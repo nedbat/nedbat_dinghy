@@ -16,11 +16,17 @@ defaults:
       title: OEP reviews
 
 digests:
-  - digest: 1week.html
-    since: 1 week
+  - digest: 1day.html
+    since: 1 day
 
   - digest: 3day.html
     since: 3 day
 
-  - digest: 1day.html
-    since: 1 day
+  - digest: 1week.html
+    since: 1 week
+
+  - digest: 1week-oep.html
+    since: 1 week
+    items:
+      - url: https://github.com/openedx/open-edx-proposals
+        title: OEP reviews
