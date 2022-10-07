@@ -26,9 +26,9 @@ digests:
     since: 3 day
     items: *ospwg-items
 
-  - digest: 1week.html
-    since: 1 week
-    items: *ospwg-items
+  #- digest: 1week.html
+  #  since: 1 week
+  #  items: *ospwg-items
 
   # OEPs
   - digest: 1week-oep.html
@@ -48,6 +48,6 @@ digests:
     since: 3 day
     items: *frontend-items
 
-  - digest: 1week-frontend.html
-    since: 1 week
-    items: *frontend-items
+  #- digest: 1week-frontend.html
+  #  since: 1 week
+  #  items: *frontend-items

@@ -50,7 +50,6 @@ jobs:
         run: |
           python -m dinghy --verbosity=debug || \
           python -m dinghy --verbosity=debug || \
-          python -m dinghy --verbosity=debug || \
           exit 1
 
       - name: "Setup Pages"
