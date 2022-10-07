@@ -2,12 +2,13 @@
 
 defaults:
   ignore_users:
-    - edx-webhook
+    - codecov-commenter
+    - coveralls
     - edx-pipeline-bot
     - edx-requirements-bot
     - edx-transifex-bot
-    - coveralls
-    - codecov-commenter
+    - edx-webhook
+    - openedx-webhooks
 
 digests:
   # OSPwg
