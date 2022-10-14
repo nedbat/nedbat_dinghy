@@ -1,0 +1,8 @@
+# Dinghy configuration for small digest, for repeated testing.
+
+digests:
+  - digest: test-digest.html
+    since: 3 days
+    title: Sample Dinghy report
+    items:
+      - https://github.com/psf/black
