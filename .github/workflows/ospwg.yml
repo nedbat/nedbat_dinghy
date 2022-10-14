@@ -3,9 +3,6 @@
 name: "Daily activity digests: ospwg"
 
 on:
-  push:
-    branches-ignore:
-      - pages
   schedule:
     # noon-ish UTC, so 7/8am Eastern.
     # https://crontab.guru/#0_7_%2A_%2A_%2A

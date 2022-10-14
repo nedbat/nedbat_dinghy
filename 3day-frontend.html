@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Frontend 3 days — Activity since 2022-10-11</title>
+  <link rel="icon" href="https://raw.githubusercontent.com/primer/octicons/main/icons/comment-discussion-24.svg" type="image/svg+xml">
+  <style>
+  body {
+    font-family: sans-serif;
+    max-width: 60em;
+    margin: auto;
+    line-height: 1.3;
+    color: black;
+  }
+  ul {
+    padding-left: 0;
+    list-style-type: none;
+  }
+  li {
+    margin: 0;
+  }
+  li p {
+    margin: 0;
+  }
+  ul.repos > li {
+    margin-top: 2em;
+  }
+  ul.entries > li {
+    margin-top: 1em;
+  }
+  ul.entries > li > p {
+    margin-left: 4.2em;
+  }
+  ul.entries > li > p:first-child {
+    text-indent: -2.1em;   /* not sure why it's half the 4.2em indent */
+  }
+  ul.comments > li > p {
+    margin-left: 4.2em;
+    padding-left: 1.6em;
+    text-indent: -1.6em;
+  }
+  ul.thread_comment ul.thread_comment {
+    padding-left: 1.6em;
+  }
+  ul.thread_comment > li > p {
+    padding-left: 7.3em;
+    text-indent: -1.6em;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  a:hover {
+    text-decoration: none;
+    color: #0969da;
+  }
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  .reponame {
+    font-weight: bold;
+    font-size: 150%;
+    margin-right: .5em;
+  }
+  .label {
+    padding: .2em .5em .1em .5em;
+    border-radius: 2em;
+    font-size: 75%;
+    opacity: .85;
+    vertical-align: middle;
+    white-space: nowrap;
+    /* GitHub label style computations, lifted from github.com */
+    border: 1px solid transparent;
+    --perceived-lightness: calc( ((var(--label-r) * 0.2126) + (var(--label-g) * 0.7152) + (var(--label-b) * 0.0722)) / 255 );
+    --lightness-switch: max(0, min(calc((var(--perceived-lightness) - var(--lightness-threshold)) * -1000), 1));
+    --lightness-threshold: 0.453;
+    --border-threshold: 0.96;
+    --border-alpha: max(0, min(calc((var(--perceived-lightness) - var(--border-threshold)) * 100), 1));
+    background: rgb(var(--label-r), var(--label-g), var(--label-b));
+    color: hsl(0, 0%, calc(var(--lightness-switch) * 100%));
+    border-color: hsla(var(--label-h), calc(var(--label-s) * 1%), calc((var(--label-l) - 25) * 1%), var(--border-alpha));
+  }
+  .homerepo {
+    color: #888;
+  }
+  .boring > p {
+    color: #888;
+  }
+  .footer {
+    color: #888;
+    font-style: italic;
+    margin-top: 3em;
+  }
+  .octicons {
+    display: inline-block;
+    padding-right: .3em;
+  }
+  .octicon {
+    width: 1.3em;
+    height: 1em;
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    padding-bottom: .2em;
+  }
+  .octicon.star {
+    background-image: url(https://raw.githubusercontent.com/primer/octicons/main/icons/star-16.svg);
+  filter: invert(1) brightness(.5) sepia(1) hue-rotate(98deg) saturate(8) brightness(0.5);
+  
+  }
+  .octicon.x {
+    background-image: url(https://raw.githubusercontent.com/primer/octicons/main/icons/x-16.svg);
+  
+  }
+  .octicon.check {
+    background-image: url(https://raw.githubusercontent.com/primer/octicons/main/icons/check-16.svg);
+  
+  }
+  .octicon.checkcircle {
+    background-image: url(https://raw.githubusercontent.com/primer/octicons/main/icons/check-circle-16.svg);
+  filter: invert(1) brightness(.5) sepia(1) hue-rotate(98deg) saturate(8) brightness(0.5);
+  
+  }
+  .octicon.comment.resolved {
+    background-image: url(https://raw.githubusercontent.com/primer/octicons/main/icons/tasklist-16.svg);
+  filter: invert(1) brightness(.5) sepia(1) hue-rotate(98deg) saturate(8) brightness(0.5);
+  
+  }
+  .octicon.comment {
+    background-image: url(https://raw.githubusercontent.com/primer/octicons/main/icons/comment-16.svg);
+  
+  }
+  .octicon.eye {
+    background-image: url(https://raw.githubusercontent.com/primer/octicons/main/icons/eye-16.svg);
+  
+  }
+  .octicon.filediff {
+    background-image: url(https://raw.githubusercontent.com/primer/octicons/main/icons/file-diff-16.svg);
+  filter: invert(1) brightness(.5) sepia(1) hue-rotate(316deg) saturate(6) brightness(.8);
+  
+  }
+  .octicon.dash {
+    background-image: url(https://raw.githubusercontent.com/primer/octicons/main/icons/dash-16.svg);
+  filter: invert(1) brightness(.5) sepia(1) hue-rotate(172deg) saturate(0.43) brightness(1.25);
+  
+  }
+  .octicon.pull {
+    background-image: url(https://raw.githubusercontent.com/primer/octicons/main/icons/git-pull-request-16.svg);
+  filter: invert(1) brightness(.5) sepia(1) hue-rotate(98deg) saturate(8) brightness(0.5);
+  
+  }
+  .octicon.pull.draft {
+    background-image: url(https://raw.githubusercontent.com/primer/octicons/main/icons/git-pull-request-draft-16.svg);
+  filter: invert(1) brightness(.5) sepia(1) hue-rotate(172deg) saturate(0.43) brightness(0.65);
+  
+  }
+  .octicon.pull.closed {
+    background-image: url(https://raw.githubusercontent.com/primer/octicons/main/icons/git-pull-request-closed-16.svg);
+  filter: invert(1) brightness(.5) sepia(1) hue-rotate(316deg) saturate(6) brightness(.8);
+  
+  }
+  .octicon.pull.merged {
+    background-image: url(https://raw.githubusercontent.com/primer/octicons/main/icons/git-merge-16.svg);
+  filter: invert(1) brightness(.5) sepia(1) hue-rotate(220deg) saturate(8) brightness(.65);
+  
+  }
+  .octicon.issue {
+    background-image: url(https://raw.githubusercontent.com/primer/octicons/main/icons/issue-opened-16.svg);
+  filter: invert(1) brightness(.5) sepia(1) hue-rotate(98deg) saturate(8) brightness(0.5);
+  
+  }
+  .octicon.issue.closed {
+    background-image: url(https://raw.githubusercontent.com/primer/octicons/main/icons/issue-closed-16.svg);
+  filter: invert(1) brightness(.5) sepia(1) hue-rotate(220deg) saturate(8) brightness(.65);
+  
+  }
+  .octicon.issue.wontdo {
+    background-image: url(https://raw.githubusercontent.com/primer/octicons/main/icons/skip-16.svg);
+  filter: invert(1) brightness(.5) sepia(1) hue-rotate(172deg) saturate(0.43) brightness(0.65);
+  
+  }
+  </style>
+<body>
+
+<h1>Frontend 3 days - Activity since 2022-10-11</h1>
+
+<ul class="repos">
+  <li>
+      <p><span class="reponame"><a href="https://github.com/orgs/edx/projects/10">FED-BOM</a></span>
+      project items
+      </p>
+      
+        <ul class="entries">
+          <li class="">
+
+              <p><a href="https://github.com/openedx/frontend-component-header/pull/210"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>FC-0001: Account pages -&gt; micro-frontend</b> #210</a>
+              [UvgenGen]
+
+              <span class="label" style="--label-r:144;--label-g:217;--label-b:70;--label-h:89;--label-s:65;--label-l:56;">engineering review</span>
+                <span class="label" style="--label-r:240;--label-g:240;--label-b:240;--label-h:0;--label-s:0;--label-l:94;">open-source-contribution</span>
+                <span class="homerepo">openedx/frontend-component-header</span>
+              </p><p>Description:
+Added ACCOUNT_PROFILE_URL and ACCOUNT_SETTINGS_URL settings.
+edx-platform PR:...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/openedx/frontend-component-header/pull/210#pullrequestreview-1138855656" title="10-12 10:40">
+                        <span class="octicon checkcircle" title="reviewed, approved"></span>
+                          
+                        
+                        <b>abdullahwaheed</b>: tested with respective changes of frontend-platform. I think we can merge it</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="">
+
+              <p><a href="https://github.com/openedx/frontend-app-account/pull/615"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>build: fix peer depends and update common depends</b> #615</a>
+              [ghassanmas]
+
+              <span class="label" style="--label-r:240;--label-g:240;--label-b:240;--label-h:0;--label-s:0;--label-l:94;">open-source-contribution</span>
+                <span class="homerepo">openedx/frontend-app-account</span>
+              </p><p>fix peer depends and update common depends</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/openedx/frontend-app-account/pull/615#issuecomment-1275705343" title="10-12 07:21">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>ghassanmas</b>: @abdullahwaheed just pushed a fix, by overrideing webpack-cli version hence...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/openedx/frontend-app-account/pull/615#issuecomment-1275722168" title="10-12 07:36">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>ghassanmas</b>: Secondaly for the tests I have backported 0527c73 and seems to resolve the failing tests</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/openedx/frontend-app-account/pull/615#issuecomment-1277376712" title="10-13 10:17">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>BilalQamar95</b>: @ghassanmas Are we sure that useEffect dependencies update won&#39;t cause unnecessary renders? If...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/openedx/frontend-app-account/pull/615#issuecomment-1277420889" title="10-13 10:54">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>ghassanmas</b>: @ghassanmas Are we sure that useEffect dependencies update won&#39;t cause unnecessary renders? If...</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="open">
+
+              <p><a href="https://github.com/openedx/frontend-wg/issues/124"><span class="octicons" title="issue"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>PubSub already loaded console warning</b> #124</a>
+              [adamstankiewicz]
+
+              <span class="homerepo">openedx/frontend-wg</span>
+              </p><p>In @edx/frontend-platform, running the tests, there are many console warnings about &#34;PubSub already loaded, using...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/openedx/frontend-wg/issues/124#issuecomment-1278569769" title="10-14 06:58">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>ishahroz</b>: When running the test cases, these console warnings come as a result of the singleton pattern...</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          </ul>
+      
+    </li>
+  <li>
+      <p><span class="reponame"><a href="https://github.com/orgs/openedx/projects/29">Frontend Development</a></span>
+      project items
+      </p>
+      
+        <ul class="entries">
+          <li class="">
+
+              <p><a href="https://github.com/openedx/paragon/pull/1388"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>docs: ADR to expose all SCSS variables that MFEs use as CSS variables [BB-6307]</b> #1388</a>
+              [xitij2000]
+
+              <span class="label" style="--label-r:240;--label-g:240;--label-b:240;--label-h:0;--label-s:0;--label-l:94;">open-source-contribution</span>
+                <span class="homerepo">openedx/paragon</span>
+              </p><p>Description
+Adds an ADR for a plan to expose all Bootstrap variables used by Paragon and MFEs as CSS...</p></li>
+          <li class="open">
+
+              <p><a href="https://github.com/openedx/tcril-engineering/issues/477"><span class="octicons" title="issue"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>Kick off meeting with UX stakeholders</b> #477</a>
+              [jmakowski1123]
+
+              <span class="homerepo">openedx/tcril-engineering</span>
+              </p><p>Organize a meeting with stakeholders to discuss how to make UX decisions.  In particular, how it relates to #418 and...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/openedx/tcril-engineering/issues/477#issuecomment-1276170458" title="10-12 13:24">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>arbrandes</b>: The theming bits of this discussion happened in a specific meeting today: see #475 for...</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="">
+
+              <p><a href="https://github.com/openedx/frontend-component-header/pull/210"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>FC-0001: Account pages -&gt; micro-frontend</b> #210</a>
+              [UvgenGen]
+
+              <span class="label" style="--label-r:144;--label-g:217;--label-b:70;--label-h:89;--label-s:65;--label-l:56;">engineering review</span>
+                <span class="label" style="--label-r:240;--label-g:240;--label-b:240;--label-h:0;--label-s:0;--label-l:94;">open-source-contribution</span>
+                <span class="homerepo">openedx/frontend-component-header</span>
+              </p><p>Description:
+Added ACCOUNT_PROFILE_URL and ACCOUNT_SETTINGS_URL settings.
+edx-platform PR:...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/openedx/frontend-component-header/pull/210#pullrequestreview-1138855656" title="10-12 10:40">
+                        <span class="octicon checkcircle" title="reviewed, approved"></span>
+                          
+                        
+                        <b>abdullahwaheed</b>: tested with respective changes of frontend-platform. I think we can merge it</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="">
+
+              <p><a href="https://github.com/openedx/frontend-app-library-authoring/pull/50"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Add a tutor plugin to easily run this on a devstack</b> #50</a>
+              [bradenmacdonald]
+
+              <span class="label" style="--label-r:240;--label-g:240;--label-b:240;--label-h:0;--label-s:0;--label-l:94;">open-source-contribution</span>
+                <span class="homerepo">openedx/frontend-app-library-authoring</span>
+              </p><p>It&#39;s a bit tricky to get this working on a Tutor-based devstack, but this plugin should make it easy!
+This updates...</p></li>
+          <li class="open">
+
+              <p><a href="https://github.com/overhangio/tutor-mfe/issues/68"><span class="octicons" title="newly created; issue"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>Update maintainer information</b> #68</a>
+              [arbrandes]
+
+              <span class="homerepo">overhangio/tutor-mfe</span>
+              </p><p>As per overhangio/tutor-ecommerce#34 (comment):
+
+Add yourself to the README, in a &#34;troubleshooting&#34; section.
+Update...</p></li>
+          <li class="open">
+
+              <p><a href="https://github.com/openedx/tcril-engineering/issues/475"><span class="octicons" title="issue"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>Discovery: Reconcile Opencraft&#39;s work on MFE Theming with 2U initiatives</b> #475</a>
+              [arbrandes]
+
+              <span class="homerepo">openedx/tcril-engineering</span>
+              </p><p>Following from the UX stakeholder meeting (#477), make sure that OpenCraft (via Kshitij) and 2U stakeholders are...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/openedx/tcril-engineering/issues/475#issuecomment-1276165917" title="10-13 14:23">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>arbrandes</b>: There was an initial meeting to discuss this: see meeting notes for details.
+Action...</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="open">
+
+              <p><a href="https://github.com/openedx/tcril-engineering/issues/494"><span class="octicons" title="newly created; issue"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>Find out which MFEs should be in Olive</b> #494</a>
+              [arbrandes]
+
+              <span class="homerepo">openedx/tcril-engineering</span>
+              </p><p>Investigate which MFEs should be included in Olive, from a product perspective with a technical feasibility in...</p></li>
+          <li class="open">
+
+              <p><a href="https://github.com/openedx/frontend-wg/issues/134"><span class="octicons" title="newly created; issue"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>Find and recommend an alternative to New Relic for Application Performance Monitoring</b> #134</a>
+              [arbrandes]
+
+              <span class="label" style="--label-r:14;--label-g:138;--label-b:22;--label-h:123;--label-s:81;--label-l:29;">epic</span>
+                <span class="homerepo">openedx/frontend-wg</span>
+              </p><p>The use of the source-map devtool in the default production config (imported here) has been identified as a way to...</p></li>
+          <li class="open">
+
+              <p><a href="https://github.com/openedx/frontend-wg/issues/124"><span class="octicons" title="issue"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>PubSub already loaded console warning</b> #124</a>
+              [adamstankiewicz]
+
+              <span class="homerepo">openedx/frontend-wg</span>
+              </p><p>In @edx/frontend-platform, running the tests, there are many console warnings about &#34;PubSub already loaded, using...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/openedx/frontend-wg/issues/124#issuecomment-1278569769" title="10-14 06:58">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>ishahroz</b>: When running the test cases, these console warnings come as a result of the singleton pattern...</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="open">
+
+              <p><a href="https://github.com/openedx/build-test-release-wg/issues/200"><span class="octicons" title="issue"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>Olive: list of new MFEs</b> #200</a>
+              [pdpinch]
+
+              <span class="label" style="--label-r:223;--label-g:39;--label-b:112;--label-h:336;--label-s:74;--label-l:51;">affects:olive</span>
+                <span class="homerepo">openedx/build-test-release-wg</span>
+              </p><p>Having a list of new MFEs will help with planning, testing and documentation of olive.
+
+this list is still in...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/openedx/build-test-release-wg/issues/200#issuecomment-1276258933" title="10-12 14:18">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>arbrandes</b>: Are we any closer to agreeing which ones will be added to the tutor-mfe plugin?</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/openedx/build-test-release-wg/issues/200#issuecomment-1276267979" title="10-12 14:24">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>arbrandes</b>: There&#39;s a PR to add frontend-app-learner-record, for the record: overhangio/tutor-mfe#63</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/openedx/build-test-release-wg/issues/200#issuecomment-1276282116" title="10-12 14:32">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>arbrandes</b>: There&#39;s a ticket to test Course Authoring.  #202</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/openedx/build-test-release-wg/issues/200#issuecomment-1277789603" title="10-13 15:22">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>regisb</b>: Considering the huge list of new MFEs that are expected to land in Olive, I&#39;m very anxious that...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/openedx/build-test-release-wg/issues/200#issuecomment-1279149729" title="10-14 15:23">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>pdpinch</b>: I think we can safely omit frontend-template-application from the list of potential MFEs. I...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/openedx/build-test-release-wg/issues/200#issuecomment-1273461553" title="10-14 15:23">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>pdpinch</b>: According to @nedbat in Slack, these are the MFEs that will get olive...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/openedx/build-test-release-wg/issues/200#issuecomment-1279153622" title="10-14 15:26">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>arbrandes</b>: Copy-pasta of a post I made in the forum:
+Do we need to include every MFE in that list in...</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="closed">
+
+              <p><a href="https://github.com/openedx/frontend-wg/issues/133"><span class="octicons" title="newly created; newly closed; closed issue"><span class="octicon star"></span><span class="octicon check"></span><span class="octicon closed issue"></span></span><b>Frontend Working Group Meeting 2022-10-13</b> #133</a>
+              [arbrandes]
+
+              <span class="homerepo">openedx/frontend-wg</span>
+              </p><p>Date, time, and location
+Thursday Octobert 13th at 15:00 UTC (Timezone converter)
+
+Calendar
+Meeting...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/openedx/frontend-wg/issues/133#issuecomment-1277763677" title="10-13 15:04">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>muselesscreator</b>: Note: FedX will be spinning up frontend study groups again next week with a working session...</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="open">
+
+              <p><a href="https://github.com/openedx/tcril-engineering/issues/425"><span class="octicons" title="issue"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>Build a service that provides configuration at run-time</b> #425</a>
+              [jmakowski1123]
+
+              <span class="label" style="--label-r:0;--label-g:252;--label-b:86;--label-h:140;--label-s:100;--label-l:49;">epic</span>
+                <span class="homerepo">openedx/tcril-engineering</span>
+              </p><p>Problem
+Having to rebuild containers with every configuration change is very expensive; possibly even more so than...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/openedx/tcril-engineering/issues/425#issuecomment-1276292983" title="10-12 14:39">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>kdmccormick</b>: Once this complete, we will need to modify tutor-mfe to take advantage of the runtime...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/openedx/tcril-engineering/issues/425#issuecomment-1279163996" title="10-14 15:36">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>arbrandes</b>: eduNext spreadsheet that lists MFEs and their status in relation to runtime config...</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="open">
+
+              <p><a href="https://github.com/openedx/platform-roadmap/issues/205"><span class="octicons" title="newly created; issue"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>Improve strategy for internationalization of MFEs</b> #205</a>
+              [arbrandes]
+
+              <span class="label" style="--label-r:152;--label-g:187;--label-b:103;--label-h:84;--label-s:38;--label-l:56;">epic</span>
+                <span class="label" style="--label-r:73;--label-g:92;--label-b:44;--label-h:83;--label-s:35;--label-l:26;">candidate for funding</span>
+                <span class="homerepo">openedx/platform-roadmap</span>
+              </p><p>Motivation
+There are a series of pain points currently identified by the community when it comes to i18n and l10n of...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/openedx/platform-roadmap/issues/205#issuecomment-1276402976" title="10-12 20:07">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>ARMBouhali</b>: @arbrandes If l10n settings are loaded through an API call, we would then solve any l10n pain...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/openedx/platform-roadmap/issues/205#issuecomment-1279192155" title="10-14 16:03">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>arbrandes</b>: Adding a pre-existing BD-49 discovery doc @jmakowski1123 pointed...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/openedx/platform-roadmap/issues/205#issuecomment-1279197490" title="10-14 16:08">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>arbrandes</b>: @ARMBouhali, those are all great ideas.  We should work with @Carlos-Muniz on the backend, in...</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="open">
+
+              <p><a href="https://github.com/openedx/build-test-release-wg/issues/131"><span class="octicons" title="issue"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>BTR requirements for an MFE to be included in a release</b> #131</a>
+              [ghassanmas]
+
+              <span class="label" style="--label-r:216;--label-g:118;--label-b:227;--label-h:293;--label-s:66;--label-l:67;">type:question</span>
+                <span class="homerepo">openedx/build-test-release-wg</span>
+              </p><p>The FWG was discussing how to ease the process for BTRWG when deploying or adding a new MFE in a release, one...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/openedx/build-test-release-wg/issues/131#issuecomment-1279145964" title="10-14 15:19">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>arbrandes</b>: Copy-pasta of a post I made in the forum:
+Do we need to include every MFE in that list in...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/openedx/build-test-release-wg/issues/131#issuecomment-1279203976" title="10-14 16:12">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>kdmccormick</b>: Relatedly, we have proposed OEP-57, which would create a system for deciding what needs to be...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/openedx/build-test-release-wg/issues/131#issuecomment-1279204044" title="10-14 16:12">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>kdmccormick</b>: One criteria I’d add is: Has the legacy version of the frontend stopped working on master?. If...</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="open">
+
+              <p><a href="https://github.com/openedx/frontend-wg/issues/135"><span class="octicons" title="newly created; issue"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>Deploy sandboxes automatically for MFE PRs</b> #135</a>
+              [arbrandes]
+
+              <span class="label" style="--label-r:14;--label-g:138;--label-b:22;--label-h:123;--label-s:81;--label-l:29;">epic</span>
+                <span class="label" style="--label-r:45;--label-g:177;--label-b:42;--label-h:118;--label-s:61;--label-l:42;">candidate for funding</span>
+                <span class="homerepo">openedx/frontend-wg</span>
+              </p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/openedx/frontend-wg/issues/135#issuecomment-1279274510" title="10-14 17:24">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>arbrandes</b>: This is pending refinement, but OpenCraft (via Fox Piacenti) has offered to do discovery on this...</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="open">
+
+              <p><a href="https://github.com/overhangio/tutor-mfe/issues/67"><span class="octicons" title="newly created; issue"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>Olive upgrade</b> #67</a>
+              [arbrandes]
+
+              <span class="label" style="--label-r:241;--label-g:172;--label-b:197;--label-h:338;--label-s:71;--label-l:80;">epic</span>
+                <span class="homerepo">overhangio/tutor-mfe</span>
+              </p><p>We need to do the following to upgrade this to Olive:
+
+ #65
+ #63
+ Fix learning MFE
+...</p></li>
+          <li class="open">
+
+              <p><a href="https://github.com/openedx/tcril-engineering/issues/23"><span class="octicons" title="issue"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>NPM Ownership</b> #23</a>
+              [sarina]
+
+              <span class="label" style="--label-r:31;--label-g:94;--label-b:83;--label-h:169;--label-s:50;--label-l:24;">decoupling</span>
+                <span class="homerepo">openedx/tcril-engineering</span>
+              </p><p>There is an edx organization on NPM that currently publishes many packages.  An organization can&#39;t be renamed but...</p></li>
+          <li class="open">
+
+              <p><a href="https://github.com/openedx/frontend-platform/issues/360"><span class="octicons" title="issue"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>Consider preloading Config API request in all MFEs</b> #360</a>
+              [kdmccormick]
+
+              <span class="homerepo">openedx/frontend-platform</span>
+              </p><p>Context
+
+We added runtime configuration to frontend-platform, backed by a new LMS API.
+We made tutor-mfe use runtime...</p></li>
+          </ul>
+      
+    </li>
+  </ul>
+
+<p class="footer">
+  created at 2022-10-14 18:29 by
+  <a href="https://pypi.org/project/dinghy/0.13.4">
+    dinghy
+    <span class="dinghy_version">0.13.4</span></a>.
+</p>
