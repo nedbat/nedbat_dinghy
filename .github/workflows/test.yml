@@ -1,0 +1,16 @@
+# This GitHub Action creates a test dinghy digest and publishes it.
+
+name: "Daily activity digests: test"
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  digest:
+    name: "Daily digest"
+    uses: ./.github/workflows/daily-digest.yml
+    with:
+      config: test.yaml
+    secrets:
+      token: ${{ secrets.DINGHY_ACCESS_TOKEN }}

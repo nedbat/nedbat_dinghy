@@ -1,18 +1,23 @@
-# This GitHub Action creates the dinghy digest and publishes them every day.
+# This GitHub Action creates dinghy digests and publishes them.
 
-name: "Daily activity digests"
+name: "Create and publish digests"
 
 on:
-  push:
-  schedule:
-    # noon-ish UTC, so 7/8am Eastern.
-    # https://crontab.guru/#0_7_%2A_%2A_%2A
-    - cron: "0 7 * * *"
-  workflow_dispatch:
+  workflow_call:
+    inputs:
+      config:
+        required: true
+        type: string
+    secrets:
+      token:
+        required: true
 
 defaults:
   run:
     shell: bash
+
+env:
+  CONFIG: ${{ inputs.config }}
 
 permissions:
   contents: read
@@ -21,7 +26,7 @@ permissions:
 
 # Allow one concurrent deployment
 concurrency:
-  group: "pages"
+  group: "digest"
   cancel-in-progress: true
 
 jobs:
@@ -33,6 +38,8 @@ jobs:
     steps:
       - name: "Check out the repo"
         uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.token }}
 
       - name: "Install Python"
         uses: actions/setup-python@v4
@@ -45,21 +52,21 @@ jobs:
 
       - name: "Run dinghy"
         env:
-          # Made with nedbat's account, with public_repo, read:org, read:project
-          GITHUB_TOKEN: ${{ secrets.DINGHY_ACCESS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.token }}
         run: |
-          python -m dinghy --verbosity=debug || \
-          python -m dinghy --verbosity=debug || \
+          python -m dinghy --verbosity=debug $CONFIG || \
+          python -m dinghy --verbosity=debug $CONFIG || \
           exit 1
 
-      - name: "Setup Pages"
-        uses: actions/configure-pages@v2
-
-      - name: "Upload artifact"
-        uses: actions/upload-pages-artifact@v1
-        with:
-          # Upload entire repository
-          path: '.'
-
-      - name: "Deploy to GitHub Pages"
-        uses: actions/deploy-pages@v1
+      #- name: "Push digests to pages"
+      #  run: |
+      - run: git config user.name nedbat
+      - run: git config user.email ned@nedbatchelder.com
+      - run: git add *.html
+      - run: git stash
+      - run: git fetch --all
+      - run: git checkout pages
+      - run: git checkout stash -- .
+      - run: git status
+      - run: git commit -m "latest digests from $CONFIG"
+      - run: git push

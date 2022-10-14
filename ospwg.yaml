@@ -1,0 +1,54 @@
+# Dinghy configuration for ospwg digests
+
+defaults:
+  ignore_users:
+    - codecov-commenter
+    - coveralls
+    - edx-pipeline-bot
+    - edx-requirements-bot
+    - edx-transifex-bot
+    - edx-webhook
+    - openedx-webhooks
+
+digests:
+
+  ### OSPwg
+  - digest: 1day.html
+    since: 1 day
+    items: &ospwg-items
+      - url: https://github.com/orgs/edx/projects/7
+        home_repo: edx/open-source-process-wg
+      - url: https://github.com/orgs/openedx/projects/8
+        home_repo: openedx/tcril-engineering
+      - url: https://github.com/openedx/open-edx-proposals
+        title: OEP reviews
+
+  - digest: 3day.html
+    since: 3 day
+    items: *ospwg-items
+
+  #- digest: 1week.html
+  #  since: 1 week
+  #  items: *ospwg-items
+
+  ### OEPs
+  - digest: 1week-oep.html
+    since: 1 week
+    items:
+      - url: https://github.com/openedx/open-edx-proposals
+        title: OEP reviews
+
+  ### Front end
+  - digest: 1day-frontend.html
+    since: 1 day
+    items: &frontend-items
+      - url: https://github.com/orgs/edx/projects/10
+      - url: https://github.com/orgs/openedx/projects/29
+
+  - digest: 3day-frontend.html
+    since: 3 day
+    items: *frontend-items
+
+  #- digest: 1week-frontend.html
+  #  since: 1 week
+  #  items: *frontend-items
