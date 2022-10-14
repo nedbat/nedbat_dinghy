@@ -5,9 +5,9 @@ name: "Daily activity digests"
 on:
   push:
   schedule:
-    # 1pm UTC, so 8/9am Eastern.
-    # https://crontab.guru/#02_13_*_*_*
-    - cron: "02 13 * * *"
+    # noon-ish UTC, so 7/8am Eastern.
+    # https://crontab.guru/#0_7_%2A_%2A_%2A
+    - cron: "0 7 * * *"
   workflow_dispatch:
 
 defaults:
