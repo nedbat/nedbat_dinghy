@@ -15,6 +15,7 @@ digests:
   ### OSPwg
   - digest: 1day.html
     since: 1 day
+    title: ospwg 1 day
     items: &ospwg-items
       - url: https://github.com/orgs/edx/projects/7
         home_repo: edx/open-source-process-wg
@@ -25,6 +26,7 @@ digests:
 
   - digest: 3day.html
     since: 3 day
+    title: ospwg 3 day
     items: *ospwg-items
 
   #- digest: 1week.html
@@ -34,21 +36,7 @@ digests:
   ### OEPs
   - digest: 1week-oep.html
     since: 1 week
+    title: OEPs 7 day activity
     items:
       - url: https://github.com/openedx/open-edx-proposals
         title: OEP reviews
-
-  ### Front end
-  - digest: 1day-frontend.html
-    since: 1 day
-    items: &frontend-items
-      - url: https://github.com/orgs/edx/projects/10
-      - url: https://github.com/orgs/openedx/projects/29
-
-  - digest: 3day-frontend.html
-    since: 3 day
-    items: *frontend-items
-
-  #- digest: 1week-frontend.html
-  #  since: 1 week
-  #  items: *frontend-items
