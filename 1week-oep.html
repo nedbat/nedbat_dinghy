@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>OEPs 7 day activity — Activity since 2022-10-07</title>
+  <link rel="icon" href="https://raw.githubusercontent.com/primer/octicons/main/icons/comment-discussion-24.svg" type="image/svg+xml">
+  <style>
+  body {
+    font-family: sans-serif;
+    max-width: 60em;
+    margin: auto;
+    line-height: 1.3;
+    color: black;
+  }
+  ul {
+    padding-left: 0;
+    list-style-type: none;
+  }
+  li {
+    margin: 0;
+  }
+  li p {
+    margin: 0;
+  }
+  ul.repos > li {
+    margin-top: 2em;
+  }
+  ul.entries > li {
+    margin-top: 1em;
+  }
+  ul.entries > li > p {
+    margin-left: 4.2em;
+  }
+  ul.entries > li > p:first-child {
+    text-indent: -2.1em;   /* not sure why it's half the 4.2em indent */
+  }
+  ul.comments > li > p {
+    margin-left: 4.2em;
+    padding-left: 1.6em;
+    text-indent: -1.6em;
+  }
+  ul.thread_comment ul.thread_comment {
+    padding-left: 1.6em;
+  }
+  ul.thread_comment > li > p {
+    padding-left: 7.3em;
+    text-indent: -1.6em;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  a:hover {
+    text-decoration: none;
+    color: #0969da;
+  }
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  .reponame {
+    font-weight: bold;
+    font-size: 150%;
+    margin-right: .5em;
+  }
+  .label {
+    padding: .2em .5em .1em .5em;
+    border-radius: 2em;
+    font-size: 75%;
+    opacity: .85;
+    vertical-align: middle;
+    white-space: nowrap;
+    /* GitHub label style computations, lifted from github.com */
+    border: 1px solid transparent;
+    --perceived-lightness: calc( ((var(--label-r) * 0.2126) + (var(--label-g) * 0.7152) + (var(--label-b) * 0.0722)) / 255 );
+    --lightness-switch: max(0, min(calc((var(--perceived-lightness) - var(--lightness-threshold)) * -1000), 1));
+    --lightness-threshold: 0.453;
+    --border-threshold: 0.96;
+    --border-alpha: max(0, min(calc((var(--perceived-lightness) - var(--border-threshold)) * 100), 1));
+    background: rgb(var(--label-r), var(--label-g), var(--label-b));
+    color: hsl(0, 0%, calc(var(--lightness-switch) * 100%));
+    border-color: hsla(var(--label-h), calc(var(--label-s) * 1%), calc((var(--label-l) - 25) * 1%), var(--border-alpha));
+  }
+  .homerepo {
+    color: #888;
+  }
+  .boring > p {
+    color: #888;
+  }
+  .footer {
+    color: #888;
+    font-style: italic;
+    margin-top: 3em;
+  }
+  .octicons {
+    display: inline-block;
+    padding-right: .3em;
+  }
+  .octicon {
+    width: 1.3em;
+    height: 1em;
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    padding-bottom: .2em;
+  }
+  .octicon.star {
+    background-image: url(https://raw.githubusercontent.com/primer/octicons/main/icons/star-16.svg);
+  filter: invert(1) brightness(.5) sepia(1) hue-rotate(98deg) saturate(8) brightness(0.5);
+  
+  }
+  .octicon.x {
+    background-image: url(https://raw.githubusercontent.com/primer/octicons/main/icons/x-16.svg);
+  
+  }
+  .octicon.check {
+    background-image: url(https://raw.githubusercontent.com/primer/octicons/main/icons/check-16.svg);
+  
+  }
+  .octicon.checkcircle {
+    background-image: url(https://raw.githubusercontent.com/primer/octicons/main/icons/check-circle-16.svg);
+  filter: invert(1) brightness(.5) sepia(1) hue-rotate(98deg) saturate(8) brightness(0.5);
+  
+  }
+  .octicon.comment.resolved {
+    background-image: url(https://raw.githubusercontent.com/primer/octicons/main/icons/tasklist-16.svg);
+  filter: invert(1) brightness(.5) sepia(1) hue-rotate(98deg) saturate(8) brightness(0.5);
+  
+  }
+  .octicon.comment {
+    background-image: url(https://raw.githubusercontent.com/primer/octicons/main/icons/comment-16.svg);
+  
+  }
+  .octicon.eye {
+    background-image: url(https://raw.githubusercontent.com/primer/octicons/main/icons/eye-16.svg);
+  
+  }
+  .octicon.filediff {
+    background-image: url(https://raw.githubusercontent.com/primer/octicons/main/icons/file-diff-16.svg);
+  filter: invert(1) brightness(.5) sepia(1) hue-rotate(316deg) saturate(6) brightness(.8);
+  
+  }
+  .octicon.dash {
+    background-image: url(https://raw.githubusercontent.com/primer/octicons/main/icons/dash-16.svg);
+  filter: invert(1) brightness(.5) sepia(1) hue-rotate(172deg) saturate(0.43) brightness(1.25);
+  
+  }
+  .octicon.pull {
+    background-image: url(https://raw.githubusercontent.com/primer/octicons/main/icons/git-pull-request-16.svg);
+  filter: invert(1) brightness(.5) sepia(1) hue-rotate(98deg) saturate(8) brightness(0.5);
+  
+  }
+  .octicon.pull.draft {
+    background-image: url(https://raw.githubusercontent.com/primer/octicons/main/icons/git-pull-request-draft-16.svg);
+  filter: invert(1) brightness(.5) sepia(1) hue-rotate(172deg) saturate(0.43) brightness(0.65);
+  
+  }
+  .octicon.pull.closed {
+    background-image: url(https://raw.githubusercontent.com/primer/octicons/main/icons/git-pull-request-closed-16.svg);
+  filter: invert(1) brightness(.5) sepia(1) hue-rotate(316deg) saturate(6) brightness(.8);
+  
+  }
+  .octicon.pull.merged {
+    background-image: url(https://raw.githubusercontent.com/primer/octicons/main/icons/git-merge-16.svg);
+  filter: invert(1) brightness(.5) sepia(1) hue-rotate(220deg) saturate(8) brightness(.65);
+  
+  }
+  .octicon.issue {
+    background-image: url(https://raw.githubusercontent.com/primer/octicons/main/icons/issue-opened-16.svg);
+  filter: invert(1) brightness(.5) sepia(1) hue-rotate(98deg) saturate(8) brightness(0.5);
+  
+  }
+  .octicon.issue.closed {
+    background-image: url(https://raw.githubusercontent.com/primer/octicons/main/icons/issue-closed-16.svg);
+  filter: invert(1) brightness(.5) sepia(1) hue-rotate(220deg) saturate(8) brightness(.65);
+  
+  }
+  .octicon.issue.wontdo {
+    background-image: url(https://raw.githubusercontent.com/primer/octicons/main/icons/skip-16.svg);
+  filter: invert(1) brightness(.5) sepia(1) hue-rotate(172deg) saturate(0.43) brightness(0.65);
+  
+  }
+  </style>
+<body>
+
+<h1>OEPs 7 day activity - Activity since 2022-10-07</h1>
+
+<ul class="repos">
+  <li>
+      <p><span class="reponame"><a href="https://github.com/openedx/open-edx-proposals">OEP reviews</a></span>
+      repo issues and pull requests
+      </p>
+      
+        <ul class="entries">
+          <li class="">
+
+              <p><a href="https://github.com/openedx/open-edx-proposals/pull/398"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>OEP-57 Product Offering</b> #398</a>
+              [sarina]
+
+              
+              </p><p>Comments will take place now through 31 Oct at :...</p></li>
+          <li class="open">
+
+              <p><a href="https://github.com/openedx/open-edx-proposals/issues/394"><span class="octicons" title="issue"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>Update OEP-19 with Recommendations for Private Links in Public Content</b> #394</a>
+              [feanil]
+
+              
+              </p><p>Sometimes it&#39;s useful for companies that we work with to be able to cross link public information with related...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/openedx/open-edx-proposals/issues/394#issuecomment-1272032161" title="10-07 19:46">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>robrap</b>: I agree. I think acceptable examples will help.
+Note, when I tried this (because I heard people...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/openedx/open-edx-proposals/issues/394#issuecomment-1274610673" title="10-11 12:29">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>feanil</b>: Yea, I&#39;d be curious to hear more as well, when I was envisioning this change, I was expecting it...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/openedx/open-edx-proposals/issues/394#issuecomment-1274681105" title="10-11 13:23">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>e0d</b>: I feel less strongly about wiki pages.  OEPs, on the other hand, are the official, public,...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/openedx/open-edx-proposals/issues/394#issuecomment-1275218883" title="10-11 20:11">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>robrap</b>: Thanks @e0d and @feanil. This is helpful nuance.
+Consider also discussing public docs (vs...</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="">
+
+              <p><a href="https://github.com/openedx/open-edx-proposals/pull/396"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>docs: Update OEP-15 to match current implementation</b> #396</a>
+              [xitij2000]
+
+              <span class="label" style="--label-r:240;--label-g:240;--label-b:240;--label-h:0;--label-s:0;--label-l:94;">open-source-contribution</span>
+                
+              </p><p>There were differences between the approach described in OEP-15 and the final
+implemntation in edx-platform#28411....</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/openedx/open-edx-proposals/pull/396#pullrequestreview-1135491845" title="10-10 05:38">
+                        <span class="octicon checkcircle" title="reviewed, approved"></span>
+                          
+                        
+                        <b>pkulkark</b>: Just the small suggestion, otherwise LGTM 👍</a></p>
+                      
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/openedx/open-edx-proposals/pull/396#discussion_r990923025" title="10-10 05:38">
+                        
+                          <span class="octicon comment resolved" title="resolved comment"></span>
+                        
+                        <b>pkulkark</b>: Suggested change
+        
+          
+    
+
+        
+      
+    
+    
+      
+          
+         ...</a></p>
+                      
+                    </li>
+                  </ul>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="">
+
+              <p><a href="https://github.com/openedx/open-edx-proposals/pull/393"><span class="octicons" title="draft pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon draft pull"></span></span><b>[Placeholder] OEP-61</b> #393</a>
+              [kdmccormick]
+
+              
+              </p><p>We will be writing this OEP according to...</p></li>
+          <li class="">
+
+              <p><a href="https://github.com/openedx/open-edx-proposals/pull/395"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>docs: Mark OEP-48 as Approved</b> #395</a>
+              [xitij2000]
+
+              <span class="label" style="--label-r:240;--label-g:240;--label-b:240;--label-h:0;--label-s:0;--label-l:94;">open-source-contribution</span>
+                
+              </p><p>OEP-48 deals with customising branding for MFEs usin an npm package override.
+This mechanism for branding is now...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/openedx/open-edx-proposals/pull/395#pullrequestreview-1139123813" title="10-12 13:45">
+                        
+                            <span class="octicon eye" title="reviewed"></span>
+                          
+                        
+                        <b>kdmccormick</b>: Thanks for making this change @xitij2000 , I agree it&#39;s time to mark this as complete. Could...</a></p>
+                      
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/openedx/open-edx-proposals/pull/395#discussion_r993480976" title="10-12 13:45">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>kdmccormick</b>: Suggested change
+        
+          
+    
+
+        
+      
+    
+    
+      
+          
+         ...</a></p>
+                      
+                    </li>
+                  </ul>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="open">
+
+              <p><a href="https://github.com/openedx/open-edx-proposals/issues/295"><span class="octicons" title="issue"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>Write OEP answering &#34;What code is part of the Open edX project?&#34;</b> #295</a>
+              [sarina]
+
+              
+              </p><p>What organizations do (and can and should) hold code that belongs to the project?
+How do we govern code moving in...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/openedx/open-edx-proposals/issues/295#issuecomment-1276206514" title="10-12 13:51">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>kdmccormick</b>: Overdue update: This will involve two OEPs (57 and 61), as well as several edits to existing...</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="">
+
+              <p><a href="https://github.com/openedx/open-edx-proposals/pull/390"><span class="octicons" title="draft pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon draft pull"></span></span><b>docs: amend OEP-18 to further discourage VCS URL dependencies</b> #390</a>
+              [kdmccormick]
+
+              
+              </p><p>Part of overhangio/2u-tutor-adoption#84
+Related to openedx/.github#26</p><ul class="comments">
+                  <li class="boring">
+                      <p><a href="https://github.com/openedx/open-edx-proposals/pull/390#pullrequestreview-1131926871" title="10-05 19:52">
+                        
+                            <span class="octicon eye" title="reviewed"></span>
+                          
+                        
+                        <b>jmbowman</b></a></p>
+                      
+                        <ul class="thread_comment"><li class="boring">
+                      <p><a href="https://github.com/openedx/open-edx-proposals/pull/390#discussion_r988289222" title="10-05 19:52">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>jmbowman</b>: A few other interesting use cases that have come up in the past:
+
+A dependency suddenly deletes...</a></p>
+                      
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/openedx/open-edx-proposals/pull/390#discussion_r993802549" title="10-12 18:59">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>jmbowman</b>: I definitely agree that there are things in github.in that have stayed there far too long. ...</a></p>
+                      
+                    </li>
+                  </ul>
+                      
+                    </li>
+                  </ul>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/openedx/open-edx-proposals/pull/390#issuecomment-1279243650" title="10-14 16:51">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>kdmccormick</b>: Based on Jeremy&#39;s feedback, I will be amending this update to be less extreme. I&#39;ll leave room...</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="">
+
+              <p><a href="https://github.com/openedx/open-edx-proposals/pull/367"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>docs: add OEP-58 - Translations Management</b> #367</a>
+              [Carlos-Muniz]
+
+              
+              </p><p>This PR introduces OEP-58 for Translations Management - Using the GitHub Transifex App and a Separate Translation...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/openedx/open-edx-proposals/pull/367#issuecomment-1261401615" title="10-14 13:59">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>Carlos-Muniz</b>: Suggestions from @nedbat to get OEP-58 approved
+
+ Find a repo, inform maintainer that they are...</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          </ul>
+      
+    </li>
+  </ul>
+
+<p class="footer">
+  created at 2022-10-14 18:25 by
+  <a href="https://pypi.org/project/dinghy/0.13.4">
+    dinghy
+    <span class="dinghy_version">0.13.4</span></a>.
+</p>
