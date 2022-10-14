@@ -3,9 +3,6 @@
 name: "Daily activity digests: frontend"
 
 on:
-  push:
-    branches-ignore:
-      - pages
   schedule:
     # https://crontab.guru/#0_5_%2A_%2A_%2A
     - cron: "0 5 * * *"

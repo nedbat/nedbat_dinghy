@@ -3,9 +3,9 @@
 name: "Daily activity digests: test"
 
 on:
-  #push:
-  #  branches-ignore:
-  #    - pages
+  push:
+    branches-ignore:
+      - pages
   workflow_dispatch:
 
 jobs:
