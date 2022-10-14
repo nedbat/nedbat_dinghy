@@ -1,11 +1,11 @@
-# This GitHub Action creates a test dinghy digest and publishes it.
+# This GitHub Action creates dinghy digests and publishes them every day.
 
-name: "Daily activity digests: test"
+name: "Daily activity digests: frontend"
 
 on:
-  push:
-    branches-ignore:
-      - pages
+  schedule:
+    # https://crontab.guru/#0_5_%2A_%2A_%2A
+    - cron: "0 5 * * *"
   workflow_dispatch:
 
 jobs:
@@ -13,7 +13,7 @@ jobs:
     name: "Daily digest"
     uses: ./.github/workflows/daily-digest.yml
     with:
-      config: test.yaml
+      config: frontend.yaml
     secrets:
       # Made with nedbat's account, with public_repo, read:org, read:project
       token: ${{ secrets.DINGHY_ACCESS_TOKEN }}
