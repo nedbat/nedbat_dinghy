@@ -19,6 +19,9 @@ digests:
     items: &ospwg-items
       - url: https://github.com/orgs/edx/projects/7
         home_repo: edx/open-source-process-wg
+      - url: https://github.com/orgs/edx/projects/21
+        home_repo: edx/hackathon-planning
+        title: Hackathon XXVIII
       - url: https://github.com/orgs/openedx/projects/8
         home_repo: openedx/tcril-engineering
       - url: https://github.com/openedx/open-edx-proposals
