@@ -16,5 +16,6 @@ jobs:
     with:
       config: ospwg.yaml
     secrets:
-      # Made with nedbat's account, with public_repo, read:org, read:project
+      # Made with nedbat's account, with repo, read:org, read:project
+      # https://github.com/settings/tokens/943640357
       token: ${{ secrets.DINGHY_ACCESS_TOKEN }}
