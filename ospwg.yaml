@@ -44,3 +44,11 @@ digests:
     items:
       - url: https://github.com/openedx/open-edx-proposals
         title: OEP reviews
+
+  ### Axim
+  - digest: 1week-axim.html
+    since: 1 week
+    title: Axim Engineering
+    items:
+      - url: https://github.com/orgs/openedx/projects/8
+        home_repo: openedx/axim-engineering
