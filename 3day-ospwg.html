@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>OSPwg 3 day
    — 
-  Activity since 2023-10-23</title>
+  Activity since 2023-10-24</title>
   <link rel="icon" href="https://raw.githubusercontent.com/primer/octicons/main/icons/comment-discussion-24.svg" type="image/svg+xml">
   <style>
   body {
@@ -202,7 +202,7 @@
 
 <h1>OSPwg 3 day
    — 
-  Activity since 2023-10-23</h1>
+  Activity since 2023-10-24</h1>
 
 <ul class="repos">
   <li>
@@ -300,42 +300,6 @@ Outline key principles like equity,...</p><ul class="comments">
       </p>
       
         <ul class="entries">
-          <li class="closed">
-
-              <p><a href="https://github.com/openedx/axim-engineering/issues/915"><span class="octicons" title="closed issue"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon closed issue"></span></span><b>Ticket migrating to `xblock.utils` from `xblockutils` after deprecation of repo</b> #915</a>
-              [farhan]
-
-              
-              </p><p>Predecessor ticket: openedx/XBlock#675
-The xblock-utils repo has been deprecated and in this story, we have to list...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/openedx/axim-engineering/issues/915#issuecomment-1775954172" title="10-23 20:17">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>Agrendalath</b>: @farhan, it would be great to keep the old imports as a fallback instead of breaking the...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/openedx/axim-engineering/issues/915#issuecomment-1775966447" title="10-23 20:26">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>feanil</b>: So add a try-except clause for the new imports and then try the old imports if we don&#39;t find the...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/openedx/axim-engineering/issues/915#issuecomment-1775979768" title="10-23 20:36">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>Agrendalath</b>: @feanil, exactly; something like this:
-try:
-    from xblock.utils.resources import...</a></p>
-                      
-                    </li>
-                  </ul>
-              </li>
           <li class="open">
 
               <p><a href="https://github.com/openedx/axim-engineering/issues/696"><span class="octicons" title="issue"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>Adolfo&#39;s reviews</b> #696</a>
@@ -483,36 +447,6 @@ I&#39;m currently working with the Badging feature, and I would like an update o
         <ul class="entries">
           <li class="">
 
-              <p><a href="https://github.com/openedx/open-edx-proposals/pull/520"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>OEP-66: Authorization Best Practices</b> #520</a>
-              [hsinkoff]
-
-              
-              </p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/openedx/open-edx-proposals/pull/520#discussion_r1367424750" title="10-20 19:37">
-                        
-                            <span class="octicon eye" title="reviewed"></span>
-                          
-                        
-                        <b>robrap</b>: Can you provide a link to the diagram source as well?
-..
-   Something like this might add a...</a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/openedx/open-edx-proposals/pull/520#discussion_r1369179809" title="10-23 19:31">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>hsinkoff</b>: I&#39;ve re-worked the diagrams in order to ensure they are editable in the future. I&#39;ve also...</a></p>
-                      
-                    </li>
-                  </ul>
-                      
-                    </li>
-                  </ul>
-              </li>
-          <li class="">
-
               <p><a href="https://github.com/openedx/open-edx-proposals/pull/484"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>docs: OEP 63 - TOC Arbitration (Draft)</b> #484</a>
               [antoviaque]
 
@@ -534,7 +468,31 @@ I&#39;m currently working with the Badging feature, and I would like an update o
               </li>
           <li class="">
 
-              <p><a href="https://github.com/openedx/open-edx-proposals/pull/521"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>docs: [OEP-11] TypeScript for static type checking</b> #521</a>
+              <p><a href="https://github.com/openedx/open-edx-proposals/pull/515"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>docs: OEP-11 automated bundle size checking</b> #515</a>
+              [brian-smith-tcril]
+
+              
+              </p></li>
+          <li class="">
+
+              <p><a href="https://github.com/openedx/open-edx-proposals/pull/520"><span class="octicons" title="newly merged; merged pull request"><span class="octicon dash"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>OEP-66: Authorization Best Practices</b> #520</a>
+              [hsinkoff]
+
+              
+              </p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/openedx/open-edx-proposals/pull/520#pullrequestreview-1700320922" title="10-26 18:32">
+                        <span class="octicon checkcircle" title="reviewed, approved"></span>
+                          
+                        
+                        <b>feanil</b>: Looks like all comments have been addressed and I see no major issues. I&#39;m marking this OEP as...</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="">
+
+              <p><a href="https://github.com/openedx/open-edx-proposals/pull/521"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>docs: [OEP-67] TypeScript for static type checking</b> #521</a>
               [brian-smith-tcril]
 
               
@@ -572,6 +530,32 @@ I&#39;m currently working with the Badging feature, and I would like an update o
                   </ul>
                       
                     </li>
+                  <li>
+                      <p><a href="https://github.com/openedx/open-edx-proposals/pull/521#discussion_r1365632169" title="10-19 14:22">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>sarina</b>: Reading this (the Decision &amp; Consequence sections) I lack context as to why this decision has...</a></p>
+                      
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/openedx/open-edx-proposals/pull/521#discussion_r1373461290" title="10-26 16:44">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>brian-smith-tcril</b>: I added a quick summary of a couple benefits of typescript here...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/openedx/open-edx-proposals/pull/521#discussion_r1373773439" title="10-26 20:21">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>sarina</b>: Love it, thank you!</a></p>
+                      
+                    </li>
+                  </ul>
+                      
+                    </li>
                   </ul>
                       
                     </li>
@@ -583,7 +567,7 @@ I&#39;m currently working with the Badging feature, and I would like an update o
   </ul>
 
 <p class="footer">
-  created at 2023-10-26 07:07 by
+  created at 2023-10-27 07:06 by
   <a href="https://pypi.org/project/dinghy/1.3.2">
     dinghy
     <span class="dinghy_version">1.3.2</span></a>.
