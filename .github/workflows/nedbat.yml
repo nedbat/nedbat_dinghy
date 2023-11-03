@@ -1,6 +1,6 @@
 # This GitHub Action creates dinghy digests and publishes them every day.
 
-name: "Daily activity digests: ospwg"
+name: "Daily activity digests: mine"
 
 on:
   schedule:
@@ -14,7 +14,7 @@ jobs:
     name: "Daily digest"
     uses: ./.github/workflows/daily-digest.yml
     with:
-      config: ospwg.yaml
+      config: nedbat.yaml
     secrets:
       # Made with nedbat's account, with repo, read:org, read:project
       # https://github.com/settings/tokens/943640357
