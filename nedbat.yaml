@@ -1,0 +1,54 @@
+# Dinghy configuration for my own current interests.
+
+defaults:
+  ignore_users:
+    - codecov-commenter
+    - coveralls
+    - edx-pipeline-bot
+    - edx-requirements-bot
+    - edx-transifex-bot
+    - edx-webhook
+    - openedx-webhooks
+
+digests:
+
+  ### OSPwg
+  - digest: 1day-nedbat.html
+    since: 1 day
+    title: One day
+    items: &nedbat-items
+      - url: https://github.com/orgs/edx/projects/7
+        home_repo: edx/open-source-process-wg
+      #- url: https://github.com/orgs/edx/projects/21
+      #  home_repo: edx/hackathon-planning
+      #  title: Hackathon XXVIII
+      - url: https://github.com/orgs/openedx/projects/8
+        home_repo: openedx/axim-engineering
+      - url: https://github.com/openedx/open-edx-proposals
+        title: OEP reviews
+
+  - digest: 3day-nedbat.html
+    since: 3 day
+    title: Three days
+    items: *nedbat-items
+
+  - digest: 1week-nedbat.html
+    since: 1 week
+    title: One week
+    items: *nedbat-items
+
+  ### OEPs
+  - digest: 1week-oep.html
+    since: 1 week
+    title: OEPs 7 day activity
+    items:
+      - url: https://github.com/openedx/open-edx-proposals
+        title: OEP reviews
+
+  ### Axim
+  - digest: 1week-axim.html
+    since: 1 week
+    title: Axim Engineering
+    items:
+      - url: https://github.com/orgs/openedx/projects/8
+        home_repo: openedx/axim-engineering

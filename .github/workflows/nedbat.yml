@@ -1,0 +1,21 @@
+# This GitHub Action creates dinghy digests and publishes them every day.
+
+name: "Daily activity digests: mine"
+
+on:
+  schedule:
+    # noon-ish UTC, so 7/8am Eastern.
+    # https://crontab.guru/#0_7_%2A_%2A_%2A
+    - cron: "0 7 * * *"
+  workflow_dispatch:
+
+jobs:
+  digest:
+    name: "Daily digest"
+    uses: ./.github/workflows/daily-digest.yml
+    with:
+      config: nedbat.yaml
+    secrets:
+      # Made with nedbat's account, with repo, read:org, read:project
+      # https://github.com/settings/tokens/943640357
+      token: ${{ secrets.DINGHY_ACCESS_TOKEN }}
