@@ -1,0 +1,27 @@
+# Dinghy configuration for my own current interests.
+
+defaults:
+  ignore_users:
+    - github-project-automation
+    - miss-islington
+
+digests:
+
+  - digest: 1day-docs.html
+    since: 1 day
+    title: One day
+    items: &nedbat-items
+      - search: repo:python/cpython label:docs -author:miss-islington
+        title: Docs items
+      - url: https://github.com/python/devguide
+        title: Dev guide
+
+  - digest: 3day-docs.html
+    since: 3 day
+    title: Three days
+    items: *nedbat-items
+
+  - digest: 1week-docs.html
+    since: 1 week
+    title: One week
+    items: *nedbat-items
