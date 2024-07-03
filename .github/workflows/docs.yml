@@ -1,6 +1,6 @@
 # This GitHub Action creates dinghy digests and publishes them every day.
 
-name: "Daily activity digests: mine"
+name: "Daily activity digests: docs"
 
 on:
   schedule:
