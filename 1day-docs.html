@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>One day
    — 
-  Activity since 2024-10-02</title>
+  Activity since 2024-10-03</title>
   <link rel="icon" href="https://raw.githubusercontent.com/primer/octicons/main/icons/comment-discussion-24.svg" type="image/svg+xml">
   <style>
   body {
@@ -202,159 +202,60 @@
 
 <h1>One day
    — 
-  Activity since 2024-10-02</h1>
+  Activity since 2024-10-03</h1>
 
 <ul class="repos">
   <li>
-      <p><span class="reponame"><a href="https://github.com/search?q=repo%3Apython%2Fcpython+label%3Adocs+-author%3Amiss-islington+updated%3A%3E2024-10-02T07%3A04%3A34&amp;type=issues">Docs items</a></span>
+      <p><span class="reponame"><a href="https://github.com/search?q=repo%3Apython%2Fcpython+label%3Adocs+-author%3Amiss-islington+updated%3A%3E2024-10-03T07%3A04%3A17&amp;type=issues">Docs items</a></span>
       search items
       </p>
       
         <ul class="entries">
           <li class="open">
 
-              <p><a href="https://github.com/python/cpython/issues/124875"><span class="octicons" title="issue"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>Undocumented differences between defaultdict and dict behavior</b> #124875</a>
-              [david-andrew]
+              <p><a href="https://github.com/python/cpython/issues/115145"><span class="octicons" title="issue"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>`PyThreadState_DeleteCurrent` documentation incorrect</b> #115145</a>
+              [colesbury]
 
               <span class="label" style="--label-r:9;--label-g:252;--label-b:89;--label-h:139;--label-s:97;--label-l:51;">docs</span>
+                <span class="label" style="--label-r:0;--label-g:82;--label-b:204;--label-h:215;--label-s:100;--label-l:40;">topic-C-API</span>
                 &nbsp;&nbsp; <span class="homerepo">python/cpython</span>
-              </p><p>Documentation
-defaultdict seems to call __getitem__ whenever __setitem__ is called (regardless of if the item was...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/python/cpython/issues/124875#issuecomment-2388366568" title="10-02 11:03">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>MechanicPig</b>: When you overwrite __setitem__, after d1[item][&#39;a&#39;] = 10, there are no key preprocess_key(item)...</a></p>
-                      
-                    </li>
-                  </ul>
-              </li>
+              </p><p>The documentation for PyThreadState_DeleteCurrent() says:
+
+Destroy the current thread state and release the global...</p></li>
           <li class="closed">
 
-              <p><a href="https://github.com/python/cpython/issues/124876"><span class="octicons" title="newly closed; closed issue"><span class="octicon dash"></span><span class="octicon check"></span><span class="octicon wontdo issue"></span></span><b>6.2.4. Displays for lists, sets and dictionaries: Grammar seems wrong</b> #124876</a>
-              [gpapashvili]
+              <p><a href="https://github.com/python/cpython/issues/124385"><span class="octicons" title="newly closed; closed issue"><span class="octicon dash"></span><span class="octicon check"></span><span class="octicon closed issue"></span></span><b>Document PyLong_AS_LONG</b> #124385</a>
+              [encukou]
 
               <span class="label" style="--label-r:9;--label-g:252;--label-b:89;--label-h:139;--label-s:97;--label-l:51;">docs</span>
+                <span class="label" style="--label-r:0;--label-g:82;--label-b:204;--label-h:215;--label-s:100;--label-l:40;">topic-C-API</span>
+                &nbsp;&nbsp; <span class="homerepo">python/cpython</span>
+              </p><p>PyLong_AS_LONG is undocumented. It should be documented, so people know how to replace it.
+See  also:...</p></li>
+          <li class="open">
+
+              <p><a href="https://github.com/python/cpython/issues/109975"><span class="octicons" title="issue"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>What&#39;s New in Python 3.13 (copyediting)</b> #109975</a>
+              [AA-Turner]
+
+              <span class="label" style="--label-r:9;--label-g:252;--label-b:89;--label-h:139;--label-s:97;--label-l:51;">docs</span>
+                <span class="label" style="--label-r:46;--label-g:115;--label-b:15;--label-h:101;--label-s:76;--label-l:25;">3.13</span>
                 &nbsp;&nbsp; <span class="homerepo">python/cpython</span>
               </p><p>Documentation
-Under 6.2.4. Displays for lists, sets and dictionaries, the grammar is given as:
-comp_for      ::= ...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/python/cpython/issues/124876#issuecomment-2387999543" title="10-02 09:14">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>tomasr8</b>: Link to the docs for reference
-I think it&#39;s correct, or_test includes more complex expressions...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/python/cpython/issues/124876#issuecomment-2388438365" title="10-02 11:42">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>skirpichev</b>: I think it&#39;s correct, or_test includes more complex expressions besides just atoms
-
-From the...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/python/cpython/issues/124876#issuecomment-2388547321" title="10-02 12:42">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>tomasr8</b>: I think it&#39;s correct, or_test includes more complex expressions besides just atoms
-
-From the...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/python/cpython/issues/124876#issuecomment-2389637016" title="10-02 20:27">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>gpapashvili</b>: Link to the docs for reference
-I think it&#39;s correct, or_test includes more complex expressions...</a></p>
-                      
-                    </li>
-                  </ul>
-              </li>
+This is a meta-issue to capture PRs for copyedits to What&#39;s New in Python 3.13.
+Other...</p></li>
           <li class="">
 
-              <p><a href="https://github.com/python/cpython/pull/124877"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>GH-124478: Cleanup argparse documentation</b> #124877</a>
-              [savannahostrowski]
+              <p><a href="https://github.com/python/cpython/pull/124941"><span class="octicons" title="newly created; newly merged; merged pull request"><span class="octicon star"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>Simplify partial() rough equivalent code</b> #124941</a>
+              [rhettinger]
 
               <span class="label" style="--label-r:9;--label-g:252;--label-b:89;--label-h:139;--label-s:97;--label-l:51;">docs</span>
-                <span class="label" style="--label-r:251;--label-g:202;--label-b:4;--label-h:48;--label-s:96;--label-l:50;">awaiting merge</span>
+                <span class="label" style="--label-r:0;--label-g:0;--label-b:0;--label-h:0;--label-s:0;--label-l:0;">skip issue</span>
                 <span class="label" style="--label-r:0;--label-g:0;--label-b:0;--label-h:0;--label-s:0;--label-l:0;">skip news</span>
+                <span class="label" style="--label-r:46;--label-g:115;--label-b:15;--label-h:101;--label-s:76;--label-l:25;">3.14</span>
                 &nbsp;&nbsp; <span class="homerepo">python/cpython</span>
-              </p><p>This PR:
-
-Removes duplicative examples that are fairly basic and sufficiently covered in the tutorial
-Removes the...</p><ul class="comments">
+              </p><p>The or-operator is more concise and expressive than building a separate dictionary with generalized argument...</p><ul class="comments">
                   <li>
-                      <p><a href="https://github.com/python/cpython/pull/124877#pullrequestreview-2342077721" title="10-02 15:29">
-                        
-                            <span class="octicon eye" title="reviewed"></span>
-                          
-                        
-                        <b>tomasr8</b></a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/python/cpython/pull/124877#discussion_r1783961689" title="10-02 15:29">
-                        
-                          <span class="octicon comment resolved" title="resolved comment"></span>
-                        
-                        <b>tomasr8</b>: Suggested change
-      
-    
-    
-      
-          
-            
-               * required_ -...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/python/cpython/pull/124877#discussion_r1784703823" title="10-02 15:29">
-                        
-                          <span class="octicon comment resolved" title="resolved comment"></span>
-                        
-                        <b>tomasr8</b>: couple more ;)
-  
-    
-      
-        Suggested change
-      
-    
-    
-      
-          
-      ...</a></p>
-                      
-                    </li>
-                  </ul>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/python/cpython/pull/124877#pullrequestreview-2343533746" title="10-02 16:53">
-                        <span class="octicon checkcircle" title="reviewed, approved"></span>
-                          
-                        
-                        <b>willingc</b>: Lovely work @savannahostrowski. Thank you!</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/python/cpython/pull/124877#issuecomment-2390388178" title="10-03 02:46">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>savannahostrowski</b>: @JelleZijlstra, I applied all of your suggestions. I also found formatting inconsistencies in...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/python/cpython/pull/124877#discussion_r1785550375" title="10-03 02:46">
+                      <p><a href="https://github.com/python/cpython/pull/124941#discussion_r1786663266" title="10-03 18:14">
                         
                             <span class="octicon eye" title="reviewed"></span>
                           
@@ -366,62 +267,101 @@ Removes the...</p><ul class="comments">
       
           
             
-               * parser - The...</a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/python/cpython/pull/124877#discussion_r1785573112" title="10-03 03:10">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>savannahostrowski</b>: Got it - this doesn&#39;t apply for parameters that are also jump targets right? Or is there a way...</a></p>
+                         ...</a></p>
                       
                     </li>
                   <li>
-                      <p><a href="https://github.com/python/cpython/pull/124877#discussion_r1785583108" title="10-03 03:33">
+                      <p><a href="https://github.com/python/cpython/pull/124941#pullrequestreview-2346382086" title="10-03 18:14">
+                        <span class="octicon checkcircle" title="reviewed, approved"></span>
+                          
                         
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>JelleZijlstra</b>: I think I remember someone finding a way to do that but it&#39;s very weird and probably not worth it.</a></p>
+                        <b>JelleZijlstra</b></a></p>
                       
                     </li>
-                  </ul>
+                  <li>
+                      <p><a href="https://github.com/python/cpython/pull/124941#discussion_r1786668441" title="10-03 18:19">
+                        
+                            <span class="octicon eye" title="reviewed"></span>
+                          
+                        
+                        <b>serhiy-storchaka</b>: This code looks confusing to me, because ** is closer to keywords than |. According to the PEP 8...</a></p>
                       
                     </li>
                   </ul>
               </li>
           <li class="">
 
-              <p><a href="https://github.com/python/cpython/pull/124811"><span class="octicons" title="merged pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon merged pull"></span></span><b>Highlight `datetime.timedelta.seconds` vs `.total_seconds()` in docs.</b> #124811</a>
-              [gpshead]
+              <p><a href="https://github.com/python/cpython/pull/124947"><span class="octicons" title="newly created; newly merged; merged pull request"><span class="octicon star"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>GH-109975: Copyedit 3.13 What&#39;s New: Remove references to the incremental GC</b> #124947</a>
+              [AA-Turner]
 
               <span class="label" style="--label-r:9;--label-g:252;--label-b:89;--label-h:139;--label-s:97;--label-l:51;">docs</span>
-                <span class="label" style="--label-r:0;--label-g:0;--label-b:0;--label-h:0;--label-s:0;--label-l:0;">skip issue</span>
                 <span class="label" style="--label-r:0;--label-g:0;--label-b:0;--label-h:0;--label-s:0;--label-l:0;">skip news</span>
                 &nbsp;&nbsp; <span class="homerepo">python/cpython</span>
-              </p><p>This comes out of a discovery a colleague made:
+              </p><p>The incremental GC was reverted in Python 3.13 (#124770), but What&#39;s New in 3.14 (/dev/) still references it. This...</p></li>
+          <li class="">
 
-Should we create a linter rule for code that looks at...</p><ul class="comments">
+              <p><a href="https://github.com/python/cpython/pull/114357"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Improvements in regular expression doc</b> #114357</a>
+              [adorilson]
+
+              <span class="label" style="--label-r:9;--label-g:252;--label-b:89;--label-h:139;--label-s:97;--label-l:51;">docs</span>
+                <span class="label" style="--label-r:251;--label-g:202;--label-b:4;--label-h:48;--label-s:96;--label-l:50;">awaiting change review</span>
+                <span class="label" style="--label-r:0;--label-g:0;--label-b:0;--label-h:0;--label-s:0;--label-l:0;">skip news</span>
+                &nbsp;&nbsp; <span class="homerepo">python/cpython</span>
+              </p><p>📚 Documentation preview 📚: https://cpython-previews--114357.org.readthedocs.build/</p></li>
+          <li class="open">
+
+              <p><a href="https://github.com/python/cpython/issues/123521"><span class="octicons" title="issue"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>`None` vs `Never` as `typing.Generator`&#39;s send type</b> #123521</a>
+              [sterliakov]
+
+              <span class="label" style="--label-r:9;--label-g:252;--label-b:89;--label-h:139;--label-s:97;--label-l:51;">docs</span>
+                <span class="label" style="--label-r:0;--label-g:82;--label-b:204;--label-h:215;--label-s:100;--label-l:40;">topic-typing</span>
+                &nbsp;&nbsp; <span class="homerepo">python/cpython</span>
+              </p><p>Documentation
+Documentation for typing.Generator currently says:
+
+If your generator will only yield values, set the...</p><ul class="comments">
                   <li>
-                      <p><a href="https://github.com/python/cpython/pull/124811#issuecomment-2389743322" title="10-02 21:41">
+                      <p><a href="https://github.com/python/cpython/issues/123521#issuecomment-2391715037" title="10-03 15:28">
                         
                           <span class="octicon comment" title="comment"></span>
                         
-                        <b>pganssle</b>: I think this is... fine, but doesn&#39;t seem especially specific to seconds? Shouldn&#39;t the same...</a></p>
+                        <b>zuo</b>: I do understand that None is there to match runtime behaviour closer since calling it.send(None)...</a></p>
                       
                     </li>
                   <li>
-                      <p><a href="https://github.com/python/cpython/pull/124811#issuecomment-2390467638" title="10-03 03:57">
+                      <p><a href="https://github.com/python/cpython/issues/123521#issuecomment-2392447156" title="10-03 22:27">
                         
                           <span class="octicon comment" title="comment"></span>
                         
-                        <b>gpshead</b>: I was pondering that as well but timedelta only has .days, .seconds, and .microseconds...</a></p>
+                        <b>TeamSpen210</b>: To me, it makes sense to change send() to accept SendType | None) - regardless of what SendType...</a></p>
                       
                     </li>
                   </ul>
               </li>
           <li class="">
 
-              <p><a href="https://github.com/python/cpython/pull/124834"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>gh-124832: Added warning that .now() can return the same instant</b> #124834</a>
+              <p><a href="https://github.com/python/cpython/pull/124830"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>gh-109975: nntplib is not on PyPI so propose pynntp</b> #124830</a>
+              [cclauss]
+
+              <span class="label" style="--label-r:9;--label-g:252;--label-b:89;--label-h:139;--label-s:97;--label-l:51;">docs</span>
+                <span class="label" style="--label-r:251;--label-g:202;--label-b:4;--label-h:48;--label-s:96;--label-l:50;">awaiting merge</span>
+                <span class="label" style="--label-r:0;--label-g:0;--label-b:0;--label-h:0;--label-s:0;--label-l:0;">skip news</span>
+                <span class="label" style="--label-r:194;--label-g:224;--label-b:198;--label-h:128;--label-s:32;--label-l:81;">needs backport to 3.13</span>
+                &nbsp;&nbsp; <span class="homerepo">python/cpython</span>
+              </p><p>PEP 594: Remove “dead batteries” from the standard library section of What’s New In Python 3.13 suggests downloading...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/python/cpython/pull/124830#pullrequestreview-2346943477" title="10-04 01:44">
+                        <span class="octicon checkcircle" title="reviewed, approved"></span>
+                          
+                        
+                        <b>Wulian233</b></a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="">
+
+              <p><a href="https://github.com/python/cpython/pull/124834"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>gh-124832: Add a note to indicate that `datetime.now` may return the same instant</b> #124834</a>
               [spacemanspiff2007]
 
               <span class="label" style="--label-r:9;--label-g:252;--label-b:89;--label-h:139;--label-s:97;--label-l:51;">docs</span>
@@ -438,44 +378,99 @@ Issue: gh-124832
 
 📚 Documentation preview 📚:...</p><ul class="comments">
                   <li>
-                      <p><a href="https://github.com/python/cpython/pull/124834#discussion_r1785597263" title="10-03 03:51">
+                      <p><a href="https://github.com/python/cpython/pull/124834#issuecomment-2390992025" title="10-03 09:52">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>vstinner</b>: On Windows in Python 3.13, I modified the clock used by datetime to have a resolution around 238...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/python/cpython/pull/124834#issuecomment-2391982535" title="10-03 17:45">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>willingc</b>: Thanks for the PR @spacemanspiff2007. As a member of the docs editorial board, I&#39;m a bit...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/python/cpython/pull/124834#issuecomment-2392003680" title="10-03 17:58">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>spacemanspiff2007</b>: It seems like it would be obvious that if you create two datetime objects in a period of time...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/python/cpython/pull/124834#discussion_r1786706878" title="10-03 18:53">
                         
                             <span class="octicon eye" title="reviewed"></span>
                           
                         
-                        <b>spacemanspiff2007</b>: How about:
-Depending on the precision of the underlying clock, it&#39;s possible that subsequent...</a></p>
+                        <b>picnixz</b>: Suggested change
+      
+    
+    
+      
+          
+            
+                  It&#39;s possible...</a></p>
                       
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/python/cpython/pull/124834#issuecomment-2390488644" title="10-03 04:24">
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/python/cpython/pull/124834#discussion_r1786720693" title="10-03 19:06">
                         
                           <span class="octicon comment" title="comment"></span>
                         
-                        <b>pganssle</b>: Looking at the docs, this doesn&#39;t seem to be cluttering things up too much, but I do wonder what...</a></p>
+                        <b>willingc</b>: @spacemanspiff2007 Looking at the suggestion by @picnixz, I think this wording would address my...</a></p>
+                      
+                    </li>
+                  </ul>
                       
                     </li>
                   <li>
-                      <p><a href="https://github.com/python/cpython/pull/124834#issuecomment-2390505907" title="10-03 04:43">
+                      <p><a href="https://github.com/python/cpython/pull/124834#issuecomment-2392109329" title="10-03 18:55">
                         
                           <span class="octicon comment" title="comment"></span>
                         
-                        <b>gvanrossum</b>: I personally agree with Paul.</a></p>
+                        <b>picnixz</b>: (I&#39;ve edited the title since it&#39;s neither a runtime nor a docs warning).</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/python/cpython/pull/124834#issuecomment-2392406986" title="10-03 21:53">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>gvanrossum</b>: Still speaking for myself, while I agree that the proposed new text is clearer, I still don’t...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/python/cpython/pull/124834#issuecomment-2392742414" title="10-04 03:57">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>spacemanspiff2007</b>: The phenomenon is rather obvious, unless you assume the clock has infinite precision.
+
+datetime...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/python/cpython/pull/124834#issuecomment-2392760105" title="10-04 04:20">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>gvanrossum</b>: Looks like a confusion between accuracy and precision. Possibly the docs weren’t written with...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/python/cpython/pull/124834#issuecomment-2392875345" title="10-04 05:52">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>spacemanspiff2007</b>: still, how many times do you think you can call that function on a microsecond? Try to measure...</a></p>
                       
                     </li>
                   </ul>
               </li>
-          <li class="open">
-
-              <p><a href="https://github.com/python/cpython/issues/115145"><span class="octicons" title="issue"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>`PyThreadState_DeleteCurrent` documentation incorrect</b> #115145</a>
-              [colesbury]
-
-              <span class="label" style="--label-r:9;--label-g:252;--label-b:89;--label-h:139;--label-s:97;--label-l:51;">docs</span>
-                <span class="label" style="--label-r:0;--label-g:82;--label-b:204;--label-h:215;--label-s:100;--label-l:40;">topic-C-API</span>
-                &nbsp;&nbsp; <span class="homerepo">python/cpython</span>
-              </p><p>The documentation for PyThreadState_DeleteCurrent() says:
-
-Destroy the current thread state and release the global...</p></li>
           </ul>
       
     </li>
@@ -485,31 +480,20 @@ Destroy the current thread state and release the global...</p></li>
       </p>
       
         <ul class="entries">
-          <li class="closed">
+          <li class="">
 
-              <p><a href="https://github.com/python/devguide/issues/1420"><span class="octicons" title="newly closed; closed issue"><span class="octicon dash"></span><span class="octicon check"></span><span class="octicon closed issue"></span></span><b>Add a note about Windows long paths support</b> #1420</a>
-              [itamaro]
+              <p><a href="https://github.com/python/devguide/pull/1427"><span class="octicons" title="newly created; newly merged; merged pull request"><span class="octicon star"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>Update 3.13.0 expected release date</b> #1427</a>
+              [ned-deily]
 
               
-              </p><p>this is a gotcha I stumbled upon when setting up a Windows buildbot worker.
-let&#39;s document that long paths support...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/python/devguide/issues/1420#issuecomment-2390585588" title="10-03 05:57">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>ezio-melotti</b>: This was fixed in #1421.  Feel free to reopen if there is anything else left to do.</a></p>
-                      
-                    </li>
-                  </ul>
-              </li>
+              </p><p>📚 Documentation preview 📚: https://cpython-devguide--1427.org.readthedocs.build/</p></li>
           </ul>
       
     </li>
   </ul>
 
 <p class="footer">
-  created at 2024-10-03 07:04 by
+  created at 2024-10-04 07:04 by
   <a href="https://pypi.org/project/dinghy/1.3.2">
     dinghy
     <span class="dinghy_version">1.3.2</span></a>.
