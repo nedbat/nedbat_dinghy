@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Sample Dinghy report
    — 
-  Activity since 2024-06-30</title>
+  Activity since 2024-10-25</title>
   <link rel="icon" href="https://raw.githubusercontent.com/primer/octicons/main/icons/comment-discussion-24.svg" type="image/svg+xml">
   <style>
   body {
@@ -202,7 +202,7 @@
 
 <h1>Sample Dinghy report
    — 
-  Activity since 2024-06-30</h1>
+  Activity since 2024-10-25</h1>
 
 <ul class="repos">
   <li>
@@ -211,48 +211,29 @@
       </p>
       
         <ul class="entries">
-          <li class="">
+          <li class="open">
 
-              <p><a href="https://github.com/psf/black/pull/4383"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Bump pypa/cibuildwheel from 2.18.1 to 2.19.1</b> #4383</a>
-              [JelleZijlstra]
+              <p><a href="https://github.com/psf/black/issues/4504"><span class="octicons" title="newly created; issue"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>`tests/test_blackd.py` runs out of fds on systems with high nproc (is blackd leaking fds?)</b> #4504</a>
+              [mgorny]
 
-              <span class="label" style="--label-r:0;--label-g:0;--label-b:0;--label-h:0;--label-s:0;--label-l:0;">skip news</span>
+              <span class="label" style="--label-r:215;--label-g:58;--label-b:74;--label-h:353;--label-s:66;--label-l:53;">T: bug</span>
                 
-              </p><p>Closes #4381. Wasn&#39;t able to push directly to the PR.
-There seems to be some issue with a mismatch in the version of...</p></li>
-          <li class="">
-
-              <p><a href="https://github.com/psf/black/pull/4365"><span class="octicons" title="draft pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon draft pull"></span></span><b>Fix formatting of backslash escaped quote inside f-string</b> #4365</a>
-              [hauntsaninja]
-
-              
-              </p><p>Fixes #4350</p><ul class="comments">
+              </p><p>Describe the bug
+When running the test suite on a machine with high nproc (i.e. large number of CPUs/cores — we have...</p><ul class="comments">
                   <li>
-                      <p><a href="https://github.com/psf/black/pull/4365#discussion_r1662017619" title="07-02 07:54">
-                        
-                            <span class="octicon eye" title="reviewed"></span>
-                          
-                        
-                        <b>tusharsadhwani</b>: Suggested change
-      
-    
-    
-      
-          
-            
-                            if...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/psf/black/pull/4365#issuecomment-2202227958" title="07-02 07:56">
+                      <p><a href="https://github.com/psf/black/issues/4504#issuecomment-2439717274" title="10-26 19:48">
                         
                           <span class="octicon comment" title="comment"></span>
                         
-                        <b>tusharsadhwani</b>: Personally I&#39;d rewrite it like so:
-if (
-    &#34;\\&#34; in string_leaf.value
-    and any(
-        &#34;\\&#34;...</a></p>
+                        <b>JelleZijlstra</b>: Possibly related to python/cpython#124706. I found that adding some gc.collect() calls helped...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/psf/black/issues/4504#issuecomment-2439718415" title="10-26 19:53">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>mgorny</b>: Actually, I&#39;ve tried adding gc.collect() after the shutdown() call and that didn&#39;t help...</a></p>
                       
                     </li>
                   </ul>
@@ -263,7 +244,7 @@ if (
   </ul>
 
 <p class="footer">
-  created at 2024-07-03 17:04 by
+  created at 2024-10-28 22:55 by
   <a href="https://pypi.org/project/dinghy/1.3.2">
     dinghy
     <span class="dinghy_version">1.3.2</span></a>.
