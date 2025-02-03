@@ -8,6 +8,9 @@ on:
       - pages
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
   digest:
     name: "Daily digest"
