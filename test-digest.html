@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Sample Dinghy report
    — 
-  Activity since 2025-01-31</title>
+  Activity since 2025-09-07</title>
   <link rel="icon" href="https://raw.githubusercontent.com/primer/octicons/main/icons/comment-discussion-24.svg" type="image/svg+xml">
   <style>
   body {
@@ -13,6 +13,12 @@
     margin: auto;
     line-height: 1.3;
     color: black;
+  }
+  .navslugs {
+    margin-top: -1em;
+  }
+  .totop {
+    float: right;
   }
   ul {
     padding-left: 0;
@@ -198,135 +204,154 @@
   }
   </style>
 </head>
-<body>
+<body id="top">
 
 <h1>Sample Dinghy report
    — 
-  Activity since 2025-01-31</h1>
+  Activity since 2025-09-07</h1>
+
+
 
 <ul class="repos">
   <li>
-      <p><span class="reponame"><a href="https://github.com/psf/black">psf/black</a></span>
+      <p><span class="reponame" id="psfblack"><a href="https://github.com/psf/black">psf/black</a></span>
       repo issues, pull requests, and releases
+      
       </p>
       
         <ul class="entries">
-          <li class="closed">
+          <li class="">
 
-              <p><a href="https://github.com/psf/black/issues/1936"><span class="octicons" title="closed issue"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon closed issue"></span></span><b>Support to sort functions/methods by type &amp; name</b> #1936</a>
-              [exhuma]
+              <p><a href="https://github.com/psf/black/pull/4710"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Add normalizing for `\r` style newlines</b> #4710</a>
+              [MeGaGiGaGon]
 
-              <span class="label" style="--label-r:162;--label-g:238;--label-b:239;--label-h:180;--label-s:70;--label-l:78;">T: enhancement</span>
-                
-              </p><p>Ensuring that functions/methods are ordered by type is beneficial for code-readability and also to avoid...</p><ul class="comments">
+              
+              </p><p>Summary
+Previously, only blackd did any newline normalization, and only with \r\n and \n.
+This PR makes black as a...</p><ul class="comments">
                   <li>
-                      <p><a href="https://github.com/psf/black/issues/1936#issuecomment-2628851724" title="02-01 08:24">
+                      <p><a href="https://github.com/psf/black/pull/4710#issuecomment-3264037575" title="09-07 20:58">
                         
                           <span class="octicon comment" title="comment"></span>
                         
-                        <b>sanmai-NL</b>: See: https://github.com/bwhmather/ssort</a></p>
-                      
-                    </li>
-                  </ul>
-              </li>
-          <li class="open">
-
-              <p><a href="https://github.com/psf/black/issues/3083"><span class="octicons" title="issue"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>Documentation: mention tools that can do doctests formatting</b> #3083</a>
-              [KelSolaar]
-
-              <span class="label" style="--label-r:212;--label-g:197;--label-b:249;--label-h:257;--label-s:81;--label-l:87;">good first issue</span>
-                <span class="label" style="--label-r:251;--label-g:205;--label-b:0;--label-h:49;--label-s:100;--label-l:49;">T: documentation</span>
-                <span class="label" style="--label-r:191;--label-g:212;--label-b:242;--label-h:215;--label-s:66;--label-l:84;">F: docstrings</span>
-                
-              </p><p>Is your feature request related to a problem? Please describe.
-Black currently does not format Doctests in...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/psf/black/issues/3083#issuecomment-2629052232" title="02-01 18:08">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>prakhar-bip</b>: Renamed the issue to reflect the discussion above: we won&#39;t do this in Black itself, but we...</a></p>
+                        <b>JelleZijlstra</b>: The logic sounds good, but I think this should be limited to the preview style. We should...</a></p>
                       
                     </li>
                   </ul>
               </li>
           <li class="">
 
-              <p><a href="https://github.com/psf/black/pull/4572"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Fixed is_type_comment() to handle extra spaces in type comments (#2097)</b> #4572</a>
-              [Daiz-19]
+              <p><a href="https://github.com/psf/black/pull/4741"><span class="octicons" title="newly merged; merged pull request"><span class="octicon dash"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>ci: Run diff-shades on unstable instead of preview</b> #4741</a>
+              [cobaltt7]
+
+              <span class="label" style="--label-r:0;--label-g:0;--label-b:0;--label-h:0;--label-s:0;--label-l:0;">skip news</span>
+                <span class="label" style="--label-r:80;--label-g:86;--label-b:120;--label-h:230;--label-s:20;--label-l:39;">C: maintenance</span>
+                
+              </p><p>Description
+This PR changes diff-shades to run on the stable and unstable styles as opposed to the stable and...</p></li>
+          <li class="closed">
+
+              <p><a href="https://github.com/psf/black/issues/3498"><span class="octicons" title="newly closed; closed issue"><span class="octicon dash"></span><span class="octicon check"></span><span class="octicon closed issue"></span></span><b>Black doesn&#39;t split too long for-in in list comprehension</b> #3498</a>
+              [AdeliManesh]
+
+              <span class="label" style="--label-r:215;--label-g:58;--label-b:74;--label-h:353;--label-s:66;--label-l:53;">T: bug</span>
+                <span class="label" style="--label-r:191;--label-g:212;--label-b:242;--label-h:215;--label-s:66;--label-l:84;">F: linetoolong</span>
+                <span class="label" style="--label-r:191;--label-g:212;--label-b:242;--label-h:215;--label-s:66;--label-l:84;">F: linebreak</span>
+                
+              </p><p>Describe` the bug
+In my python file a line with more than 80 characters exists but black doesn&#39;t split the line into...</p></li>
+          <li class="">
+
+              <p><a href="https://github.com/psf/black/pull/4699"><span class="octicons" title="newly merged; merged pull request"><span class="octicon dash"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>Wrap the `in` clause of comprehensions across lines if necessary</b> #4699</a>
+              [cobaltt7]
 
               
               </p><p>Description
-This PR fixes the is_type_comment() function to correctly handle type comments with excessive...</p><ul class="comments">
+Fixes #3498
+Checklist - did you ...
+
+
+[y] Add an entry in CHANGES.md if necessary?
+[y] Add / update...</p><ul class="comments">
                   <li>
-                      <p><a href="https://github.com/psf/black/pull/4572#pullrequestreview-2588429036" title="02-01 23:26">
-                        <span class="octicon filediff" title="reviewed, changes requested"></span>
+                      <p><a href="https://github.com/psf/black/pull/4699#pullrequestreview-3194583204" title="09-07 20:44">
+                        <span class="octicon checkcircle" title="reviewed, approved"></span>
                           
                         
-                        <b>MeGaGiGaGon</b>: Hello, thank you for your contribution to Black! I have a few things that need addressed before...</a></p>
+                        <b>JelleZijlstra</b></a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/psf/black/pull/4699#discussion_r2330149943" title="09-08 12:51">
+                        
+                            <span class="octicon eye" title="reviewed"></span>
+                          
+                        
+                        <b>cobaltt7</b>: Suggested change
+      
+    
+    
+      
+          
+            
+              across lines if...</a></p>
                       
                     </li>
                   </ul>
               </li>
-          <li class="closed">
+          <li class="">
 
-              <p><a href="https://github.com/psf/black/issues/4573"><span class="octicons" title="newly created; newly closed; closed issue"><span class="octicon star"></span><span class="octicon check"></span><span class="octicon wontdo issue"></span></span><b>Projeto</b> #4573</a>
-              [thiagomsa]
+              <p><a href="https://github.com/psf/black/pull/4645"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Standardize type comments to form `# type: (value)` (#2097)</b> #4645</a>
+              [ranjodhsingh1729]
 
               
-              </p></li>
-          <li class="closed">
+              </p><p>Description
+Fixes #2097 – is_type_comment() is wrong
+Closes #4572
+Summary of Changes:
 
-              <p><a href="https://github.com/psf/black/issues/182"><span class="octicons" title="closed issue"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon closed issue"></span></span><b>feature_request(formatting): wrap long strings</b> #182</a>
-              [Kristinita]
-
-              <span class="label" style="--label-r:0;--label-g:82;--label-b:204;--label-h:215;--label-s:100;--label-l:40;">T: style</span>
-                
-              </p><p>1. Summary
-It would be nice, if Black will wrap long strings.
-2. Example
-I have SashaLongStrings.py...</p><ul class="comments">
+Modified function signatures...</p><ul class="comments">
                   <li>
-                      <p><a href="https://github.com/psf/black/issues/182#issuecomment-2629784595" title="02-03 02:56">
+                      <p><a href="https://github.com/psf/black/pull/4645#pullrequestreview-3045050800" title="07-22 22:35">
+                        
+                            <span class="octicon eye" title="reviewed"></span>
+                          
+                        
+                        <b>cobaltt7</b>: Sorry for the delay in review. Looks pretty good! Just a few small things</a></p>
+                      
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/psf/black/pull/4645#discussion_r2223951158" title="07-22 22:35">
+                        
+                          <span class="octicon comment resolved" title="resolved comment"></span>
+                        
+                        <b>cobaltt7</b>: Why is this necessary in the context of this PR? And as Jelle asked on #4467, could we instead...</a></p>
+                      
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/psf/black/pull/4645#discussion_r2331427599" title="09-08 21:31">
                         
                           <span class="octicon comment" title="comment"></span>
                         
-                        <b>Phprunnerbraydon55</b>: @ambv https://stackdev.space/questions/steps-for-turning-a-lengthy-string-into-a-date-variable</a></p>
+                        <b>cobaltt7</b>: This is good as-is</a></p>
+                      
+                    </li>
+                  </ul>
+                      
+                    </li>
+                  </ul>
                       
                     </li>
                   </ul>
               </li>
-          <li class="open">
-
-              <p><a href="https://github.com/psf/black/issues/4575"><span class="octicons" title="newly created; issue"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>formats `assert f(a,) == (b)` and `assert f(a,) == b` very differently</b> #4575</a>
-              [rdaysky]
-
-              <span class="label" style="--label-r:0;--label-g:82;--label-b:204;--label-h:215;--label-s:100;--label-l:40;">T: style</span>
-                
-              </p><p>Black transforms
-assert f(a,) == (b)
-
-assert f(a,) == b
-
-into
-assert f(
-    a,
-) == (b)
-
-assert (
-    f(
-        a,
-...</p></li>
           </ul>
       
     </li>
   </ul>
 
 <p class="footer">
-  created at 2025-02-03 15:04 by
-  <a href="https://pypi.org/project/dinghy/1.3.3">
+  created at 2025-09-10 11:22 by
+  <a href="https://pypi.org/project/dinghy/1.4.1">
     dinghy
-    <span class="dinghy_version">1.3.3</span></a>.
+    <span class="dinghy_version">1.4.1</span></a>.
 </p>
 </body>
 </html>
