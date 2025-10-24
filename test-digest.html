@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Sample Dinghy report
    — 
-  Activity since 2025-09-07</title>
+  Activity since 2025-10-21</title>
   <link rel="icon" href="https://raw.githubusercontent.com/primer/octicons/main/icons/comment-discussion-24.svg" type="image/svg+xml">
   <style>
   body {
@@ -208,7 +208,7 @@
 
 <h1>Sample Dinghy report
    — 
-  Activity since 2025-09-07</h1>
+  Activity since 2025-10-21</h1>
 
 
 
@@ -222,133 +222,234 @@
         <ul class="entries">
           <li class="">
 
-              <p><a href="https://github.com/psf/black/pull/4710"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Add normalizing for `\r` style newlines</b> #4710</a>
-              [MeGaGiGaGon]
+              <p><a href="https://github.com/psf/black/pull/4658"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Fix bug with standalone comments in lambda default arguments</b> #4658</a>
+              [siavasha]
 
               
-              </p><p>Summary
-Previously, only blackd did any newline normalization, and only with \r\n and \n.
-This PR makes black as a...</p><ul class="comments">
+              </p><p>Description
+Fixes #4640
+This PR fixes a bug where Black would crash when formatting code with standalone comments...</p><ul class="comments">
                   <li>
-                      <p><a href="https://github.com/psf/black/pull/4710#issuecomment-3264037575" title="09-07 20:58">
+                      <p><a href="https://github.com/psf/black/pull/4658#issuecomment-3426433455" title="10-21 12:46">
                         
                           <span class="octicon comment" title="comment"></span>
                         
-                        <b>JelleZijlstra</b>: The logic sounds good, but I think this should be limited to the preview style. We should...</a></p>
+                        <b>cobaltt7</b>: This PR introduced a crash when running on...</a></p>
                       
                     </li>
                   </ul>
               </li>
-          <li class="">
+          <li class="open">
 
-              <p><a href="https://github.com/psf/black/pull/4741"><span class="octicons" title="newly merged; merged pull request"><span class="octicon dash"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>ci: Run diff-shades on unstable instead of preview</b> #4741</a>
-              [cobaltt7]
-
-              <span class="label" style="--label-r:0;--label-g:0;--label-b:0;--label-h:0;--label-s:0;--label-l:0;">skip news</span>
-                <span class="label" style="--label-r:80;--label-g:86;--label-b:120;--label-h:230;--label-s:20;--label-l:39;">C: maintenance</span>
-                
-              </p><p>Description
-This PR changes diff-shades to run on the stable and unstable styles as opposed to the stable and...</p></li>
-          <li class="closed">
-
-              <p><a href="https://github.com/psf/black/issues/3498"><span class="octicons" title="newly closed; closed issue"><span class="octicon dash"></span><span class="octicon check"></span><span class="octicon closed issue"></span></span><b>Black doesn&#39;t split too long for-in in list comprehension</b> #3498</a>
-              [AdeliManesh]
+              <p><a href="https://github.com/psf/black/issues/4797"><span class="octicons" title="issue"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>t-strings (Python 3.14) support for black</b> #4797</a>
+              [bowiechen]
 
               <span class="label" style="--label-r:215;--label-g:58;--label-b:74;--label-h:353;--label-s:66;--label-l:53;">T: bug</span>
-                <span class="label" style="--label-r:191;--label-g:212;--label-b:242;--label-h:215;--label-s:66;--label-l:84;">F: linetoolong</span>
-                <span class="label" style="--label-r:191;--label-g:212;--label-b:242;--label-h:215;--label-s:66;--label-l:84;">F: linebreak</span>
+                <span class="label" style="--label-r:83;--label-g:25;--label-b:231;--label-h:256;--label-s:81;--label-l:50;">3.14</span>
                 
-              </p><p>Describe` the bug
-In my python file a line with more than 80 characters exists but black doesn&#39;t split the line into...</p></li>
+              </p><p>Describe the bug
+black doesn&#39;t support Python 3.14 syntax.
+To Reproduce
+For example, take this code:
+name =...</p></li>
           <li class="">
 
-              <p><a href="https://github.com/psf/black/pull/4699"><span class="octicons" title="newly merged; merged pull request"><span class="octicon dash"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>Wrap the `in` clause of comprehensions across lines if necessary</b> #4699</a>
-              [cobaltt7]
+              <p><a href="https://github.com/psf/black/pull/4803"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>feat: add --no-cache option to prevent cache during formatting</b> #4803</a>
+              [Pranay-Pandey]
 
               
               </p><p>Description
-Fixes #3498
-Checklist - did you ...
+closes: #4802
 
-
-[y] Add an entry in CHANGES.md if necessary?
-[y] Add / update...</p><ul class="comments">
+Adds a --no-cache CLI flag that disables both reading from and writing to Black&#39;s on-disk...</p><ul class="comments">
                   <li>
-                      <p><a href="https://github.com/psf/black/pull/4699#pullrequestreview-3194583204" title="09-07 20:44">
-                        <span class="octicon checkcircle" title="reviewed, approved"></span>
+                      <p><a href="https://github.com/psf/black/pull/4803#pullrequestreview-3360362511" title="10-21 12:32">
+                        <span class="octicon filediff" title="reviewed, changes requested"></span>
                           
                         
-                        <b>JelleZijlstra</b></a></p>
+                        <b>cobaltt7</b>: Thank you!
+As @MeGaGiGaGon mentioned, you&#39;ll have to run scripts/generate_schema.py- that&#39;s why...</a></p>
                       
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/psf/black/pull/4699#discussion_r2330149943" title="09-08 12:51">
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/psf/black/pull/4803#discussion_r2448001661" title="10-21 12:32">
                         
-                            <span class="octicon eye" title="reviewed"></span>
-                          
+                          <span class="octicon comment resolved" title="resolved comment"></span>
                         
-                        <b>cobaltt7</b>: Suggested change
+                        <b>cobaltt7</b>: Nitpick
+  
+    
+      
+        Suggested change
       
     
     
       
           
             
-              across lines if...</a></p>
+...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/psf/black/pull/4803#discussion_r2448008312" title="10-21 12:36">
+                        
+                          <span class="octicon comment resolved" title="resolved comment"></span>
+                        
+                        <b>cobaltt7</b>: Could you also add a test for format_many?
+Also, does this work when configured from...</a></p>
+                      
+                    </li>
+                  </ul>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/psf/black/pull/4803#issuecomment-3427150471" title="10-21 15:02">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>Pranay-Pandey</b>: Thank you guys. There was some issue due to python version in my Windows system. It should be...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/psf/black/pull/4803#issuecomment-3432914170" title="10-22 15:10">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>Pranay-Pandey</b>: @cobaltt7 Please review</a></p>
                       
                     </li>
                   </ul>
               </li>
           <li class="">
 
-              <p><a href="https://github.com/psf/black/pull/4645"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Standardize type comments to form `# type: (value)` (#2097)</b> #4645</a>
-              [ranjodhsingh1729]
+              <p><a href="https://github.com/psf/black/pull/4804"><span class="octicons" title="newly created; newly merged; merged pull request"><span class="octicon star"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>Add inital CI for 3.14</b> #4804</a>
+              [cooperlees]
 
-              
+              <span class="label" style="--label-r:83;--label-g:25;--label-b:231;--label-h:256;--label-s:81;--label-l:50;">3.14</span>
+                
               </p><p>Description
-Fixes #2097 – is_type_comment() is wrong
-Closes #4572
-Summary of Changes:
 
-Modified function signatures...</p><ul class="comments">
+State in pyproject that we somewhat work in 3.14
+Enable py314 tox
+Add base testing action so we don&#39;t...</p><ul class="comments">
                   <li>
-                      <p><a href="https://github.com/psf/black/pull/4645#pullrequestreview-3045050800" title="07-22 22:35">
+                      <p><a href="https://github.com/psf/black/pull/4804#discussion_r2450246117" title="10-22 02:33">
                         
                             <span class="octicon eye" title="reviewed"></span>
                           
                         
-                        <b>cobaltt7</b>: Sorry for the delay in review. Looks pretty good! Just a few small things</a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/psf/black/pull/4645#discussion_r2223951158" title="07-22 22:35">
-                        
-                          <span class="octicon comment resolved" title="resolved comment"></span>
-                        
-                        <b>cobaltt7</b>: Why is this necessary in the context of this PR? And as Jelle asked on #4467, could we instead...</a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/psf/black/pull/4645#discussion_r2331427599" title="09-08 21:31">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>cobaltt7</b>: This is good as-is</a></p>
-                      
-                    </li>
-                  </ul>
-                      
-                    </li>
-                  </ul>
+                        <b>cooperlees</b>: Happy to take this out until we have what we think is all parsing support ...</a></p>
                       
                     </li>
                   </ul>
               </li>
+          <li class="">
+
+              <p><a href="https://github.com/psf/black/pull/4805"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>[WIP] t-string support</b> #4805</a>
+              [tusharsadhwani]
+
+              
+              </p><p>Resolves #4797
+What&#39;s left:
+
+ Formatting t-string quotes
+ Adding a new T_STRINGS Feature flag and gate it for py314
+...</p></li>
+          <li class="open">
+
+              <p><a href="https://github.com/psf/black/issues/4429"><span class="octicons" title="issue"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>Add more documentation about preview style features</b> #4429</a>
+              [AshSta512]
+
+              <span class="label" style="--label-r:251;--label-g:205;--label-b:0;--label-h:49;--label-s:100;--label-l:49;">T: documentation</span>
+                <span class="label" style="--label-r:228;--label-g:197;--label-b:211;--label-h:332;--label-s:36;--label-l:83;">C: preview style</span>
+                
+              </p><p>Is this related to a problem? Please describe.
+The descriptions of many preview style features aren&#39;t very...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/psf/black/issues/4429#issuecomment-3437038852" title="10-23 13:34">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>ShraddhaSharma3</b>: Hi! I’m Shraddha, a first-year student interested in contributing to this project.
+I’d like to...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/psf/black/issues/4429#issuecomment-3437072972" title="10-23 13:40">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>tusharsadhwani</b>: Sure you can proceed, the issues don&#39;t get assigned to anyone. Note that the issue isn&#39;t about...</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="">
+
+              <p><a href="https://github.com/psf/black/pull/4806"><span class="octicons" title="newly created; newly closed; closed pull request"><span class="octicon star"></span><span class="octicon x"></span><span class="octicon closed pull"></span></span><b>Docs: Add module docstrings to __init__.py files for preview-style features</b> #4806</a>
+              [ShraddhaSharma3]
+
+              
+              </p><p>This PR adds module-level docstrings to the init.py files in the Black repository
+(src/black/init.py and...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/psf/black/pull/4806#issuecomment-3437849456" title="10-23 16:05">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>tusharsadhwani</b>: Closing because this isn&#39;t adding much value to the project. Half of these docstrings are on...</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="">
+
+              <p><a href="https://github.com/psf/black/pull/4800"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>fix_fmt_skip_in_one_liners</b> #4800</a>
+              [sonianuj287]
+
+              
+              </p><p>Closes #4783
+
+Description
+
+Checklist - did you ...
+
+
+ Implement any code style changes under the --preview style,...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/psf/black/pull/4800#issuecomment-3428070097" title="10-21 17:28">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>sonianuj287</b>: Hi @cobaltt7  , so sorry to spam your inbox. Just want to work here more, please help me with...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/psf/black/pull/4800#issuecomment-3438614549" title="10-23 18:50">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>sonianuj287</b>: Hi @cobaltt7 @Jonty @amyreese @blueyed , please review this PR and suggest me changes.
+Thanks :)</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="">
+
+              <p><a href="https://github.com/psf/black/pull/4807"><span class="octicons" title="newly created; newly closed; closed pull request"><span class="octicon star"></span><span class="octicon x"></span><span class="octicon closed pull"></span></span><b>Docs: Add docstrings to __init__.py files for preview features</b> #4807</a>
+              [ShraddhaSharma3]
+
+              <span class="label" style="--label-r:182;--label-g:2;--label-b:5;--label-h:359;--label-s:97;--label-l:36;">spam</span>
+                
+              </p><p>Added module-level docstrings to src/black/init.py and src/blackd/init.py
+to explain the preview-style...</p></li>
           </ul>
       
     </li>
   </ul>
 
 <p class="footer">
-  created at 2025-09-10 11:22 by
+  created at 2025-10-24 11:43 by
   <a href="https://pypi.org/project/dinghy/1.4.1">
     dinghy
     <span class="dinghy_version">1.4.1</span></a>.
