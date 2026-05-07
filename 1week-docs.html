@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>One week
    — 
-  Activity since 2026-04-29</title>
+  Activity since 2026-04-30</title>
   <link rel="icon" href="https://raw.githubusercontent.com/primer/octicons/main/icons/comment-discussion-24.svg" type="image/svg+xml">
   <style>
   body {
@@ -208,7 +208,7 @@
 
 <h1>One week
    — 
-  Activity since 2026-04-29</h1>
+  Activity since 2026-04-30</h1>
 
 
   <p class="navslugs">»
@@ -217,7 +217,7 @@
 
 <ul class="repos">
   <li>
-      <p><span class="reponame" id="docs-items"><a href="https://github.com/search?q=repo%3Apython%2Fcpython+label%3Adocs+-author%3Amiss-islington+updated%3A%3E2026-04-29T07%3A49%3A54&amp;type=issues">Docs items</a></span>
+      <p><span class="reponame" id="docs-items"><a href="https://github.com/search?q=repo%3Apython%2Fcpython+label%3Adocs+-author%3Amiss-islington+updated%3A%3E2026-04-30T07%3A55%3A48&amp;type=issues">Docs items</a></span>
       search items
       
         <a class="totop" href="#top">[back to top]</a>
@@ -225,294 +225,6 @@
       </p>
       
         <ul class="entries">
-          <li class="open">
-
-              <p><a href="https://github.com/python/cpython/issues/141148"><span class="octicons" title="issue"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>data races in decimal module with global context</b> #141148</a>
-              [kumaraditya303]
-
-              <span class="label" style="--label-r:233;--label-g:150;--label-b:149;--label-h:0;--label-s:65;--label-l:74;">type-bug</span>
-                <span class="label" style="--label-r:9;--label-g:252;--label-b:89;--label-h:139;--label-s:97;--label-l:51;">docs</span>
-                <span class="label" style="--label-r:9;--label-g:252;--label-b:89;--label-h:139;--label-s:97;--label-l:51;">extension-modules</span>
-                <span class="label" style="--label-r:0;--label-g:82;--label-b:204;--label-h:215;--label-s:100;--label-l:40;">topic-free-threading</span>
-                &nbsp;&nbsp; <span class="homerepo">python/cpython</span>
-              </p><p>Reproducer:
-import decimal
-from threading import Thread, Barrier
-
-context = decimal.Context()
-context.prec =...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/python/cpython/issues/141148#issuecomment-4342352258" title="04-29 09:22">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>devdanzin</b>: Just to flag a scope question for after #146482 lands:
-The PR closes the inherited-context path...</a></p>
-                      
-                    </li>
-                  </ul>
-              </li>
-          <li class="">
-
-              <p><a href="https://github.com/python/cpython/pull/149140"><span class="octicons" title="newly created; newly closed; closed pull request"><span class="octicon star"></span><span class="octicon x"></span><span class="octicon closed pull"></span></span><b>Docs: fix incorrect reference in bin() documentation</b> #149140</a>
-              [BHUVANSH855]
-
-              <span class="label" style="--label-r:9;--label-g:252;--label-b:89;--label-h:139;--label-s:97;--label-l:51;">docs</span>
-                <span class="label" style="--label-r:251;--label-g:202;--label-b:4;--label-h:48;--label-s:96;--label-l:50;">awaiting review</span>
-                <span class="label" style="--label-r:0;--label-g:0;--label-b:0;--label-h:0;--label-s:0;--label-l:0;">skip news</span>
-                &nbsp;&nbsp; <span class="homerepo">python/cpython</span>
-              </p><p>Fix an incorrect reference to enum.bin in the documentation for the built-in bin() function.
-The reference pointed...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/python/cpython/pull/149140#issuecomment-4342207588" title="04-29 08:55">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>BHUVANSH855</b>: This is a small documentation fix that does not require a separate issue.
-Could a maintainer...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/python/cpython/pull/149140#issuecomment-4342301641" title="04-29 09:38">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>picnixz</b>: enum.bin exists and its purpose is correct: https://docs.python.org/3/library/enum.html#enum.bin.</a></p>
-                      
-                    </li>
-                  </ul>
-              </li>
-          <li class="">
-
-              <p><a href="https://github.com/python/cpython/pull/144747"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>gh-109532: fix socket HOWTO inaccuracy about send() on broken connection</b> #144747</a>
-              [Gh-Novel]
-
-              <span class="label" style="--label-r:9;--label-g:252;--label-b:89;--label-h:139;--label-s:97;--label-l:51;">docs</span>
-                <span class="label" style="--label-r:251;--label-g:202;--label-b:4;--label-h:48;--label-s:96;--label-l:50;">awaiting review</span>
-                <span class="label" style="--label-r:0;--label-g:0;--label-b:0;--label-h:0;--label-s:0;--label-l:0;">skip news</span>
-                &nbsp;&nbsp; <span class="homerepo">python/cpython</span>
-              </p><p>Issue: gh-109532
-
-Summary
-Corrects an inaccuracy in the Socket Programming HOWTO (Doc/howto/sockets.rst) about...</p></li>
-          <li class="">
-
-              <p><a href="https://github.com/python/cpython/pull/149107"><span class="octicons" title="newly closed; closed pull request"><span class="octicon dash"></span><span class="octicon x"></span><span class="octicon closed pull"></span></span><b>Fix sentence in bdb.rst</b> #149107</a>
-              [manoj-km24]
-
-              <span class="label" style="--label-r:9;--label-g:252;--label-b:89;--label-h:139;--label-s:97;--label-l:51;">docs</span>
-                <span class="label" style="--label-r:251;--label-g:202;--label-b:4;--label-h:48;--label-s:96;--label-l:50;">awaiting review</span>
-                <span class="label" style="--label-r:0;--label-g:0;--label-b:0;--label-h:0;--label-s:0;--label-l:0;">skip news</span>
-                &nbsp;&nbsp; <span class="homerepo">python/cpython</span>
-              </p><p>This PR fixes a minor typo in ```Doc/library/bdb.rst&#34; .
-   If the breakpoint was set via
-   :attr:`function name...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/python/cpython/pull/149107#pullrequestreview-4197735851" title="04-29 14:24">
-                        
-                            <span class="octicon eye" title="reviewed"></span>
-                          
-                        
-                        <b>ByteFlowing1337</b></a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/python/cpython/pull/149107#discussion_r3161653199" title="04-29 14:24">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>ByteFlowing1337</b>: I think if it is None is ambiguous here.</a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/python/cpython/pull/149107#discussion_r3161770537" title="04-29 14:28">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>manoj-km24</b>: @ByteFlowing1337 I have made the requested change</a></p>
-                      
-                    </li>
-                  </ul>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/python/cpython/pull/149107#discussion_r3161705119" title="04-29 14:24">
-                        
-                          <span class="octicon comment resolved" title="resolved comment"></span>
-                        
-                        <b>ByteFlowing1337</b>: Suggested change
-      
-    
-    
-      
-          
-            
-            
-          
-       ...</a></p>
-                      
-                    </li>
-                  </ul>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/python/cpython/pull/149107#discussion_r3161785056" title="04-29 14:30">
-                        
-                            <span class="octicon eye" title="reviewed"></span>
-                          
-                        
-                        <b>ByteFlowing1337</b>: Suggested change
-      
-    
-    
-      
-          
-            
-                  Print the...</a></p>
-                      
-                    </li>
-                  </ul>
-              </li>
-          <li class="">
-
-              <p><a href="https://github.com/python/cpython/pull/149158"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Fix typos in bdb.rst</b> #149158</a>
-              [manoj-km24]
-
-              <span class="label" style="--label-r:9;--label-g:252;--label-b:89;--label-h:139;--label-s:97;--label-l:51;">docs</span>
-                <span class="label" style="--label-r:251;--label-g:202;--label-b:4;--label-h:48;--label-s:96;--label-l:50;">awaiting review</span>
-                <span class="label" style="--label-r:0;--label-g:0;--label-b:0;--label-h:0;--label-s:0;--label-l:0;">skip news</span>
-                &nbsp;&nbsp; <span class="homerepo">python/cpython</span>
-              </p><p>This PR fixes 2 typos in *Doc/library/bdb.rst&#34; by:
-
-Adding colon for correctness
-Fixing a sentence with correct...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/python/cpython/pull/149158#issuecomment-4345310159" title="04-29 15:50">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>manoj-km24</b>: @ByteFlowing1337 Messed up the old PR, Kindly review here. Thank you for your patience.</a></p>
-                      
-                    </li>
-                  </ul>
-              </li>
-          <li class="">
-
-              <p><a href="https://github.com/python/cpython/pull/139139"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Docs/howto/remote_debugging: Give non-sudo suggestions first</b> #139139</a>
-              [geofft]
-
-              <span class="label" style="--label-r:9;--label-g:252;--label-b:89;--label-h:139;--label-s:97;--label-l:51;">docs</span>
-                <span class="label" style="--label-r:0;--label-g:0;--label-b:0;--label-h:0;--label-s:0;--label-l:0;">skip issue</span>
-                <span class="label" style="--label-r:251;--label-g:202;--label-b:4;--label-h:48;--label-s:96;--label-l:50;">awaiting review</span>
-                <span class="label" style="--label-r:0;--label-g:0;--label-b:0;--label-h:0;--label-s:0;--label-l:0;">skip news</span>
-                <span class="label" style="--label-r:156;--label-g:168;--label-b:23;--label-h:64;--label-s:75;--label-l:37;">stale</span>
-                <span class="label" style="--label-r:194;--label-g:224;--label-b:198;--label-h:128;--label-s:32;--label-l:81;">needs backport to 3.14</span>
-                &nbsp;&nbsp; <span class="homerepo">python/cpython</span>
-              </p><p>sudo is much too powerful and unnecessary for debugging your own processes. Start with guidance on how to opt into...</p></li>
-          <li class="open">
-
-              <p><a href="https://github.com/python/cpython/issues/149160"><span class="octicons" title="newly created; issue"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>Removal of implicit event loop creation in `asyncio.get_event_loop()` breaks batteries-included promise</b> #149160</a>
-              [SoundsSerious]
-
-              <span class="label" style="--label-r:9;--label-g:252;--label-b:89;--label-h:139;--label-s:97;--label-l:51;">docs</span>
-                <span class="label" style="--label-r:0;--label-g:82;--label-b:204;--label-h:215;--label-s:100;--label-l:40;">topic-asyncio</span>
-                <span class="label" style="--label-r:9;--label-g:252;--label-b:89;--label-h:139;--label-s:97;--label-l:51;">stdlib</span>
-                <span class="label" style="--label-r:255;--label-g:165;--label-b:51;--label-h:33;--label-s:100;--label-l:60;">pending</span>
-                &nbsp;&nbsp; <span class="homerepo">python/cpython</span>
-              </p><p>Removal of implicit event loop creation in asyncio.get_event_loop() breaks batteries-included usage
-Summary
-Starting...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/python/cpython/issues/149160#issuecomment-4346284866" title="04-29 18:07">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>bdarnell</b>: As the maintainer of Tornado, I was annoyed by these changes when they began in 3.10, for the...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/python/cpython/issues/149160#issuecomment-4346400628" title="04-29 18:27">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>SoundsSerious</b>: @bdarnell Thanks for that, your comment is really insightful especially since I am not in the...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/python/cpython/issues/149160#issuecomment-4347509200" title="04-29 21:05">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>picnixz</b>: cc @kumaraditya303
-I am removing the bug label because I think this was already discussed but...</a></p>
-                      
-                    </li>
-                  </ul>
-              </li>
-          <li class="">
-
-              <p><a href="https://github.com/python/cpython/pull/139334"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>gh-98894: Update DTrace Docs in instrumentation.rst</b> #139334</a>
-              [Zheaoli]
-
-              <span class="label" style="--label-r:9;--label-g:252;--label-b:89;--label-h:139;--label-s:97;--label-l:51;">docs</span>
-                <span class="label" style="--label-r:251;--label-g:202;--label-b:4;--label-h:48;--label-s:96;--label-l:50;">awaiting review</span>
-                <span class="label" style="--label-r:0;--label-g:0;--label-b:0;--label-h:0;--label-s:0;--label-l:0;">skip news</span>
-                <span class="label" style="--label-r:156;--label-g:168;--label-b:23;--label-h:64;--label-s:75;--label-l:37;">stale</span>
-                &nbsp;&nbsp; <span class="homerepo">python/cpython</span>
-              </p><p>Issue: gh-98894
-
-
-
-
-📚 Documentation preview 📚: https://cpython-previews--139334.org.readthedocs.build/</p></li>
-          <li class="">
-
-              <p><a href="https://github.com/python/cpython/pull/139358"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>gh-136563: Update concurrent.interpreters module documentation</b> #139358</a>
-              [aisk]
-
-              <span class="label" style="--label-r:9;--label-g:252;--label-b:89;--label-h:139;--label-s:97;--label-l:51;">docs</span>
-                <span class="label" style="--label-r:251;--label-g:202;--label-b:4;--label-h:48;--label-s:96;--label-l:50;">awaiting core review</span>
-                <span class="label" style="--label-r:0;--label-g:0;--label-b:0;--label-h:0;--label-s:0;--label-l:0;">skip news</span>
-                <span class="label" style="--label-r:156;--label-g:168;--label-b:23;--label-h:64;--label-s:75;--label-l:37;">stale</span>
-                &nbsp;&nbsp; <span class="homerepo">python/cpython</span>
-              </p><p>Removed the non-existent dedent parameter from Interpreter.exec().
-Fixed exception class names for...</p></li>
-          <li class="">
-
-              <p><a href="https://github.com/python/cpython/pull/149170"><span class="octicons" title="newly created; newly closed; closed pull request"><span class="octicon star"></span><span class="octicon x"></span><span class="octicon closed pull"></span></span><b>Spam</b> #149170</a>
-              [Rohan5commit]
-
-              <span class="label" style="--label-r:9;--label-g:252;--label-b:89;--label-h:139;--label-s:97;--label-l:51;">docs</span>
-                <span class="label" style="--label-r:251;--label-g:202;--label-b:4;--label-h:48;--label-s:96;--label-l:50;">awaiting review</span>
-                <span class="label" style="--label-r:0;--label-g:0;--label-b:0;--label-h:0;--label-s:0;--label-l:0;">skip news</span>
-                <span class="label" style="--label-r:237;--label-g:237;--label-b:237;--label-h:0;--label-s:0;--label-l:92;">invalid</span>
-                &nbsp;&nbsp; <span class="homerepo">python/cpython</span>
-              </p><p>Automated daily maintenance update (batch 2).</p></li>
-          <li class="">
-
-              <p><a href="https://github.com/python/cpython/pull/139554"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>gh-127305: more detailed doc for `register_error`&#39;s error_handler</b> #139554</a>
-              [litlighilit]
-
-              <span class="label" style="--label-r:9;--label-g:252;--label-b:89;--label-h:139;--label-s:97;--label-l:51;">docs</span>
-                <span class="label" style="--label-r:251;--label-g:202;--label-b:4;--label-h:48;--label-s:96;--label-l:50;">awaiting core review</span>
-                <span class="label" style="--label-r:0;--label-g:0;--label-b:0;--label-h:0;--label-s:0;--label-l:0;">skip news</span>
-                <span class="label" style="--label-r:156;--label-g:168;--label-b:23;--label-h:64;--label-s:75;--label-l:37;">stale</span>
-                &nbsp;&nbsp; <span class="homerepo">python/cpython</span>
-              </p><p>Issue: gh-127305
-
-
-
-
-📚 Documentation preview 📚: https://cpython-previews--139554.org.readthedocs.build/</p></li>
-          <li class="">
-
-              <p><a href="https://github.com/python/cpython/pull/139598"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>gh-105812: Make use of the Sphinx `deco` role in documentation, part 1</b> #139598</a>
-              [Viicos]
-
-              <span class="label" style="--label-r:9;--label-g:252;--label-b:89;--label-h:139;--label-s:97;--label-l:51;">docs</span>
-                <span class="label" style="--label-r:251;--label-g:202;--label-b:4;--label-h:48;--label-s:96;--label-l:50;">awaiting review</span>
-                <span class="label" style="--label-r:0;--label-g:0;--label-b:0;--label-h:0;--label-s:0;--label-l:0;">skip news</span>
-                <span class="label" style="--label-r:156;--label-g:168;--label-b:23;--label-h:64;--label-s:75;--label-l:37;">stale</span>
-                &nbsp;&nbsp; <span class="homerepo">python/cpython</span>
-              </p><p>For the following decorators: classmethod, staticmethod, property, ABC decorators, enum decorators,...</p></li>
           <li class="">
 
               <p><a href="https://github.com/python/cpython/pull/139629"><span class="octicons" title="newly closed; draft closed pull request"><span class="octicon dash"></span><span class="octicon x"></span><span class="octicon draft closed pull"></span></span><b>GH-123299: Copyedit 3.14 What&#39;s New: Remove PEP prefixes</b> #139629</a>
@@ -679,7 +391,7 @@ gh-149185</p></li>
               </li>
           <li class="">
 
-              <p><a href="https://github.com/python/cpython/pull/149176"><span class="octicons" title="newly created; newly merged; merged pull request"><span class="octicon star"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>gh-149083: Use `sentinel` in `functools.rst` docs</b> #149176</a>
+              <p><a href="https://github.com/python/cpython/pull/149176"><span class="octicons" title="newly merged; merged pull request"><span class="octicon dash"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>gh-149083: Use `sentinel` in `functools.rst` docs</b> #149176</a>
               [sobolevn]
 
               <span class="label" style="--label-r:9;--label-g:252;--label-b:89;--label-h:139;--label-s:97;--label-l:51;">docs</span>
@@ -1642,22 +1354,6 @@ On...</p></li>
 Added missing from importlib.metadata import metadata import statement before the example code that...</p></li>
           <li class="">
 
-              <p><a href="https://github.com/python/cpython/pull/142357"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Replace use of Python keyword in `issubclass` function documentation</b> #142357</a>
-              [guoci]
-
-              <span class="label" style="--label-r:9;--label-g:252;--label-b:89;--label-h:139;--label-s:97;--label-l:51;">docs</span>
-                <span class="label" style="--label-r:0;--label-g:0;--label-b:0;--label-h:0;--label-s:0;--label-l:0;">skip issue</span>
-                <span class="label" style="--label-r:251;--label-g:202;--label-b:4;--label-h:48;--label-s:96;--label-l:50;">awaiting core review</span>
-                <span class="label" style="--label-r:0;--label-g:0;--label-b:0;--label-h:0;--label-s:0;--label-l:0;">skip news</span>
-                <span class="label" style="--label-r:156;--label-g:168;--label-b:23;--label-h:64;--label-s:75;--label-l:37;">stale</span>
-                &nbsp;&nbsp; <span class="homerepo">python/cpython</span>
-              </p><p>skip news, skip item
-
-
-
-📚 Documentation preview 📚: https://cpython-previews--142357.org.readthedocs.build/</p></li>
-          <li class="">
-
               <p><a href="https://github.com/python/cpython/pull/142393"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>gh-142392: Update `ExceptionGroup`s in docs to use a tuple of errors where possible</b> #142393</a>
               [dr-carlos]
 
@@ -2008,23 +1704,6 @@ The mapping (1) glossary term is defined as
 
 A container object that supports arbitrary key lookups...</p><ul class="comments">
                   <li>
-                      <p><a href="https://github.com/python/cpython/issues/149093#issuecomment-4350014379" title="04-30 05:52">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>ApusBerliozi</b>: Hello everyone!
-Can I work with this issue?</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/python/cpython/issues/149093#issuecomment-4350356802" title="04-30 07:04">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>picnixz</b>: Yes, go ahead.</a></p>
-                      
-                    </li>
-                  <li>
                       <p><a href="https://github.com/python/cpython/issues/149093#issuecomment-4357946683" title="05-01 05:41">
                         
                           <span class="octicon comment" title="comment"></span>
@@ -2052,7 +1731,7 @@ Can I work with this issue?</a></p>
               </li>
           <li class="open">
 
-              <p><a href="https://github.com/python/cpython/issues/149142"><span class="octicons" title="newly created; issue"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>_decimal: `mpd_context_t::status`/`traps` mutated non-atomically leading to data race</b> #149142</a>
+              <p><a href="https://github.com/python/cpython/issues/149142"><span class="octicons" title="issue"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>_decimal: `mpd_context_t::status`/`traps` mutated non-atomically leading to data race</b> #149142</a>
               [devdanzin]
 
               <span class="label" style="--label-r:233;--label-g:150;--label-b:149;--label-h:0;--label-s:65;--label-l:74;">type-bug</span>
@@ -2064,14 +1743,6 @@ Can I work with this issue?</a></p>
 Bug description:
 Summary
 Modules/_decimal/_decimal.c performs unsynchronized read-modify-write and plain...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/python/cpython/issues/149142#issuecomment-4348307102" title="04-29 23:47">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>skirpichev</b>: It&#39;s not very clear if such usage patter (i.e. sharing context via variable) is intended to be...</a></p>
-                      
-                    </li>
                   <li>
                       <p><a href="https://github.com/python/cpython/issues/149142#issuecomment-4368656458" title="05-04 06:05">
                         
@@ -2292,26 +1963,6 @@ The...</a></p>
 Users create cross-interpreter queues by calling concurrent.interpreters.create_queue().  @terryjreedy...</p></li>
           <li class="">
 
-              <p><a href="https://github.com/python/cpython/pull/144857"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>gh-76303: Improve -x option documentation</b> #144857</a>
-              [RoryGlenn]
-
-              <span class="label" style="--label-r:9;--label-g:252;--label-b:89;--label-h:139;--label-s:97;--label-l:51;">docs</span>
-                <span class="label" style="--label-r:251;--label-g:202;--label-b:4;--label-h:48;--label-s:96;--label-l:50;">awaiting merge</span>
-                <span class="label" style="--label-r:0;--label-g:0;--label-b:0;--label-h:0;--label-s:0;--label-l:0;">skip news</span>
-                &nbsp;&nbsp; <span class="homerepo">python/cpython</span>
-              </p><p>Expand the documentation for the -x command-line option to explain its purpose and usage for turning Python scripts...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/python/cpython/pull/144857#issuecomment-4371960575" title="05-04 14:41">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>serhiy-storchaka</b>: @zooba, could you please take a look?</a></p>
-                      
-                    </li>
-                  </ul>
-              </li>
-          <li class="">
-
               <p><a href="https://github.com/python/cpython/pull/144607"><span class="octicons" title="newly merged; merged pull request"><span class="octicon dash"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>gh-137337: Clarify import statement namespace binding</b> #144607</a>
               [kovan]
 
@@ -2363,101 +2014,6 @@ Issue: gh-142108
 
 
 📚 Documentation preview 📚:...</p></li>
-          <li class="">
-
-              <p><a href="https://github.com/python/cpython/pull/149347"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>gh-148641: Flesh out PEP 829 for What&#39;s New</b> #149347</a>
-              [warsaw]
-
-              <span class="label" style="--label-r:9;--label-g:252;--label-b:89;--label-h:139;--label-s:97;--label-l:51;">docs</span>
-                <span class="label" style="--label-r:251;--label-g:202;--label-b:4;--label-h:48;--label-s:96;--label-l:50;">awaiting core review</span>
-                <span class="label" style="--label-r:0;--label-g:0;--label-b:0;--label-h:0;--label-s:0;--label-l:0;">skip news</span>
-                &nbsp;&nbsp; <span class="homerepo">python/cpython</span>
-              </p><p>Issue: gh-148641</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/python/cpython/pull/149347#pullrequestreview-4218089483" title="05-04 07:34">
-                        
-                            <span class="octicon eye" title="reviewed"></span>
-                          
-                        
-                        <b>hugovk</b></a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/python/cpython/pull/149347#discussion_r3179950242" title="05-04 07:34">
-                        
-                          <span class="octicon comment resolved" title="resolved comment"></span>
-                        
-                        <b>hugovk</b>: Use sentence case for...</a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/python/cpython/pull/149347#discussion_r3182676672" title="05-04 15:34">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>warsaw</b>: Use sentence case for headers:
-
-Although, note that 803 still uses &#34;Free-Threaded Builds&#34;</a></p>
-                      
-                    </li>
-                  </ul>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/python/cpython/pull/149347#discussion_r3179954272" title="05-04 07:34">
-                        
-                          <span class="octicon comment resolved" title="resolved comment"></span>
-                        
-                        <b>hugovk</b>: Suggested change
-      
-    
-    
-      
-          
-            
-            :pep:`829`: Startup...</a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/python/cpython/pull/149347#discussion_r3182705153" title="05-04 15:39">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>warsaw</b>: Likewise move this block up between 800 and 782.
-
-I don&#39;t understand this.  800 doesn&#39;t have a...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/python/cpython/pull/149347#discussion_r3182751718" title="05-04 15:49">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>hugovk</b>: 800 is still missing docs, we&#39;ll have to add them during beta.
-782 is the first of the C API, so...</a></p>
-                      
-                    </li>
-                  </ul>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/python/cpython/pull/149347#discussion_r3179994968" title="05-04 07:34">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>hugovk</b>: Let&#39;s link something to the new _site-pth-files reference here, perhaps link  &#34;.pth files&#34;?...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/python/cpython/pull/149347#discussion_r3179996882" title="05-04 07:34">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>hugovk</b>: And link to _site-start-files somewhere here, perhaps &#34;.start files&#34;.</a></p>
-                      
-                    </li>
-                  </ul>
-                      
-                    </li>
-                  </ul>
-              </li>
           <li class="">
 
               <p><a href="https://github.com/python/cpython/pull/148627"><span class="octicons" title="newly closed; closed pull request"><span class="octicon dash"></span><span class="octicon x"></span><span class="octicon closed pull"></span></span><b>gh-141444: Replace dead robotstxt.org URL with RFC 9309 in urllib.robotparser docs</b> #148627</a>
@@ -2807,45 +2363,6 @@ Changed the description under the indent parameter to json.dump, such that it no
                     </li>
                   </ul>
               </li>
-          <li class="open">
-
-              <p><a href="https://github.com/python/cpython/issues/149402"><span class="octicons" title="newly created; issue"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>Meta issue: improve documentation for implementation of the PEP 3118 in Python</b> #149402</a>
-              [skirpichev]
-
-              <span class="label" style="--label-r:9;--label-g:252;--label-b:89;--label-h:139;--label-s:97;--label-l:51;">docs</span>
-                <span class="label" style="--label-r:9;--label-g:252;--label-b:89;--label-h:139;--label-s:97;--label-l:51;">interpreter-core</span>
-                <span class="label" style="--label-r:9;--label-g:252;--label-b:89;--label-h:139;--label-s:97;--label-l:51;">extension-modules</span>
-                &nbsp;&nbsp; <span class="homerepo">python/cpython</span>
-              </p><p>Documentation
-Recent d.p.o discussion thread and SC decision reveal some problems with current docs.  Affected parts...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/python/cpython/issues/149402#issuecomment-4377783819" title="05-05 08:49">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>skirpichev</b>: CC @vstinner @encukou</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/python/cpython/issues/149402#issuecomment-4377883300" title="05-05 09:05">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>encukou</b>: The docs are correct: these modules all “use similar – but slightly different – type...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/python/cpython/issues/149402#issuecomment-4378433635" title="05-05 10:30">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>skirpichev</b>: The docs are correct: these modules all “use similar – but slightly different – type codes”.
-
-I...</a></p>
-                      
-                    </li>
-                  </ul>
-              </li>
           <li class="">
 
               <p><a href="https://github.com/python/cpython/pull/144219"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>[DOC] Clarify imprecise reference to example</b> #144219</a>
@@ -2860,127 +2377,6 @@ I...</a></p>
               </p><p>Summary of the changes made
 Modified one line of descriptive text.
 The text refers to &#34;our example,&#34; despite there...</p></li>
-          <li class="">
-
-              <p><a href="https://github.com/python/cpython/pull/149185"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>gh-149187: Doc: Add frozendict to functions.rst</b> #149185</a>
-              [oyvindronningstad]
-
-              <span class="label" style="--label-r:9;--label-g:252;--label-b:89;--label-h:139;--label-s:97;--label-l:51;">docs</span>
-                <span class="label" style="--label-r:251;--label-g:202;--label-b:4;--label-h:48;--label-s:96;--label-l:50;">awaiting review</span>
-                <span class="label" style="--label-r:0;--label-g:0;--label-b:0;--label-h:0;--label-s:0;--label-l:0;">skip news</span>
-                &nbsp;&nbsp; <span class="homerepo">python/cpython</span>
-              </p><p>Add frozendict to the Built-in Functions table, and add a short entry on the page, derived from the dict and...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/python/cpython/pull/149185#pullrequestreview-4210772061" title="05-01 10:00">
-                        
-                            <span class="octicon eye" title="reviewed"></span>
-                          
-                        
-                        <b>sobolevn</b>: Thank you!</a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/python/cpython/pull/149185#discussion_r3172808755" title="05-01 10:00">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>sobolevn</b>: That&#39;s unfortunate that we have to make so many code changes for a single line :(
-But, AFAIK...</a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/python/cpython/pull/149185#discussion_r3176863761" title="05-02 15:57">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>oyvindronningstad</b>: It&#39;s possible to forego the empty space before the &#34;G:&#34;, which will give a 2-line change...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/python/cpython/pull/149185#discussion_r3176872106" title="05-05 08:20">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>oyvindronningstad</b>: 0c3441a &lt;- 2-line change alternative</a></p>
-                      
-                    </li>
-                  </ul>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/python/cpython/pull/149185#discussion_r3172813310" title="05-01 10:00">
-                        
-                          <span class="octicon comment resolved" title="resolved comment"></span>
-                        
-                        <b>sobolevn</b>: Can we keep this description in line with the dict one?
-Create a new frozen dictionary.  The...</a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/python/cpython/pull/149185#discussion_r3176866850" title="05-02 15:59">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>oyvindronningstad</b>: done</a></p>
-                      
-                    </li>
-                  </ul>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/python/cpython/pull/149185#discussion_r3172814347" title="05-01 10:00">
-                        
-                          <span class="octicon comment resolved" title="resolved comment"></span>
-                        
-                        <b>sobolevn</b>: Suggested change
-      
-    
-    
-      
-          
-            
-               Create a new...</a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/python/cpython/pull/149185#discussion_r3176866553" title="05-02 15:59">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>oyvindronningstad</b>: done</a></p>
-                      
-                    </li>
-                  </ul>
-                      
-                    </li>
-                  </ul>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/python/cpython/pull/149185#issuecomment-4377602539" title="05-05 08:20">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>oyvindronningstad</b>: @sobolevn Thanks for the review! Are there other reviewers I should add?</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/python/cpython/pull/149185#issuecomment-4380732887" title="05-05 15:31">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>StanFromIreland</b>: Are there other reviewers I should add?
-
-Please don&#39;t ping people at random. CODEOWNERS/experts...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/python/cpython/pull/149185#discussion_r3189679823" title="05-05 15:32">
-                        
-                            <span class="octicon eye" title="reviewed"></span>
-                          
-                        
-                        <b>StanFromIreland</b>: @nedbat, is the linklint update ready so that we can fix the rendering here?</a></p>
-                      
-                    </li>
-                  </ul>
-              </li>
           <li class="">
 
               <p><a href="https://github.com/python/cpython/pull/17911"><span class="octicons" title="newly closed; closed pull request"><span class="octicon dash"></span><span class="octicon x"></span><span class="octicon closed pull"></span></span><b>gh-83448: Fix dict&#39;s __missing__ documentation</b> #17911</a>
@@ -3177,6 +2573,58 @@ Issue: gh-106318
 
 
 📚 Documentation preview 📚: https://cpython-previews--144721.org.readthedocs.build/</p></li>
+          <li class="open">
+
+              <p><a href="https://github.com/python/cpython/issues/133879"><span class="octicons" title="issue"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>What&#39;s New in Python 3.15 (copyediting)</b> #133879</a>
+              [picnixz]
+
+              <span class="label" style="--label-r:9;--label-g:252;--label-b:89;--label-h:139;--label-s:97;--label-l:51;">docs</span>
+                <span class="label" style="--label-r:46;--label-g:115;--label-b:15;--label-h:101;--label-s:76;--label-l:25;">3.15</span>
+                &nbsp;&nbsp; <span class="homerepo">python/cpython</span>
+              </p><p>Documentation
+This is a meta-issue to capture PRs for copyedits to What&#39;s New in Python 3.15.
+Other...</p></li>
+          <li class="">
+
+              <p><a href="https://github.com/python/cpython/pull/144745"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>gh-110548: modernize venv EnvBuilder example</b> #144745</a>
+              [Gh-Novel]
+
+              <span class="label" style="--label-r:9;--label-g:252;--label-b:89;--label-h:139;--label-s:97;--label-l:51;">docs</span>
+                <span class="label" style="--label-r:251;--label-g:202;--label-b:4;--label-h:48;--label-s:96;--label-l:50;">awaiting review</span>
+                <span class="label" style="--label-r:0;--label-g:0;--label-b:0;--label-h:0;--label-s:0;--label-l:0;">skip news</span>
+                <span class="label" style="--label-r:156;--label-g:168;--label-b:23;--label-h:64;--label-s:75;--label-l:37;">stale</span>
+                &nbsp;&nbsp; <span class="homerepo">python/cpython</span>
+              </p><p>Issue: gh-110548
+
+Summary
+Modernizes the venv.EnvBuilder example in Doc/library/venv.rst.
+The existing example used...</p></li>
+          <li class="">
+
+              <p><a href="https://github.com/python/cpython/pull/144746"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>gh-100150: document that --without-doc-strings affects inspect.signature</b> #144746</a>
+              [Gh-Novel]
+
+              <span class="label" style="--label-r:9;--label-g:252;--label-b:89;--label-h:139;--label-s:97;--label-l:51;">docs</span>
+                <span class="label" style="--label-r:251;--label-g:202;--label-b:4;--label-h:48;--label-s:96;--label-l:50;">awaiting review</span>
+                <span class="label" style="--label-r:0;--label-g:0;--label-b:0;--label-h:0;--label-s:0;--label-l:0;">skip news</span>
+                <span class="label" style="--label-r:156;--label-g:168;--label-b:23;--label-h:64;--label-s:75;--label-l:37;">stale</span>
+                &nbsp;&nbsp; <span class="homerepo">python/cpython</span>
+              </p><p>\n* Issue: gh-100150\n\n## Summary\n\nAdds a note to the `--without-doc-strings` configure option documentation...</p></li>
+          <li class="">
+
+              <p><a href="https://github.com/python/cpython/pull/142357"><span class="octicons" title="newly merged; merged pull request"><span class="octicon dash"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>Replace use of Python keyword in `issubclass` function documentation</b> #142357</a>
+              [guoci]
+
+              <span class="label" style="--label-r:9;--label-g:252;--label-b:89;--label-h:139;--label-s:97;--label-l:51;">docs</span>
+                <span class="label" style="--label-r:0;--label-g:0;--label-b:0;--label-h:0;--label-s:0;--label-l:0;">skip issue</span>
+                <span class="label" style="--label-r:0;--label-g:0;--label-b:0;--label-h:0;--label-s:0;--label-l:0;">skip news</span>
+                <span class="label" style="--label-r:156;--label-g:168;--label-b:23;--label-h:64;--label-s:75;--label-l:37;">stale</span>
+                &nbsp;&nbsp; <span class="homerepo">python/cpython</span>
+              </p><p>skip news, skip item
+
+
+
+📚 Documentation preview 📚: https://cpython-previews--142357.org.readthedocs.build/</p></li>
           <li class="closed">
 
               <p><a href="https://github.com/python/cpython/issues/149096"><span class="octicons" title="newly closed; closed issue"><span class="octicon dash"></span><span class="octicon check"></span><span class="octicon closed issue"></span></span><b>`inspect` docstring is outdated</b> #149096</a>
@@ -3202,15 +2650,631 @@ The docstring of the inspect module on every python 3 branch lists &#39;im_*&#39
                         <b>terryjreedy</b>: I checked that im_ appears nowhere else in inspect.py and nowhere in inspect.rst.</a></p>
                       
                     </li>
+                  <li>
+                      <p><a href="https://github.com/python/cpython/issues/149096#issuecomment-4388568379" title="05-06 13:33">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>jonathandung</b>: Great, thanks</a></p>
+                      
+                    </li>
                   </ul>
               </li>
           <li class="">
 
-              <p><a href="https://github.com/python/cpython/pull/149346"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>gh-121249: deprecate support for F/D type codes in the struct module</b> #149346</a>
+              <p><a href="https://github.com/python/cpython/pull/148962"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>gh-148961 : Use parsed-literal for the slot column legend in c-api/typeobj.rst</b> #148962</a>
+              [Chang-LeHung]
+
+              <span class="label" style="--label-r:9;--label-g:252;--label-b:89;--label-h:139;--label-s:97;--label-l:51;">docs</span>
+                <span class="label" style="--label-r:251;--label-g:202;--label-b:4;--label-h:48;--label-s:96;--label-l:50;">awaiting review</span>
+                <span class="label" style="--label-r:0;--label-g:0;--label-b:0;--label-h:0;--label-s:0;--label-l:0;">skip news</span>
+                &nbsp;&nbsp; <span class="homerepo">python/cpython</span>
+              </p><p>The two small legends under the PyTypeObject &#34;Quick Reference&#34; table in
+Doc/c-api/typeobj.rst explain what each...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/python/cpython/pull/148962#discussion_r3141689940" title="04-25 08:12">
+                        
+                            <span class="octicon eye" title="reviewed"></span>
+                          
+                        
+                        <b>StanFromIreland</b>: These break translations, see #135828.</a></p>
+                      
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/python/cpython/pull/148962#discussion_r3196319090" title="05-06 14:41">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>Chang-LeHung</b>: @ZeroIntensity, please review it if you are available.</a></p>
+                      
+                    </li>
+                  </ul>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="">
+
+              <p><a href="https://github.com/python/cpython/pull/149451"><span class="octicons" title="newly created; newly merged; merged pull request"><span class="octicon star"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>gh-133879: Copyedit &#34;What&#39;s new in Python 3.15&#34;</b> #149451</a>
+              [hugovk]
+
+              <span class="label" style="--label-r:9;--label-g:252;--label-b:89;--label-h:139;--label-s:97;--label-l:51;">docs</span>
+                <span class="label" style="--label-r:0;--label-g:0;--label-b:0;--label-h:0;--label-s:0;--label-l:0;">skip news</span>
+                &nbsp;&nbsp; <span class="homerepo">python/cpython</span>
+              </p><p>A bigger pass.
+
+
+Issue: gh-133879</p></li>
+          <li class="">
+
+              <p><a href="https://github.com/python/cpython/pull/144839"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>docs: Add note recommending grid over pack in tkinter documentation</b> #144839</a>
+              [zlq500]
+
+              <span class="label" style="--label-r:9;--label-g:252;--label-b:89;--label-h:139;--label-s:97;--label-l:51;">docs</span>
+                <span class="label" style="--label-r:251;--label-g:202;--label-b:4;--label-h:48;--label-s:96;--label-l:50;">awaiting review</span>
+                <span class="label" style="--label-r:0;--label-g:0;--label-b:0;--label-h:0;--label-s:0;--label-l:0;">skip news</span>
+                <span class="label" style="--label-r:156;--label-g:168;--label-b:23;--label-h:64;--label-s:75;--label-l:37;">stale</span>
+                &nbsp;&nbsp; <span class="homerepo">python/cpython</span>
+              </p><p>Summary
+This PR adds a note at the beginning of the &#39;The Packer&#39; section in the tkinter documentation to recommend...</p></li>
+          <li class="">
+
+              <p><a href="https://github.com/python/cpython/pull/144847"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>gh-106318: Add examples for str.islower() docs</b> #144847</a>
+              [adorilson]
+
+              <span class="label" style="--label-r:9;--label-g:252;--label-b:89;--label-h:139;--label-s:97;--label-l:51;">docs</span>
+                <span class="label" style="--label-r:251;--label-g:202;--label-b:4;--label-h:48;--label-s:96;--label-l:50;">awaiting review</span>
+                <span class="label" style="--label-r:0;--label-g:0;--label-b:0;--label-h:0;--label-s:0;--label-l:0;">skip news</span>
+                <span class="label" style="--label-r:156;--label-g:168;--label-b:23;--label-h:64;--label-s:75;--label-l:37;">stale</span>
+                &nbsp;&nbsp; <span class="homerepo">python/cpython</span>
+              </p><p>WIP #106318
+
+
+Issue: gh-106318
+
+
+
+
+📚 Documentation preview 📚: https://cpython-previews--144847.org.readthedocs.build/</p></li>
+          <li class="">
+
+              <p><a href="https://github.com/python/cpython/pull/144848"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>gh-106318: Improve str.lower() docs</b> #144848</a>
+              [adorilson]
+
+              <span class="label" style="--label-r:9;--label-g:252;--label-b:89;--label-h:139;--label-s:97;--label-l:51;">docs</span>
+                <span class="label" style="--label-r:251;--label-g:202;--label-b:4;--label-h:48;--label-s:96;--label-l:50;">awaiting review</span>
+                <span class="label" style="--label-r:0;--label-g:0;--label-b:0;--label-h:0;--label-s:0;--label-l:0;">skip news</span>
+                <span class="label" style="--label-r:156;--label-g:168;--label-b:23;--label-h:64;--label-s:75;--label-l:37;">stale</span>
+                &nbsp;&nbsp; <span class="homerepo">python/cpython</span>
+              </p><p>WIP #106318
+This PR adds some details to str.lower() to make it similar to str.upper() proposed by #144638.
+
+
+Issue:...</p></li>
+          <li class="">
+
+              <p><a href="https://github.com/python/cpython/pull/144863"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>gh-141444:fix broken URLs and examples in urllib.request.rst</b> #144863</a>
+              [tangyuan0821]
+
+              <span class="label" style="--label-r:9;--label-g:252;--label-b:89;--label-h:139;--label-s:97;--label-l:51;">docs</span>
+                <span class="label" style="--label-r:251;--label-g:202;--label-b:4;--label-h:48;--label-s:96;--label-l:50;">awaiting review</span>
+                <span class="label" style="--label-r:0;--label-g:0;--label-b:0;--label-h:0;--label-s:0;--label-l:0;">skip news</span>
+                <span class="label" style="--label-r:156;--label-g:168;--label-b:23;--label-h:64;--label-s:75;--label-l:37;">stale</span>
+                &nbsp;&nbsp; <span class="homerepo">python/cpython</span>
+              </p><p>Summary
+
+Replace dead/unreliable URLs: musi‑cal.com → https://www.python.org, requestb.in →...</p></li>
+          <li class="">
+
+              <p><a href="https://github.com/python/cpython/pull/149185"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>gh-149187: Doc: Add frozendict to functions.rst</b> #149185</a>
+              [oyvindronningstad]
+
+              <span class="label" style="--label-r:9;--label-g:252;--label-b:89;--label-h:139;--label-s:97;--label-l:51;">docs</span>
+                <span class="label" style="--label-r:251;--label-g:202;--label-b:4;--label-h:48;--label-s:96;--label-l:50;">awaiting review</span>
+                <span class="label" style="--label-r:0;--label-g:0;--label-b:0;--label-h:0;--label-s:0;--label-l:0;">skip news</span>
+                &nbsp;&nbsp; <span class="homerepo">python/cpython</span>
+              </p><p>Add frozendict to the Built-in Functions table, and add a short entry on the page, derived from the dict and...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/python/cpython/pull/149185#pullrequestreview-4210772061" title="05-01 10:00">
+                        
+                            <span class="octicon eye" title="reviewed"></span>
+                          
+                        
+                        <b>sobolevn</b>: Thank you!</a></p>
+                      
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/python/cpython/pull/149185#discussion_r3172808755" title="05-01 10:00">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>sobolevn</b>: That&#39;s unfortunate that we have to make so many code changes for a single line :(
+But, AFAIK...</a></p>
+                      
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/python/cpython/pull/149185#discussion_r3176863761" title="05-02 15:57">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>oyvindronningstad</b>: It&#39;s possible to forego the empty space before the &#34;G:&#34;, which will give a 2-line change...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/python/cpython/pull/149185#discussion_r3176872106" title="05-05 08:20">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>oyvindronningstad</b>: 0c3441a &lt;- 2-line change alternative</a></p>
+                      
+                    </li>
+                  </ul>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/python/cpython/pull/149185#discussion_r3172813310" title="05-01 10:00">
+                        
+                          <span class="octicon comment resolved" title="resolved comment"></span>
+                        
+                        <b>sobolevn</b>: Can we keep this description in line with the dict one?
+Create a new frozen dictionary.  The...</a></p>
+                      
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/python/cpython/pull/149185#discussion_r3176866850" title="05-02 15:59">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>oyvindronningstad</b>: done</a></p>
+                      
+                    </li>
+                  </ul>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/python/cpython/pull/149185#discussion_r3172814347" title="05-01 10:00">
+                        
+                          <span class="octicon comment resolved" title="resolved comment"></span>
+                        
+                        <b>sobolevn</b>: Suggested change
+      
+    
+    
+      
+          
+            
+               Create a new...</a></p>
+                      
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/python/cpython/pull/149185#discussion_r3176866553" title="05-02 15:59">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>oyvindronningstad</b>: done</a></p>
+                      
+                    </li>
+                  </ul>
+                      
+                    </li>
+                  </ul>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/python/cpython/pull/149185#issuecomment-4377602539" title="05-05 08:20">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>oyvindronningstad</b>: @sobolevn Thanks for the review! Are there other reviewers I should add?</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/python/cpython/pull/149185#issuecomment-4380732887" title="05-05 15:31">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>StanFromIreland</b>: Are there other reviewers I should add?
+
+Please don&#39;t ping people at random. CODEOWNERS/experts...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/python/cpython/pull/149185#discussion_r3189679823" title="05-05 15:32">
+                        
+                            <span class="octicon eye" title="reviewed"></span>
+                          
+                        
+                        <b>StanFromIreland</b>: @nedbat, is the linklint update ready so that we can fix the rendering here?</a></p>
+                      
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/python/cpython/pull/149185#discussion_r3195674858" title="05-06 13:14">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>nedbat</b>: linklint==1.0.0 will do it correctly. I&#39;m not sure at the moment how the requirements are...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/python/cpython/pull/149185#discussion_r3196349558" title="05-06 14:45">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>StanFromIreland</b>: It looks like it&#39;s still with a manually updated pylock.toml file.
+
+Do you plan to open a PR for...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/python/cpython/pull/149185#discussion_r3196466988" title="05-06 15:46">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>nedbat</b>: I wasn&#39;t planning to because I don&#39;t know the intent for the future. Hugo seemed in charge of it.</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/python/cpython/pull/149185#discussion_r3196492778" title="05-06 16:23">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>hugovk</b>: Go for it! Either here or a new PR.</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/python/cpython/pull/149185#discussion_r3196810872" title="05-06 19:06">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>nedbat</b>: #149467</a></p>
+                      
+                    </li>
+                  </ul>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="">
+
+              <p><a href="https://github.com/python/cpython/pull/144857"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>gh-76303: Improve -x option documentation</b> #144857</a>
+              [RoryGlenn]
+
+              <span class="label" style="--label-r:9;--label-g:252;--label-b:89;--label-h:139;--label-s:97;--label-l:51;">docs</span>
+                <span class="label" style="--label-r:251;--label-g:202;--label-b:4;--label-h:48;--label-s:96;--label-l:50;">awaiting merge</span>
+                <span class="label" style="--label-r:0;--label-g:0;--label-b:0;--label-h:0;--label-s:0;--label-l:0;">skip news</span>
+                &nbsp;&nbsp; <span class="homerepo">python/cpython</span>
+              </p><p>Expand the documentation for the -x command-line option to explain its purpose and usage for turning Python scripts...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/python/cpython/pull/144857#issuecomment-4371960575" title="05-04 14:41">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>serhiy-storchaka</b>: @zooba, could you please take a look?</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/python/cpython/pull/144857#discussion_r3196972858" title="05-06 19:35">
+                        
+                            <span class="octicon eye" title="reviewed"></span>
+                          
+                        
+                        <b>zooba</b>: I normally use %~dpf0 to ensure the full path is used, which handles launching the batch file...</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="">
+
+              <p><a href="https://github.com/python/cpython/pull/144825"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>docs: improve timeit autorange description</b> #144825</a>
+              [scop]
+
+              <span class="label" style="--label-r:9;--label-g:252;--label-b:89;--label-h:139;--label-s:97;--label-l:51;">docs</span>
+                <span class="label" style="--label-r:251;--label-g:202;--label-b:4;--label-h:48;--label-s:96;--label-l:50;">awaiting review</span>
+                <span class="label" style="--label-r:0;--label-g:0;--label-b:0;--label-h:0;--label-s:0;--label-l:0;">skip news</span>
+                <span class="label" style="--label-r:156;--label-g:168;--label-b:23;--label-h:64;--label-s:75;--label-l:37;">stale</span>
+                &nbsp;&nbsp; <span class="homerepo">python/cpython</span>
+              </p><p>It not only determines but actually runs timeit a number of times. Also be more concise; the original form said...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/python/cpython/pull/144825#issuecomment-4391776729" title="05-06 20:18">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>scop</b>: Rebased, not stale.</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="">
+
+              <p><a href="https://github.com/python/cpython/pull/144968"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Correct `DynamicClassAttribute` from function to class in types docs</b> #144968</a>
+              [tanloong]
+
+              <span class="label" style="--label-r:9;--label-g:252;--label-b:89;--label-h:139;--label-s:97;--label-l:51;">docs</span>
+                <span class="label" style="--label-r:0;--label-g:0;--label-b:0;--label-h:0;--label-s:0;--label-l:0;">skip issue</span>
+                <span class="label" style="--label-r:251;--label-g:202;--label-b:4;--label-h:48;--label-s:96;--label-l:50;">awaiting review</span>
+                <span class="label" style="--label-r:0;--label-g:0;--label-b:0;--label-h:0;--label-s:0;--label-l:0;">skip news</span>
+                <span class="label" style="--label-r:156;--label-g:168;--label-b:23;--label-h:64;--label-s:75;--label-l:37;">stale</span>
+                <span class="label" style="--label-r:0;--label-g:82;--label-b:204;--label-h:215;--label-s:100;--label-l:40;">topic-typing</span>
+                &nbsp;&nbsp; <span class="homerepo">python/cpython</span>
+              </p><p>The documentation incorrectly labeled DynamicClassAttribute as a function, which misrepresents its actual type.
+As...</p></li>
+          <li class="">
+
+              <p><a href="https://github.com/python/cpython/pull/144997"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>gh-144873: Document isinstance Edge Case</b> #144997</a>
+              [George-Ogden]
+
+              <span class="label" style="--label-r:9;--label-g:252;--label-b:89;--label-h:139;--label-s:97;--label-l:51;">docs</span>
+                <span class="label" style="--label-r:251;--label-g:202;--label-b:4;--label-h:48;--label-s:96;--label-l:50;">awaiting review</span>
+                <span class="label" style="--label-r:0;--label-g:0;--label-b:0;--label-h:0;--label-s:0;--label-l:0;">skip news</span>
+                <span class="label" style="--label-r:156;--label-g:168;--label-b:23;--label-h:64;--label-s:75;--label-l:37;">stale</span>
+                &nbsp;&nbsp; <span class="homerepo">python/cpython</span>
+              </p><p>Fixes #144873 and #79264 by describing the optimization where type(instance) is cls during inistance(instance, cls)....</p></li>
+          <li class="">
+
+              <p><a href="https://github.com/python/cpython/pull/145025"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>gh-145024: Improved wording for broken socket for socket.send</b> #145025</a>
+              [brijkapadia]
+
+              <span class="label" style="--label-r:9;--label-g:252;--label-b:89;--label-h:139;--label-s:97;--label-l:51;">docs</span>
+                <span class="label" style="--label-r:251;--label-g:202;--label-b:4;--label-h:48;--label-s:96;--label-l:50;">awaiting review</span>
+                <span class="label" style="--label-r:0;--label-g:0;--label-b:0;--label-h:0;--label-s:0;--label-l:0;">skip news</span>
+                <span class="label" style="--label-r:156;--label-g:168;--label-b:23;--label-h:64;--label-s:75;--label-l:37;">stale</span>
+                &nbsp;&nbsp; <span class="homerepo">python/cpython</span>
+              </p><p>Add to docs for socket.send that it will raise an OSError if trying to send to a broken socket (instead of returning...</p></li>
+          <li class="">
+
+              <p><a href="https://github.com/python/cpython/pull/149347"><span class="octicons" title="newly created; newly merged; merged pull request"><span class="octicon star"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>gh-148641: Flesh out PEP 829 for What&#39;s New</b> #149347</a>
+              [warsaw]
+
+              <span class="label" style="--label-r:9;--label-g:252;--label-b:89;--label-h:139;--label-s:97;--label-l:51;">docs</span>
+                <span class="label" style="--label-r:0;--label-g:0;--label-b:0;--label-h:0;--label-s:0;--label-l:0;">skip news</span>
+                &nbsp;&nbsp; <span class="homerepo">python/cpython</span>
+              </p><p>Issue: gh-148641</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/python/cpython/pull/149347#pullrequestreview-4218089483" title="05-04 07:34">
+                        
+                            <span class="octicon eye" title="reviewed"></span>
+                          
+                        
+                        <b>hugovk</b></a></p>
+                      
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/python/cpython/pull/149347#discussion_r3179950242" title="05-04 07:34">
+                        
+                          <span class="octicon comment resolved" title="resolved comment"></span>
+                        
+                        <b>hugovk</b>: Use sentence case for...</a></p>
+                      
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/python/cpython/pull/149347#discussion_r3182676672" title="05-04 15:34">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>warsaw</b>: Use sentence case for headers:
+
+Although, note that 803 still uses &#34;Free-Threaded Builds&#34;</a></p>
+                      
+                    </li>
+                  </ul>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/python/cpython/pull/149347#discussion_r3179954272" title="05-04 07:34">
+                        
+                          <span class="octicon comment resolved" title="resolved comment"></span>
+                        
+                        <b>hugovk</b>: Suggested change
+      
+    
+    
+      
+          
+            
+            :pep:`829`: Startup...</a></p>
+                      
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/python/cpython/pull/149347#discussion_r3182705153" title="05-04 15:39">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>warsaw</b>: Likewise move this block up between 800 and 782.
+
+I don&#39;t understand this.  800 doesn&#39;t have a...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/python/cpython/pull/149347#discussion_r3182751718" title="05-04 15:49">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>hugovk</b>: 800 is still missing docs, we&#39;ll have to add them during beta.
+782 is the first of the C API, so...</a></p>
+                      
+                    </li>
+                  </ul>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/python/cpython/pull/149347#discussion_r3179994968" title="05-04 07:34">
+                        
+                          <span class="octicon comment resolved" title="resolved comment"></span>
+                        
+                        <b>hugovk</b>: Let&#39;s link something to the new _site-pth-files reference here, perhaps link  &#34;.pth files&#34;?...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/python/cpython/pull/149347#discussion_r3179996882" title="05-04 07:34">
+                        
+                          <span class="octicon comment resolved" title="resolved comment"></span>
+                        
+                        <b>hugovk</b>: And link to _site-start-files somewhere here, perhaps &#34;.start files&#34;.</a></p>
+                      
+                    </li>
+                  </ul>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/python/cpython/pull/149347#issuecomment-4387226183" title="05-06 10:45">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>hugovk</b>: If you don&#39;t mind, I&#39;ll push some changes here and then merge. Happy to make adjustments later!</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/python/cpython/pull/149347#pullrequestreview-4235567675" title="05-06 11:13">
+                        <span class="octicon checkcircle" title="reviewed, approved"></span>
+                          
+                        
+                        <b>hugovk</b>: Thanks!</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/python/cpython/pull/149347#issuecomment-4393635868" title="05-07 02:05">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>warsaw</b>: Thanks @hugovk !  I ran out of time due to other commitments pre-PyCon</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="closed">
+
+              <p><a href="https://github.com/python/cpython/issues/149470"><span class="octicons" title="newly created; newly closed; closed issue"><span class="octicon star"></span><span class="octicon check"></span><span class="octicon wontdo issue"></span></span><b>Docs: error on page &#34;1. Command line and environment&#34;</b> #149470</a>
+              [KingSupernova31]
+
+              <span class="label" style="--label-r:9;--label-g:252;--label-b:89;--label-h:139;--label-s:97;--label-l:51;">docs</span>
+                &nbsp;&nbsp; <span class="homerepo">python/cpython</span>
+              </p><p>Documentation
+The page at https://docs.python.org/3/using/cmdline.html states, for the -O flag:
+
+Remove assert...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/python/cpython/issues/149470#issuecomment-4392445159" title="05-06 21:50">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>picnixz</b>: This is incorrect, see:
+$ echo &#34;if __debug__: print(1)&#34; | python -O -m dis
+  0           0...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/python/cpython/issues/149470#issuecomment-4392640341" title="05-06 22:24">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>KingSupernova31</b>: @picnixz __debug__ is false when python is run with the -O flag, so that code is not testing...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/python/cpython/issues/149470#issuecomment-4392667836" title="05-06 22:29">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>picnixz</b>: What I meant is: the code is eliminated. If you have a dynamic boolean, it will still emit...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/python/cpython/issues/149470#issuecomment-4392681526" title="05-06 22:33">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>picnixz</b>: As for how they are eliminated, whether it is because it is behind a &#34;if False&#34; block or not, is...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/python/cpython/issues/149470#issuecomment-4394064134" title="05-07 03:57">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>KingSupernova31</b>: Eliminating dead code is not the same thing as eliminating code that is conditional on the value...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/python/cpython/issues/149470#issuecomment-4394159788" title="05-07 04:26">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>zware</b>: It&#39;s really not clear what you&#39;re arguing here.  My best guess is that you&#39;re trying to say that...</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="open">
+
+              <p><a href="https://github.com/python/cpython/issues/149402"><span class="octicons" title="newly created; issue"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>Meta issue: improve documentation for implementation of the PEP 3118 in Python</b> #149402</a>
+              [skirpichev]
+
+              <span class="label" style="--label-r:9;--label-g:252;--label-b:89;--label-h:139;--label-s:97;--label-l:51;">docs</span>
+                <span class="label" style="--label-r:9;--label-g:252;--label-b:89;--label-h:139;--label-s:97;--label-l:51;">interpreter-core</span>
+                <span class="label" style="--label-r:9;--label-g:252;--label-b:89;--label-h:139;--label-s:97;--label-l:51;">extension-modules</span>
+                &nbsp;&nbsp; <span class="homerepo">python/cpython</span>
+              </p><p>Documentation
+Recent d.p.o discussion thread and SC decision reveal some problems with current docs.  Affected parts...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/python/cpython/issues/149402#issuecomment-4377783819" title="05-05 08:49">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>skirpichev</b>: CC @vstinner @encukou</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/python/cpython/issues/149402#issuecomment-4377883300" title="05-05 09:05">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>encukou</b>: The docs are correct: these modules all “use similar – but slightly different – type...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/python/cpython/issues/149402#issuecomment-4378433635" title="05-05 10:30">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>skirpichev</b>: The docs are correct: these modules all “use similar – but slightly different – type codes”.
+
+I...</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="">
+
+              <p><a href="https://github.com/python/cpython/pull/145067"><span class="octicons" title="draft pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon draft pull"></span></span><b>gh-49989: Add equivalent code for the &#34;for&#34; statement</b> #145067</a>
+              [serhiy-storchaka]
+
+              <span class="label" style="--label-r:9;--label-g:252;--label-b:89;--label-h:139;--label-s:97;--label-l:51;">docs</span>
+                <span class="label" style="--label-r:0;--label-g:0;--label-b:0;--label-h:0;--label-s:0;--label-l:0;">skip news</span>
+                <span class="label" style="--label-r:156;--label-g:168;--label-b:23;--label-h:64;--label-s:75;--label-l:37;">stale</span>
+                <span class="label" style="--label-r:194;--label-g:224;--label-b:198;--label-h:128;--label-s:32;--label-l:81;">needs backport to 3.13</span>
+                <span class="label" style="--label-r:194;--label-g:224;--label-b:198;--label-h:128;--label-s:32;--label-l:81;">needs backport to 3.14</span>
+                &nbsp;&nbsp; <span class="homerepo">python/cpython</span>
+              </p><p>Issue: gh-49989
+
+
+
+
+📚 Documentation preview 📚: https://cpython-previews--145067.org.readthedocs.build/</p></li>
+          <li class="">
+
+              <p><a href="https://github.com/python/cpython/pull/145087"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>docs: fix description of `function` parameter of `shutil.register_archive_format`</b> #145087</a>
+              [brianschubert]
+
+              <span class="label" style="--label-r:9;--label-g:252;--label-b:89;--label-h:139;--label-s:97;--label-l:51;">docs</span>
+                <span class="label" style="--label-r:0;--label-g:0;--label-b:0;--label-h:0;--label-s:0;--label-l:0;">skip issue</span>
+                <span class="label" style="--label-r:251;--label-g:202;--label-b:4;--label-h:48;--label-s:96;--label-l:50;">awaiting core review</span>
+                <span class="label" style="--label-r:0;--label-g:0;--label-b:0;--label-h:0;--label-s:0;--label-l:0;">skip news</span>
+                <span class="label" style="--label-r:156;--label-g:168;--label-b:23;--label-h:64;--label-s:75;--label-l:37;">stale</span>
+                <span class="label" style="--label-r:194;--label-g:224;--label-b:198;--label-h:128;--label-s:32;--label-l:81;">needs backport to 3.13</span>
+                <span class="label" style="--label-r:194;--label-g:224;--label-b:198;--label-h:128;--label-s:32;--label-l:81;">needs backport to 3.14</span>
+                &nbsp;&nbsp; <span class="homerepo">python/cpython</span>
+              </p><p>Both register_archive_format and register_unpack_format describe their function parameter as
+
+function is the...</p></li>
+          <li class="">
+
+              <p><a href="https://github.com/python/cpython/pull/149346"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>gh-121249: remove F/D type codes from table in the struct module</b> #149346</a>
               [skirpichev]
 
               <span class="label" style="--label-r:9;--label-g:252;--label-b:89;--label-h:139;--label-s:97;--label-l:51;">docs</span>
                 <span class="label" style="--label-r:251;--label-g:202;--label-b:4;--label-h:48;--label-s:96;--label-l:50;">awaiting review</span>
+                <span class="label" style="--label-r:0;--label-g:0;--label-b:0;--label-h:0;--label-s:0;--label-l:0;">skip news</span>
                 &nbsp;&nbsp; <span class="homerepo">python/cpython</span>
               </p><p>Issue: gh-121249</p><ul class="comments">
                   <li>
@@ -3278,6 +3342,46 @@ It&#39;s an alternative to #148676, see...</a></p>
                         <b>skirpichev</b>: I removed F/D types from the table and postponed removal to 3.20.  I think it&#39;s now along line...</a></p>
                       
                     </li>
+                  <li>
+                      <p><a href="https://github.com/python/cpython/pull/149346#issuecomment-4389651800" title="05-06 15:33">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>vstinner</b>: It&#39;s too late to introduce a deprecation in Python 3.15. We can reconsider a deprecation in Python 3.16.</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/python/cpython/pull/149346#issuecomment-4393740392" title="05-07 02:24">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>skirpichev</b>: @vstinner, deprecation was reverted.</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="">
+
+              <p><a href="https://github.com/python/cpython/pull/149483"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>gh-149402: don&#39;t assume single-character type codes (struct/array/ctypes)</b> #149483</a>
+              [skirpichev]
+
+              <span class="label" style="--label-r:9;--label-g:252;--label-b:89;--label-h:139;--label-s:97;--label-l:51;">docs</span>
+                <span class="label" style="--label-r:251;--label-g:202;--label-b:4;--label-h:48;--label-s:96;--label-l:50;">awaiting review</span>
+                <span class="label" style="--label-r:0;--label-g:0;--label-b:0;--label-h:0;--label-s:0;--label-l:0;">skip news</span>
+                &nbsp;&nbsp; <span class="homerepo">python/cpython</span>
+              </p><p>In the struct docs, section &#34;Format Characters&#34; was renamed to &#34;Type Codes&#34;.
+
+
+
+Issue: gh-149402</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/python/cpython/pull/149483#issuecomment-4395150912" title="05-07 07:42">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>skirpichev</b>: RTFD failure seems to be not related to the PR.</a></p>
+                      
+                    </li>
                   </ul>
               </li>
           </ul>
@@ -3292,60 +3396,6 @@ It&#39;s an alternative to #148676, see...</a></p>
       </p>
       
         <ul class="entries">
-          <li class="">
-
-              <p><a href="https://github.com/python/devguide/pull/1796"><span class="octicons" title="newly merged; merged pull request"><span class="octicon dash"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>PSRT: Add link to report security issues</b> #1796</a>
-              [hugovk]
-
-              
-              </p><p>https://devguide.python.org/developer-workflow/psrt/ shows up first (for me) in Google for &#34;PSRT&#34;.
-This page is...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/python/devguide/pull/1796#discussion_r3163345814" title="04-29 18:39">
-                        
-                            <span class="octicon eye" title="reviewed"></span>
-                          
-                        
-                        <b>StanFromIreland</b>: WDYT about making it a nice sphinx-design button with text like &#34;Report a security issue&#34;?</a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/python/devguide/pull/1796#discussion_r3163656900" title="04-29 19:33">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>hugovk</b>: I don&#39;t think we need an extra Sphinx extension just for this.</a></p>
-                      
-                    </li>
-                  </ul>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/python/devguide/pull/1796#pullrequestreview-4200126410" title="04-29 19:34">
-                        <span class="octicon checkcircle" title="reviewed, approved"></span>
-                          
-                        
-                        <b>sethmlarson</b>: Thanks Hugo, this is a good idea.</a></p>
-                      
-                    </li>
-                  </ul>
-              </li>
-          <li class="">
-
-              <p><a href="https://github.com/python/devguide/pull/1797"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Fix subpixel gap between release cycle mask rects</b> #1797</a>
-              [qb20nh]
-
-              
-              </p><p>Fix subpixel gap by stretching white part by 1 pixel into black area, and moving gradient mask to top in z...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/python/devguide/pull/1797#issuecomment-4349905041" title="04-30 05:23">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>qb20nh</b>: Will the image at https://www.python.org/downloads/ be updated by this too?</a></p>
-                      
-                    </li>
-                  </ul>
-              </li>
           <li class="open">
 
               <p><a href="https://github.com/python/devguide/issues/1791"><span class="octicons" title="issue"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>Feature: Add Homebrew as a way to get build dependencies installed on Linux</b> #1791</a>
@@ -3370,7 +3420,7 @@ This page is...</p><ul class="comments">
   </ul>
 
 <p class="footer">
-  created at 2026-05-06 07:50 by
+  created at 2026-05-07 07:56 by
   <a href="https://pypi.org/project/dinghy/1.4.1">
     dinghy
     <span class="dinghy_version">1.4.1</span></a>.
