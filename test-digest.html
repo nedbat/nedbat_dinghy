@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Sample Dinghy report
    — 
-  Activity since 2026-01-30</title>
+  Activity since 2026-06-12</title>
   <link rel="icon" href="https://raw.githubusercontent.com/primer/octicons/main/icons/comment-discussion-24.svg" type="image/svg+xml">
   <style>
   body {
@@ -208,7 +208,7 @@
 
 <h1>Sample Dinghy report
    — 
-  Activity since 2026-01-30</h1>
+  Activity since 2026-06-12</h1>
 
 
 
@@ -222,45 +222,71 @@
         <ul class="entries">
           <li class="">
 
-              <p><a href="https://github.com/psf/black/pull/4978"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>A few more small CI tweaks</b> #4978</a>
-              [cobaltt7]
+              <p><a href="https://github.com/psf/black/pull/5170"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Parenthesize singleton tuples in yield expressions</b> #5170</a>
+              [wayyoungboy]
 
-              <span class="label" style="--label-r:0;--label-g:0;--label-b:0;--label-h:0;--label-s:0;--label-l:0;">skip news</span>
-                
-              </p><p>Description
+              
+              </p><p>Fixes #3851.
+Summary
 
-A small followup to #4928 with a few more things I noticed since then
-Notable changes:
-
-Change Fuzz to...</p><ul class="comments">
+normalize yield expressions so bare singleton tuple yields like yield x, become yield...</p><ul class="comments">
                   <li>
-                      <p><a href="https://github.com/psf/black/pull/4978#discussion_r2750532587" title="02-01 04:57">
-                        
-                            <span class="octicon eye" title="reviewed"></span>
-                          
-                        
-                        <b>JelleZijlstra</b>: I&#39;m strongly against these changes. In practice, major versions aren&#39;t an especially good...</a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/psf/black/pull/4978#discussion_r2750598855" title="02-01 06:12">
+                      <p><a href="https://github.com/psf/black/pull/5170#issuecomment-4693315007" title="06-12 16:46">
                         
                           <span class="octicon comment" title="comment"></span>
                         
-                        <b>hauntsaninja</b>: see also https://iscinumpy.dev/post/bound-version-constraints/</a></p>
+                        <b>wayyoungboy</b>: 谢谢！这个变化不仅影响单元组，还让任何元组的语句更像函数，但我认为总体来说这是个好变化，有助于一致性。yield``yield
+这改变了Black的格式，因此需要将它限制为预览样式。请参见01c...</a></p>
                       
                     </li>
-                  </ul>
+                  <li>
+                      <p><a href="https://github.com/psf/black/pull/5170#issuecomment-4693353982" title="06-12 16:52">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>wayyoungboy</b>: Updated.</a></p>
                       
                     </li>
                   </ul>
               </li>
+          <li class="">
+
+              <p><a href="https://github.com/psf/black/pull/5177"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>avoid quadratic opening-bracket scan in is_one_sequence_between</b> #5177</a>
+              [sahvx655-wq]
+
+              
+              </p><p>Profiling format_str on a single long call such as result = g(f(a, b, c, d, e, f), ...) showed...</p></li>
+          <li class="">
+
+              <p><a href="https://github.com/psf/black/pull/5178"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>avoid rebuilding sibling maps on every node mutation</b> #5178</a>
+              [sahvx655-wq]
+
+              
+              </p><p>Description
+While profiling --preview runs over string-heavy modules I traced a quadratic in format_str to the...</p></li>
+          <li class="open">
+
+              <p><a href="https://github.com/psf/black/issues/5179"><span class="octicons" title="newly created; issue"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>Localization of The Black Documentation</b> #5179</a>
+              [hwhsu1231]
+
+              
+              </p><p>Announcement
+Hello, Black Community,
+I am the author of the @localizethedocs organization. And I’m glad to announce...</p></li>
+          <li class="">
+
+              <p><a href="https://github.com/psf/black/pull/5113"><span class="octicons" title="newly closed; closed pull request"><span class="octicon dash"></span><span class="octicon x"></span><span class="octicon closed pull"></span></span><b>Fix standalone comment before binary op causing unnecessary split</b> #5113</a>
+              [HoraDomu]
+
+              
+              </p><p>Fixes #3713</p></li>
           </ul>
       
     </li>
   </ul>
 
 <p class="footer">
-  created at 2026-02-02 13:39 by
+  created at 2026-06-15 13:28 by
   <a href="https://pypi.org/project/dinghy/1.4.1">
     dinghy
     <span class="dinghy_version">1.4.1</span></a>.
