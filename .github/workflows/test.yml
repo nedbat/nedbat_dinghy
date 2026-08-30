@@ -18,7 +18,7 @@ concurrency:
 jobs:
   digest:
     name: "Daily digest"
-    uses: ./.github/workflows/daily-digest.yml
+    uses: $/.github/workflows/daily-digest.yml
     with:
       config: test.yaml
     secrets:
