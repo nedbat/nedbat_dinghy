@@ -214,110 +214,25 @@
 
 <ul class="repos">
   <li>
-      <p><span class="reponame" id="coveragepy"><a href="https://github.com/coveragepy/coveragepy">Coverage.py</a></span>
-      repo issues, pull requests, and releases
+      <p><span class="reponame" id="coveragepy"><a href="https://github.com/search?q=repo%3Acoveragepy%2Fcoveragepy+state%3Aopen+updated%3A%3E2026-11-04T15%3A42%3A55&amp;type=issues">Coverage.py</a></span>
+      search items
       
       </p>
       
         <ul class="entries">
-          <li class="">
+          <li class="open">
 
-              <p><a href="https://github.com/coveragepy/coveragepy/pull/2360"><span class="octicons" title="newly merged; merged pull request"><span class="octicon dash"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>fix: don&#39;t initialize a data file we can only read</b> #2360</a>
-              [simpleqt]
+              <p><a href="https://github.com/coveragepy/coveragepy/issues/2358"><span class="octicons" title="issue"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>Combining unexecuted default-tracer files with plugin measurements raises a tracer conflict</b> #2358</a>
+              [harshitdeora]
 
-              
-              </p><p>Fixes the empty-data-file crash reported in #2356.
-Root cause
-CoverageData._read_db() initializes the schema when a...</p><ul class="comments">
+              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
+              </p><p>Following up on the distributed-coverage failure in pytest-cov #642: an unexecuted source file recorded without a...</p><ul class="comments">
                   <li>
-                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2360#issuecomment-6636384085" title="11-04 16:44">
+                      <p><a href="https://github.com/coveragepy/coveragepy/issues/2358#issuecomment-6639455421" title="11-04 19:03">
                         
                           <span class="octicon comment" title="comment"></span>
                         
-                        <b>simpleqt</b>: Understood — closing this so it does not sit in your queue, since you have #2357 in hand.
-For...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2360#issuecomment-6636588303" title="11-04 16:53">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>simpleqt</b>: Closing this now rather than leaving it open — and I want to correct what I told you yesterday,...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2360#issuecomment-6637408074" title="11-04 17:28">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>nedbat</b>: I don&#39;t see a comment from you about journal_mode. I think this PR is the right fix for the...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2360#issuecomment-6638801171" title="11-04 18:32">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>simpleqt</b>: Thanks for merging it, and thank you for the two things you added.
-The guard is what I should...</a></p>
-                      
-                    </li>
-                  </ul>
-              </li>
-          <li class="">
-
-              <p><a href="https://github.com/coveragepy/coveragepy/releases/tag/7.17.2"><span class="octicons" title="newly created; release"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon release"></span></span><b>7.17.2</b>
-                <span class="octicon dash"></span>
-                <span class="octicon tag"></span>7.17.2
-                <span class="octicon commit"></span>d0d3e1d</a>
-              [nedbat]
-
-              
-              </p><p>## Version 7.17.2 — 2026-11-04
-
-- Fix: two different scenarios failed with “attempt to write a readonly database”....</p></li>
-          <li class="closed">
-
-              <p><a href="https://github.com/coveragepy/coveragepy/issues/2356"><span class="octicons" title="closed issue"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon closed issue"></span></span><b>7.17.1 gives sqlite3.OperationalError: attempt to write a readonly database</b> #2356</a>
-              [Paul-Durrant]
-
-              <span class="label" style="--label-r:255;--label-g:119;--label-b:136;--label-h:352;--label-s:100;--label-l:73;">bug</span>
-                <span class="label" style="--label-r:144;--label-g:221;--label-b:244;--label-h:193;--label-s:81;--label-l:76;">sql</span>
-                <span class="label" style="--label-r:136;--label-g:238;--label-b:102;--label-h:105;--label-s:80;--label-l:66;">fixed</span>
-                
-              </p><p>Describe the bug
-We&#39;re using coverage in a gitlab pipeline. The pipeline worked fine with 7.17.0, but fails with...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/coveragepy/coveragepy/issues/2356#issuecomment-6640578299" title="11-04 19:53">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>nedbat</b>: This is now released as part of coverage 7.17.2.</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/coveragepy/coveragepy/issues/2356#issuecomment-6641479749" title="11-04 20:36">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>ellieayla</b>: Do we want to yank the 7.17.1 release from PyPI?</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/coveragepy/coveragepy/issues/2356#issuecomment-6641723909" title="11-04 20:47">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>nedbat</b>: I don&#39;t see a need to yank the release. It&#39;s not a security problem, it&#39;s not dangerous. It just...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/coveragepy/coveragepy/issues/2356#issuecomment-6653350000" title="11-05 08:27">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>Paul-Durrant</b>: Many thanks for the quick fix and release, and thanks also to those people who found time to...</a></p>
+                        <b>ericdelorefice</b>: Thanks for cutting this down to the CoverageData API, it made it quick to check. I see the same...</a></p>
                       
                     </li>
                   </ul>
@@ -327,14 +242,14 @@ We&#39;re using coverage in a gitlab pipeline. The pipeline worked fine with 7.1
               <p><a href="https://github.com/coveragepy/coveragepy/pull/2361"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>test: fix the &#39;Combined 3 files, skipped 1&#39; flake in MultiprocessingTest</b> #2361</a>
               [glaziermag]
 
-              
+              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
               </p><p>MultiprocessingTest sometimes fails with assert &#39;Combined 3 files, skipped 1&#39; == &#39;Combined 2 files, skipped 2&#39;: on...</p></li>
           <li class="">
 
               <p><a href="https://github.com/coveragepy/coveragepy/pull/2331"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>fix: excluded lines end a range of missing lines</b> #2331</a>
               [Mohanad49]
 
-              
+              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
               </p><p>Closes #1691.
 The Missing column joins missing lines into one range as long as no executed statement sits between...</p></li>
           <li class="open">
@@ -342,7 +257,7 @@ The Missing column joins missing lines into one range as long as no executed sta
               <p><a href="https://github.com/coveragepy/coveragepy/issues/2362"><span class="octicons" title="newly created; issue"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>patch = subprocess: SIGINT-killed child exits 1 instead of -2 on Python 3.13 (regression in 7.17.1)</b> #2362</a>
               [boldaxolotl]
 
-              
+              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
               </p><p>Describe the bug
 With [run] patch = subprocess, a Python child process that is interrupted by SIGINT exits with...</p></li>
           <li class="">
@@ -350,7 +265,7 @@ With [run] patch = subprocess, a Python child process that is interrupted by SIG
               <p><a href="https://github.com/coveragepy/coveragepy/pull/2363"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>docs: document [report] partial_branches_always</b> #2363</a>
               [Aryapatel-007]
 
-              
+              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
               </p><p>[report] partial_branches_always is read in coverage/config.py, used by no_branch_lines() in coverage/python.py, and...</p></li>
           <li class="open">
 
@@ -358,7 +273,7 @@ With [run] patch = subprocess, a Python child process that is interrupted by SIG
               [vEpiphyte]
 
               <span class="label" style="--label-r:255;--label-g:119;--label-b:136;--label-h:352;--label-s:100;--label-l:73;">bug</span>
-                
+                &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
               </p><p>Describe the bug
 Since 7.17.1, combine_parallel_data() (and so Coverage.combine() / coverage combine) crashes with...</p></li>
           <li class="">
@@ -366,14 +281,14 @@ Since 7.17.1, combine_parallel_data() (and so Coverage.combine() / coverage comb
               <p><a href="https://github.com/coveragepy/coveragepy/pull/2365"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>fix: continue combining when a parallel data file disappears</b> #2365</a>
               [Jinyong-Li]
 
-              
+              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
               </p><p>A worker can rename its parallel data file after coverage combine has discovered it. If the old path is gone when...</p></li>
           <li class="">
 
               <p><a href="https://github.com/coveragepy/coveragepy/pull/2367"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>fix: reject wildcard result paths in [paths] configuration</b> #2367</a>
               [cdytotoro-ctrl]
 
-              
+              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
               </p><p>Fixes #1531.
 Problem
 A [paths] entry whose result (second and later) column is fine, but whose first column contains...</p></li>
@@ -382,7 +297,7 @@ A [paths] entry whose result (second and later) column is fine, but whose first 
               <p><a href="https://github.com/coveragepy/coveragepy/pull/2368"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>fix: issues #2364-2362 - parallel data combine crash and SIGINT exit code handling</b> #2368</a>
               [Sahas2711]
 
-              
+              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
               </p><p>Summary
 This PR fixes two regressions in coverage.py 7.17.x: a parallel data combine crash when files vanish...</p></li>
           <li class="">
@@ -390,7 +305,7 @@ This PR fixes two regressions in coverage.py 7.17.x: a parallel data combine cra
               <p><a href="https://github.com/coveragepy/coveragepy/pull/2353"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>fix: don&#39;t drop same-named functions and classes from the JSON report</b> #2353</a>
               [nk-batman21]
 
-              
+              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
               </p><p>The JSON report keys each file&#39;s functions and classes by name, but Python code often has more than one function or...</p><ul class="comments">
                   <li>
                       <p><a href="https://github.com/coveragepy/coveragepy/pull/2353#issuecomment-6690486043" title="11-06 16:58">
@@ -415,14 +330,14 @@ This PR fixes two regressions in coverage.py 7.17.x: a parallel data combine cra
               <p><a href="https://github.com/coveragepy/coveragepy/pull/2307"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Fix outer sysmon collection after nested Coverage stops</b> #2307</a>
               [DITlieD]
 
-              
+              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
               </p><p>Starting and stopping a nested Coverage instance could prevent an outer sysmon collection from recording new lines...</p></li>
           <li class="">
 
               <p><a href="https://github.com/coveragepy/coveragepy/pull/2366"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>fix: report a vanishing parallel data file instead of crashing combine</b> #2366</a>
               [cdytotoro-ctrl]
 
-              
+              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
               </p><p>Fixes #2364.
 Since 7.17.1, combine_parallel_data() aborts with an uncaught DataError when a parallel data file...</p><ul class="comments">
                   <li>
@@ -456,7 +371,7 @@ Since 7.17.1, combine_parallel_data() aborts with an uncaught DataError when a p
               <p><a href="https://github.com/coveragepy/coveragepy/pull/2342"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>fix: restart coverage from parent config in patch=fork child process</b> #2342</a>
               [SwastikTripathi]
 
-              
+              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
               </p><p>Bug
 _after_fork_in_child() stops the parent&#39;s coverage and then calls process_startup(force=True), which requires...</p><ul class="comments">
                   <li>
@@ -483,7 +398,7 @@ _after_fork_in_child() stops the parent&#39;s coverage and then calls process_st
   </ul>
 
 <p class="footer">
-  created at 2026-11-07 15:29 by
+  created at 2026-11-07 15:42 by
   <a href="https://pypi.org/project/dinghy/1.4.1">
     dinghy
     <span class="dinghy_version">1.4.1</span></a>.
