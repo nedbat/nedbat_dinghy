@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>One week
+   — 
+  Activity since 2026-10-31</title>
+  <link rel="icon" href="https://raw.githubusercontent.com/primer/octicons/main/icons/comment-discussion-24.svg" type="image/svg+xml">
+  <style>
+  body {
+    font-family: sans-serif;
+    max-width: 60em;
+    margin: auto;
+    line-height: 1.3;
+    color: black;
+  }
+  .navslugs {
+    margin-top: -1em;
+  }
+  .totop {
+    float: right;
+  }
+  ul {
+    padding-left: 0;
+    list-style-type: none;
+  }
+  li {
+    margin: 0;
+  }
+  li p {
+    margin: 0;
+  }
+  ul.repos > li {
+    margin-top: 2em;
+  }
+  ul.entries > li {
+    margin-top: 1em;
+  }
+  ul.entries > li > p {
+    margin-left: 4.2em;
+  }
+  ul.entries > li > p:first-child {
+    text-indent: -2.1em;   /* not sure why it's half the 4.2em indent */
+  }
+  ul.comments > li > p {
+    margin-left: 4.2em;
+    padding-left: 1.6em;
+    text-indent: -1.6em;
+  }
+  ul.thread_comment ul.thread_comment {
+    padding-left: 1.6em;
+  }
+  ul.thread_comment > li > p {
+    padding-left: 7.3em;
+    text-indent: -1.6em;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  a:hover {
+    text-decoration: none;
+    color: #0969da;
+  }
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  .reponame {
+    font-weight: bold;
+    font-size: 150%;
+    margin-right: .5em;
+  }
+  .label {
+    padding: .2em .5em .1em .5em;
+    border-radius: 2em;
+    font-size: 75%;
+    opacity: .85;
+    vertical-align: middle;
+    white-space: nowrap;
+    /* GitHub label style computations, lifted from github.com */
+    border: 1px solid transparent;
+    --perceived-lightness: calc( ((var(--label-r) * 0.2126) + (var(--label-g) * 0.7152) + (var(--label-b) * 0.0722)) / 255 );
+    --lightness-switch: max(0, min(calc((var(--perceived-lightness) - var(--lightness-threshold)) * -1000), 1));
+    --lightness-threshold: 0.453;
+    --border-threshold: 0.96;
+    --border-alpha: max(0, min(calc((var(--perceived-lightness) - var(--border-threshold)) * 100), 1));
+    background: rgb(var(--label-r), var(--label-g), var(--label-b));
+    color: hsl(0, 0%, calc(var(--lightness-switch) * 100%));
+    border-color: hsla(var(--label-h), calc(var(--label-s) * 1%), calc((var(--label-l) - 25) * 1%), var(--border-alpha));
+  }
+  .homerepo {
+    color: #888;
+  }
+  .boring > p {
+    color: #888;
+  }
+  .footer {
+    color: #888;
+    font-style: italic;
+    margin-top: 3em;
+  }
+  .octicons {
+    display: inline-block;
+    padding-right: .3em;
+  }
+  .octicon {
+    width: 1.3em;
+    height: 1em;
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    padding-bottom: .2em;
+  }
+  .octicon.star {
+    background-image: url(https://raw.githubusercontent.com/primer/octicons/main/icons/star-16.svg);
+  filter: invert(1) brightness(.5) sepia(1) hue-rotate(98deg) saturate(8) brightness(0.5);
+  
+  }
+  .octicon.x {
+    background-image: url(https://raw.githubusercontent.com/primer/octicons/main/icons/x-16.svg);
+  
+  }
+  .octicon.check {
+    background-image: url(https://raw.githubusercontent.com/primer/octicons/main/icons/check-16.svg);
+  
+  }
+  .octicon.checkcircle {
+    background-image: url(https://raw.githubusercontent.com/primer/octicons/main/icons/check-circle-16.svg);
+  filter: invert(1) brightness(.5) sepia(1) hue-rotate(98deg) saturate(8) brightness(0.5);
+  
+  }
+  .octicon.comment.resolved {
+    background-image: url(https://raw.githubusercontent.com/primer/octicons/main/icons/tasklist-16.svg);
+  filter: invert(1) brightness(.5) sepia(1) hue-rotate(98deg) saturate(8) brightness(0.5);
+  
+  }
+  .octicon.comment {
+    background-image: url(https://raw.githubusercontent.com/primer/octicons/main/icons/comment-16.svg);
+  
+  }
+  .octicon.eye {
+    background-image: url(https://raw.githubusercontent.com/primer/octicons/main/icons/eye-16.svg);
+  
+  }
+  .octicon.filediff {
+    background-image: url(https://raw.githubusercontent.com/primer/octicons/main/icons/file-diff-16.svg);
+  filter: invert(1) brightness(.5) sepia(1) hue-rotate(316deg) saturate(6) brightness(.8);
+  
+  }
+  .octicon.dash {
+    background-image: url(https://raw.githubusercontent.com/primer/octicons/main/icons/dash-16.svg);
+  filter: invert(1) brightness(.5) sepia(1) hue-rotate(172deg) saturate(0.43) brightness(1.25);
+  
+  }
+  .octicon.pull {
+    background-image: url(https://raw.githubusercontent.com/primer/octicons/main/icons/git-pull-request-16.svg);
+  filter: invert(1) brightness(.5) sepia(1) hue-rotate(98deg) saturate(8) brightness(0.5);
+  
+  }
+  .octicon.pull.draft {
+    background-image: url(https://raw.githubusercontent.com/primer/octicons/main/icons/git-pull-request-draft-16.svg);
+  filter: invert(1) brightness(.5) sepia(1) hue-rotate(172deg) saturate(0.43) brightness(0.65);
+  
+  }
+  .octicon.pull.closed {
+    background-image: url(https://raw.githubusercontent.com/primer/octicons/main/icons/git-pull-request-closed-16.svg);
+  filter: invert(1) brightness(.5) sepia(1) hue-rotate(316deg) saturate(6) brightness(.8);
+  
+  }
+  .octicon.pull.merged {
+    background-image: url(https://raw.githubusercontent.com/primer/octicons/main/icons/git-merge-16.svg);
+  filter: invert(1) brightness(.5) sepia(1) hue-rotate(220deg) saturate(8) brightness(.65);
+  
+  }
+  .octicon.issue {
+    background-image: url(https://raw.githubusercontent.com/primer/octicons/main/icons/issue-opened-16.svg);
+  filter: invert(1) brightness(.5) sepia(1) hue-rotate(98deg) saturate(8) brightness(0.5);
+  
+  }
+  .octicon.issue.closed {
+    background-image: url(https://raw.githubusercontent.com/primer/octicons/main/icons/issue-closed-16.svg);
+  filter: invert(1) brightness(.5) sepia(1) hue-rotate(220deg) saturate(8) brightness(.65);
+  
+  }
+  .octicon.issue.wontdo {
+    background-image: url(https://raw.githubusercontent.com/primer/octicons/main/icons/skip-16.svg);
+  filter: invert(1) brightness(.5) sepia(1) hue-rotate(172deg) saturate(0.43) brightness(0.65);
+  
+  }
+  .octicon.tag {
+    background-image: url(https://raw.githubusercontent.com/primer/octicons/main/icons/tag-16.svg);
+  filter: invert(1) brightness(.5) sepia(1) hue-rotate(172deg) saturate(0.43) brightness(0.65);
+  
+  }
+  .octicon.commit {
+    background-image: url(https://raw.githubusercontent.com/primer/octicons/main/icons/git-commit-16.svg);
+  filter: invert(1) brightness(.5) sepia(1) hue-rotate(172deg) saturate(0.43) brightness(0.65);
+  
+  }
+  .octicon.release {
+    background-image: url(https://raw.githubusercontent.com/primer/octicons/main/icons/package-16.svg);
+  filter: invert(1) brightness(.5) sepia(1) hue-rotate(98deg) saturate(8) brightness(0.5);
+  
+  }
+  </style>
+</head>
+<body id="top">
+
+<h1>One week
+   — 
+  Activity since 2026-10-31</h1>
+
+
+
+<ul class="repos">
+  <li>
+      <p><span class="reponame" id="coveragepy"><a href="https://github.com/coveragepy/coveragepy">Coverage.py</a></span>
+      repo issues, pull requests, and releases
+      
+      </p>
+      
+        <ul class="entries">
+          <li class="">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/pull/2235"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Add Coverage.clear_data() for lightweight data reset</b> #2235</a>
+              [pctablet505]
+
+              
+              </p><p>Closes #2139
+Adds Coverage.clear_data(). It discards collected data but keeps the setup from the first start()....</p></li>
+          <li class="">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/releases/tag/7.17.1"><span class="octicons" title="newly created; release"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon release"></span></span><b>7.17.1</b>
+                <span class="octicon dash"></span>
+                <span class="octicon tag"></span>7.17.1
+                <span class="octicon commit"></span>1941ee1</a>
+              [nedbat]
+
+              
+              </p><p>## Version 7.17.1 — 2026-11-03
+
+- Fix: a one-line class or function body immediately followed by another statement...</p></li>
+          <li class="closed">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/issues/2167"><span class="octicons" title="closed issue"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon closed issue"></span></span><b>3.14: uncovered branch for single line class</b> #2167</a>
+              [bfis]
+
+              <span class="label" style="--label-r:255;--label-g:119;--label-b:136;--label-h:352;--label-s:100;--label-l:73;">bug</span>
+                
+              </p><p>Describe the bug
+In python 3.14 there is a uncovered branch detected of a class is only a single line and followed...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/issues/2167#issuecomment-6604004742" title="11-03 12:39">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>nedbat</b>: This is now released as part of coverage 7.17.1.</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="closed">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/issues/2291"><span class="octicons" title="closed issue"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon closed issue"></span></span><b>--source=/ matches no files</b> #2291</a>
+              [Vaibhavtripathi7]
+
+              
+              </p><p>Splitting this out of #2290 per @nedbat&#39;s comment there. Reported by @KRRT7, this is the --source=/ item from that...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/issues/2291#issuecomment-6604005048" title="11-03 12:39">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>nedbat</b>: This is now released as part of coverage 7.17.1.</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="closed">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/issues/2337"><span class="octicons" title="closed issue"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon closed issue"></span></span><b>sysmon + branch: phantom missing branch to elided statement (?)</b> #2337</a>
+              [asottile]
+
+              <span class="label" style="--label-r:255;--label-g:119;--label-b:136;--label-h:352;--label-s:100;--label-l:73;">bug</span>
+                <span class="label" style="--label-r:136;--label-g:238;--label-b:102;--label-h:105;--label-s:80;--label-l:66;">fixed</span>
+                
+              </p><p>Describe the bug
+this is low priority I think -- but I found it while reducing down a different testcase.
+def...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/issues/2337#issuecomment-6604005406" title="11-03 12:39">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>nedbat</b>: This is now released as part of coverage 7.17.1.</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="closed">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/issues/2295"><span class="octicons" title="closed issue"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon closed issue"></span></span><b>--fail-under prints a self-contradictory failure message</b> #2295</a>
+              [KRRT7]
+
+              
+              </p><p>Split out of #2290 as requested.
+Describe the bug
+The --fail-under failure message can state something plainly...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/issues/2295#issuecomment-6604005766" title="11-03 12:39">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>nedbat</b>: This is now released as part of coverage 7.17.1.</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="closed">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/issues/2357"><span class="octicons" title="newly created; newly closed; closed issue"><span class="octicon star"></span><span class="octicon check"></span><span class="octicon closed issue"></span></span><b>Coverage fails with sqlite readonly error after upgrading to 7.71.1</b> #2357</a>
+              [ShreyasMahangade]
+
+              <span class="label" style="--label-r:255;--label-g:119;--label-b:136;--label-h:352;--label-s:100;--label-l:73;">bug</span>
+                
+              </p><p>Describe the bug
+After upgrading to latest version 1.17.1 ci/cd failing with below error:
+INTERNALERROR&gt; Traceback...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/issues/2357#issuecomment-6610952962" title="11-03 17:30">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>vsajko</b>: I have same bug on Rocky 8
+I cannot repro on Fedora 44
+It seems that problem is in...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/issues/2357#issuecomment-6611300783" title="11-03 17:46">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>nedbat</b>: I&#39;m closing this as a duplicate of #2356, but these details are helpful, thanks.  On #2356 can...</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/pull/2359"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>fix: don&#39;t treat a touched file as a conflicting tracer claim</b> #2359</a>
+              [inchang-ing]
+
+              
+              </p><p>The problem
+CoverageData.update() rejects any pair of data files that disagree about a file&#39;s tracer, including the...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2359#issuecomment-6611834401" title="11-03 18:12">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>inchang-ing</b>: Heads-up on the red Tests successful check, in case it looks like this branch broke something:...</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/pull/2350"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>fix: hold the data lock only to snapshot, and make it re-entrant</b> #2350</a>
+              [inchang-ing]
+
+              
+              </p><p>Summary
+Collector._clear_data held the non-reentrant data_lock while iterating self.data. A GC started in that...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2350#issuecomment-6590884756" title="11-02 23:13">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>ericdelorefice</b>: Thanks for the fix, @inchang-ing. I reproduced #2348 on main, and this PR fixes it in my runs...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2350#issuecomment-6598352190" title="11-03 07:55">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>inchang-ing</b>: Thanks, that is a useful find. I added your test to ApiTest unchanged (commit...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2350#issuecomment-6618136278" title="11-03 23:28">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>inchang-ing</b>: Pushed e7b5b590, which drops the retry loop and covers the two lines that the Combine coverage...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2350#issuecomment-6618812677" title="11-04 00:10">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>inchang-ing</b>: Two more commits, both from CI feedback on the new test:
+
+547dba20 — bind collector.data to a...</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/pull/2123"><span class="octicons" title="newly closed; closed pull request"><span class="octicon dash"></span><span class="octicon x"></span><span class="octicon closed pull"></span></span><b>fix: sysmon coverage for nested context managers</b> #2123</a>
+              [miketheman]
+
+              
+              </p><p>Resolves #1987
+
+Extract helper for frame references
+Track last lines during sysmon branch coverage to catch them...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2123#issuecomment-6634223419" title="11-04 15:10">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>miketheman</b>: Closing this, since f95c980 fixed #1987 in the parser, so the sysmon changes here aren&#39;t...</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/pull/2360"><span class="octicons" title="newly created; newly merged; merged pull request"><span class="octicon star"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>fix: don&#39;t initialize a data file we can only read</b> #2360</a>
+              [simpleqt]
+
+              
+              </p><p>Fixes the empty-data-file crash reported in #2356.
+Root cause
+CoverageData._read_db() initializes the schema when a...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2360#issuecomment-6618586693" title="11-03 23:57">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>nedbat</b>: This doesn&#39;t account for the stack trace in #2357, so I want more information.</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2360#issuecomment-6619839384" title="11-04 01:15">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>simpleqt</b>: Thanks — the question sent me back to the traceback, and I think I can account for it now. It is...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2360#issuecomment-6631193335" title="11-04 12:56">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>nedbat</b>: Thanks for the work, I&#39;m fixing this separately.</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2360#issuecomment-6633321094" title="11-04 14:32">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>nedbat</b>: This is a separate case, so I will take the fix.</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2360#issuecomment-6636384085" title="11-04 16:44">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>simpleqt</b>: Understood — closing this so it does not sit in your queue, since you have #2357 in hand.
+For...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2360#issuecomment-6636588303" title="11-04 16:53">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>simpleqt</b>: Closing this now rather than leaving it open — and I want to correct what I told you yesterday,...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2360#issuecomment-6637408074" title="11-04 17:28">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>nedbat</b>: I don&#39;t see a comment from you about journal_mode. I think this PR is the right fix for the...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2360#issuecomment-6638801171" title="11-04 18:32">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>simpleqt</b>: Thanks for merging it, and thank you for the two things you added.
+The guard is what I should...</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="open">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/issues/2358"><span class="octicons" title="newly created; issue"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>Combining unexecuted default-tracer files with plugin measurements raises a tracer conflict</b> #2358</a>
+              [harshitdeora]
+
+              
+              </p><p>Following up on the distributed-coverage failure in pytest-cov #642: an unexecuted source file recorded without a...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/issues/2358#issuecomment-6639455421" title="11-04 19:03">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>ericdelorefice</b>: Thanks for cutting this down to the CoverageData API, it made it quick to check. I see the same...</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/releases/tag/7.17.2"><span class="octicons" title="newly created; release"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon release"></span></span><b>7.17.2</b>
+                <span class="octicon dash"></span>
+                <span class="octicon tag"></span>7.17.2
+                <span class="octicon commit"></span>d0d3e1d</a>
+              [nedbat]
+
+              
+              </p><p>## Version 7.17.2 — 2026-11-04
+
+- Fix: two different scenarios failed with “attempt to write a readonly database”....</p></li>
+          <li class="closed">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/issues/2356"><span class="octicons" title="newly created; newly closed; closed issue"><span class="octicon star"></span><span class="octicon check"></span><span class="octicon closed issue"></span></span><b>7.17.1 gives sqlite3.OperationalError: attempt to write a readonly database</b> #2356</a>
+              [Paul-Durrant]
+
+              <span class="label" style="--label-r:255;--label-g:119;--label-b:136;--label-h:352;--label-s:100;--label-l:73;">bug</span>
+                <span class="label" style="--label-r:144;--label-g:221;--label-b:244;--label-h:193;--label-s:81;--label-l:76;">sql</span>
+                <span class="label" style="--label-r:136;--label-g:238;--label-b:102;--label-h:105;--label-s:80;--label-l:66;">fixed</span>
+                
+              </p><p>Describe the bug
+We&#39;re using coverage in a gitlab pipeline. The pipeline worked fine with 7.17.0, but fails with...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/issues/2356#issuecomment-6608449562" title="11-03 15:50">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>MichaelSquires</b>: We&#39;re seeing similar issues.</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/issues/2356#issuecomment-6611320034" title="11-03 17:47">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>nedbat</b>: It looks like this is specific to pytest-cov.  People who are seeing this issue: are you using...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/issues/2356#issuecomment-6613322966" title="11-03 19:22">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>OurBoy22</b>: Seeing similar issues as well, we are going to revert version</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/issues/2356#issuecomment-6613507956" title="11-03 19:31">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>nedbat</b>: Hey everyone, sorry about the breakage, but &#34;me too&#34; isn&#39;t useful. Tell me if you are using...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/issues/2356#issuecomment-6613566823" title="11-03 19:34">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>OurBoy22</b>: I am on pytest-cov 3.0.0</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/issues/2356#issuecomment-6613594651" title="11-03 19:35">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>nedbat</b>: Even better: a reproducible case that I can run myself.</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/issues/2356#issuecomment-6613630594" title="11-03 19:37">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>nedbat</b>: I am on pytest-cov 3.0.0
+
+That&#39;s five years old. Can you upgrade? Also, more details like Python...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/issues/2356#issuecomment-6613891796" title="11-03 19:49">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>BigWorster</b>: Python 3.12. Works with 7.17.0 but not 7.17.1.
+#!/bin/bash
+# `coverage combine` crashes on an...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/issues/2356#issuecomment-6614664812" title="11-03 20:58">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>nedbat</b>: Thanks for the example, though your stack trace is different than #2357.
+If you are here to...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/issues/2356#issuecomment-6615304130" title="11-03 21:00">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>nedbat</b>: @Paul-Durrant @OurBoy22 @MichaelSquires Can you provide complete error reports including the...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/issues/2356#issuecomment-6615857071" title="11-03 21:28">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>vsajko</b>: Rocky...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/issues/2356#issuecomment-6618625410" title="11-04 00:07">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>nedbat</b>: @vsajko I can&#39;t reproduce that on my Mac, since sqlite-libs-3.26.0 seems to be a Linux package....</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/issues/2356#issuecomment-6619069101" title="11-04 00:26">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>nedbat</b>: @ShreyasMahangade can you give us more information about the stack trace you showed in #2357?</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/issues/2356#issuecomment-6619845797" title="11-04 01:16">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>vsajko</b>: 18. @vsajko I can&#39;t reproduce that on my Mac, since sqlite-libs-3.26.0 seems to be a Linux...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/issues/2356#issuecomment-6623086532" title="11-04 05:07">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>aws-sde</b>: To reproduce, your Python interpreter must be using sqlite3 &lt; 3.34.0. Newer versions have this...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/issues/2356#issuecomment-6623468165" title="11-04 06:28">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>ShreyasMahangade</b>: It looks like the problematic sqlite version is shipped by the container which is being used for...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/issues/2356#issuecomment-6631178531" title="11-04 12:56">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>nedbat</b>: Thanks all.  This I think is the first bug that depended on the version of SQLite, which added...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/issues/2356#issuecomment-6631813863" title="11-04 13:25">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>nedbat</b>: Fixed in commit 36e4a18, with a new CI test to run the test suite on an old version of SQLite in...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/issues/2356#issuecomment-6640578299" title="11-04 19:53">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>nedbat</b>: This is now released as part of coverage 7.17.2.</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/issues/2356#issuecomment-6641479749" title="11-04 20:36">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>ellieayla</b>: Do we want to yank the 7.17.1 release from PyPI?</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/issues/2356#issuecomment-6641723909" title="11-04 20:47">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>nedbat</b>: I don&#39;t see a need to yank the release. It&#39;s not a security problem, it&#39;s not dangerous. It just...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/issues/2356#issuecomment-6653350000" title="11-05 08:27">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>Paul-Durrant</b>: Many thanks for the quick fix and release, and thanks also to those people who found time to...</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/pull/2361"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>test: fix the &#39;Combined 3 files, skipped 1&#39; flake in MultiprocessingTest</b> #2361</a>
+              [glaziermag]
+
+              
+              </p><p>MultiprocessingTest sometimes fails with assert &#39;Combined 3 files, skipped 1&#39; == &#39;Combined 2 files, skipped 2&#39;: on...</p></li>
+          <li class="">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/pull/2331"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>fix: excluded lines end a range of missing lines</b> #2331</a>
+              [Mohanad49]
+
+              
+              </p><p>Closes #1691.
+The Missing column joins missing lines into one range as long as no executed statement sits between...</p></li>
+          <li class="open">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/issues/2362"><span class="octicons" title="newly created; issue"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>patch = subprocess: SIGINT-killed child exits 1 instead of -2 on Python 3.13 (regression in 7.17.1)</b> #2362</a>
+              [boldaxolotl]
+
+              
+              </p><p>Describe the bug
+With [run] patch = subprocess, a Python child process that is interrupted by SIGINT exits with...</p></li>
+          <li class="">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/pull/2363"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>docs: document [report] partial_branches_always</b> #2363</a>
+              [Aryapatel-007]
+
+              
+              </p><p>[report] partial_branches_always is read in coverage/config.py, used by no_branch_lines() in coverage/python.py, and...</p></li>
+          <li class="open">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/issues/2364"><span class="octicons" title="newly created; issue"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>combine() crashes with DataError (SQLITE_CANTOPEN) when a parallel data file vanishes mid-combine (regression in 7.17.1)</b> #2364</a>
+              [vEpiphyte]
+
+              <span class="label" style="--label-r:255;--label-g:119;--label-b:136;--label-h:352;--label-s:100;--label-l:73;">bug</span>
+                
+              </p><p>Describe the bug
+Since 7.17.1, combine_parallel_data() (and so Coverage.combine() / coverage combine) crashes with...</p></li>
+          <li class="">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/pull/2365"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>fix: continue combining when a parallel data file disappears</b> #2365</a>
+              [Jinyong-Li]
+
+              
+              </p><p>A worker can rename its parallel data file after coverage combine has discovered it. If the old path is gone when...</p></li>
+          <li class="">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/pull/2367"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>fix: reject wildcard result paths in [paths] configuration</b> #2367</a>
+              [cdytotoro-ctrl]
+
+              
+              </p><p>Fixes #1531.
+Problem
+A [paths] entry whose result (second and later) column is fine, but whose first column contains...</p></li>
+          <li class="">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/pull/2368"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>fix: issues #2364-2362 - parallel data combine crash and SIGINT exit code handling</b> #2368</a>
+              [Sahas2711]
+
+              
+              </p><p>Summary
+This PR fixes two regressions in coverage.py 7.17.x: a parallel data combine crash when files vanish...</p></li>
+          <li class="">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/pull/2353"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>fix: don&#39;t drop same-named functions and classes from the JSON report</b> #2353</a>
+              [nk-batman21]
+
+              
+              </p><p>The JSON report keys each file&#39;s functions and classes by name, but Python code often has more than one function or...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2353#issuecomment-6690486043" title="11-06 16:58">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>ericdelorefice</b>: Thanks for fixing the lost regions. I ran this PR on rich, click, attrs and sqlalchemy, 368...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2353#issuecomment-6705464634" title="11-07 10:11">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>nk-batman21</b>: Thanks @ericdelorefice, good catch. 82a6f57 sorts the regions by line before naming them, so the...</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/pull/2307"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Fix outer sysmon collection after nested Coverage stops</b> #2307</a>
+              [DITlieD]
+
+              
+              </p><p>Starting and stopping a nested Coverage instance could prevent an outer sysmon collection from recording new lines...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2307#issuecomment-6620447134" title="11-04 01:57">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>DITlieD</b>: The diff-coverage gate is green locally now: the restart re-arm block in SysMonitor.start...</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/pull/2366"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>fix: report a vanishing parallel data file instead of crashing combine</b> #2366</a>
+              [cdytotoro-ctrl]
+
+              
+              </p><p>Fixes #2364.
+Since 7.17.1, combine_parallel_data() aborts with an uncaught DataError when a parallel data file...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2366#issuecomment-6707768752" title="11-07 13:49">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>ericdelorefice</b>: Thanks for tracing this to update() running outside the try in the combine loop. There&#39;s one...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2366#issuecomment-6708408194" title="11-07 14:46">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>nedbat</b>: @ericdelorefice Thanks for the other reproducer. But on 7.17.0, your code errors with...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2366#issuecomment-6708573788" title="11-07 14:58">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>ericdelorefice</b>: No, the late rename isn&#39;t a regression. Thanks for running it on 7.17.0. I didn&#39;t check older...</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/pull/2342"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>fix: restart coverage from parent config in patch=fork child process</b> #2342</a>
+              [SwastikTripathi]
+
+              
+              </p><p>Bug
+_after_fork_in_child() stops the parent&#39;s coverage and then calls process_startup(force=True), which requires...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2342#issuecomment-6701697314" title="11-07 03:32">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>SwastikTripathi</b>: Any chance someone could take a look? Happy to change anything.</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2342#issuecomment-6708707349" title="11-07 15:07">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>ericdelorefice</b>: Thanks for picking up #2340. I ran this branch (e1e957b) against the reproducer from the issue....</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          </ul>
+      
+    </li>
+  </ul>
+
+<p class="footer">
+  created at 2026-11-07 15:29 by
+  <a href="https://pypi.org/project/dinghy/1.4.1">
+    dinghy
+    <span class="dinghy_version">1.4.1</span></a>.
+</p>
+</body>
+</html>

@@ -21,7 +21,7 @@ jobs:
     name: "Daily digest"
     uses: $/.github/workflows/daily-digest.yml
     with:
-      config: docs.yaml
+      config: coverage.yaml
     secrets:
       # Made with nedbat's account, with repo, read:org, read:project
       # https://github.com/settings/tokens/943640357
