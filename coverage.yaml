@@ -1,0 +1,24 @@
+# Dinghy configuration for coveragepy work.
+
+defaults:
+  ignore_users:
+    - github-project-automation
+
+digests:
+
+  - digest: 1day-coverage.html
+    since: 1 day
+    title: One day
+    items: &coverage-items
+      - url: https://github.com/coveragepy/coveragepy
+        title: Coverage.py
+
+  - digest: 3day-coverage.html
+    since: 3 day
+    title: Three days
+    items: *coverage-items
+
+  - digest: 1week-coverage.html
+    since: 1 week
+    title: One week
+    items: *coverage-items

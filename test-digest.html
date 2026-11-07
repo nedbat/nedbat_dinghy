@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Sample Dinghy report
    — 
-  Activity since 2026-10-30</title>
+  Activity since 2026-11-04</title>
   <link rel="icon" href="https://raw.githubusercontent.com/primer/octicons/main/icons/comment-discussion-24.svg" type="image/svg+xml">
   <style>
   body {
@@ -208,7 +208,7 @@
 
 <h1>Sample Dinghy report
    — 
-  Activity since 2026-10-30</h1>
+  Activity since 2026-11-04</h1>
 
 
 
@@ -222,639 +222,274 @@
         <ul class="entries">
           <li class="">
 
-              <p><a href="https://github.com/psf/black/pull/5641"><span class="octicons" title="newly merged; merged pull request"><span class="octicon dash"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>cache: treat an unreadable cache file as a miss</b> #5641</a>
-              [PerryLink]
-
-              
-              </p><p>Description
-Black treats the cache as an optimization everywhere except one place: Cache.read() opens the pickle...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/psf/black/pull/5641#pullrequestreview-5716213171" title="10-30 17:36">
-                        
-                            <span class="octicon eye" title="reviewed"></span>
-                          
-                        
-                        <b>cobaltt7</b>: Thanks! A few nits</a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/psf/black/pull/5641#discussion_r4426607002" title="10-30 17:36">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>cobaltt7</b>: Cache changelogs typically fall under Configuration</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/psf/black/pull/5641#discussion_r4426609841" title="10-30 17:36">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>cobaltt7</b>: The comment is self explanatory and can be removed</a></p>
-                      
-                    </li>
-                  </ul>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/psf/black/pull/5641#issuecomment-6535086598" title="10-30 22:45">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>PerryLink</b>: Applied both nits in 27a3024: the comment is gone, and the CHANGES.md entry now sits under ###...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/psf/black/pull/5641#issuecomment-6535277398" title="10-30 22:58">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>cobaltt7</b>: Thanks!</a></p>
-                      
-                    </li>
-                  </ul>
-              </li>
-          <li class="">
-
-              <p><a href="https://github.com/psf/black/pull/5642"><span class="octicons" title="newly merged; merged pull request"><span class="octicon dash"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>Fix &#34;depug&#34; typo in contributing docs</b> #5642</a>
-              [moshe99]
+              <p><a href="https://github.com/psf/black/pull/5552"><span class="octicons" title="merged pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon merged pull"></span></span><b>docs: render the no-cache example as a command</b> #5552</a>
+              [Mohamedajab]
 
               <span class="label" style="--label-r:0;--label-g:0;--label-b:0;--label-h:0;--label-s:0;--label-l:0;">ci: skip news</span>
                 
               </p><p>Description
-Fix a typo in docs/contributing/the_basics.md on line 137: depug -&gt; debug.
-This is a docs-only change,...</p></li>
-          <li class="closed">
+Put the --no-cache example in a console code block so it renders like the other commands. Add the...</p></li>
+          <li class="">
 
-              <p><a href="https://github.com/psf/black/issues/3998"><span class="octicons" title="newly closed; closed issue"><span class="octicon dash"></span><span class="octicon check"></span><span class="octicon closed issue"></span></span><b>Inconsistent formatting of method call chain with comment</b> #3998</a>
-              [robmoss]
+              <p><a href="https://github.com/psf/black/pull/5527"><span class="octicons" title="merged pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon merged pull"></span></span><b>Document stdin filename file-type inference</b> #5527</a>
+              [Mohamedajab]
 
-              <span class="label" style="--label-r:215;--label-g:58;--label-b:74;--label-h:353;--label-s:66;--label-l:53;">T: bug</span>
+              <span class="label" style="--label-r:0;--label-g:0;--label-b:0;--label-h:0;--label-s:0;--label-l:0;">ci: skip news</span>
                 
-              </p><p>Describe the bug
-I noticed what appears to be inconsistent formatting when comparing black&#39;s output (v23.10.1) to...</p></li>
+              </p><p>Description
+Explain how Black uses --stdin-filename to choose formatting rules: .pyi for type stubs and .ipynb for...</p></li>
           <li class="">
 
-              <p><a href="https://github.com/psf/black/pull/5518"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Fix preview splitting of commented method chains</b> #5518</a>
-              [TusharND12]
-
-              
-              </p><p>Summary
-
-Add a preview-gated split for method chains separated by a standalone comment.
-Keep stable formatting...</p></li>
-          <li class="">
-
-              <p><a href="https://github.com/psf/black/pull/5644"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Do not let standalone comments break fluent method chaining</b> #5644</a>
-              [Prateek99-s]
-
-              
-              </p><p>Summary
-
-Fix an issue where standalone comments between chained method calls cause Black to miss dot delimiters and...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/psf/black/pull/5644#issuecomment-6550911350" title="11-01 00:03">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>cobaltt7</b>: This needs to be preview-gated as it changes previous formatting
-A split should be added before...</a></p>
-                      
-                    </li>
-                  </ul>
-              </li>
-          <li class="closed">
-
-              <p><a href="https://github.com/psf/black/issues/4877"><span class="octicons" title="newly closed; closed issue"><span class="octicon dash"></span><span class="octicon check"></span><span class="octicon closed issue"></span></span><b>wrap_comprehension_in: Black preview style removes parentheses that make code harder to read</b> #4877</a>
-              [hauntsaninja]
-
-              <span class="label" style="--label-r:228;--label-g:197;--label-b:211;--label-h:332;--label-s:36;--label-l:83;">C: preview style</span>
-                
-              </p><p>For example:
-         filtered_trait_instructions: list[str] = [
--            trait for trait in...</p></li>
-          <li class="">
-
-              <p><a href="https://github.com/psf/black/pull/4881"><span class="octicons" title="newly merged; merged pull request"><span class="octicon dash"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>wrap_comprehension_in: Retain user&#39;s choice if there&#39;s delimiters</b> #4881</a>
-              [cobaltt7]
+              <p><a href="https://github.com/psf/black/pull/5472"><span class="octicons" title="merged pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon merged pull"></span></span><b>Expand guidance for adopting Black in existing projects</b> #5472</a>
+              [Mohamedajab]
 
               <span class="label" style="--label-r:249;--label-g:208;--label-b:196;--label-h:13;--label-s:81;--label-l:87;">S: needs discussion</span>
                 
               </p><p>Description
-
-Background info: On current stable, Black does not add nor remove parens around in clauses in...</p></li>
+Add practical tips for adopting Black in an existing project. Cover shared configuration,...</p></li>
           <li class="">
 
-              <p><a href="https://github.com/psf/black/pull/5592"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Parenthesize unsplittable keyword argument values (preview)</b> #5592</a>
-              [ShahabAhmed01]
+              <p><a href="https://github.com/psf/black/pull/5427"><span class="octicons" title="merged pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon merged pull"></span></span><b>Fix splitting stringified return annotations with parameters</b> #5427</a>
+              [Mohamedajab]
 
               
               </p><p>Description
-Fixes #2893
-Closes #5335
-When a keyword argument&#39;s value is an expression Black cannot split — a...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/psf/black/pull/5592#issuecomment-6516306868" title="10-30 17:36">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>ShahabAhmed01</b>: Fixed both findings in 09106cd9, rebased onto current main — PR is now mergeable: true (the...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/psf/black/pull/5592#discussion_r4433787377" title="11-01 00:11">
-                        
-                            <span class="octicon eye" title="reviewed"></span>
-                          
-                        
-                        <b>cobaltt7</b>: This amount of detail is unnecessary, it can be assumed</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/psf/black/pull/5592#discussion_r4433790478" title="11-01 00:12">
-                        
-                            <span class="octicon eye" title="reviewed"></span>
-                          
-                        
-                        <b>cobaltt7</b>: This is way too wordy and detailed. Hit the main points. Most of it should be self-explanatory...</a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/psf/black/pull/5592#discussion_r4433794259" title="11-01 00:13">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>cobaltt7</b>: This also applies to the other docstrings</a></p>
-                      
-                    </li>
-                  </ul>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/psf/black/pull/5592#discussion_r4433797962" title="11-01 00:15">
-                        
-                            <span class="octicon eye" title="reviewed"></span>
-                          
-                        
-                        <b>cobaltt7</b>: I don&#39;t think it&#39;s a question of whether line length is won back, rather it should be wrapped...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/psf/black/pull/5592#discussion_r4433805877" title="11-01 00:18">
-                        
-                            <span class="octicon eye" title="reviewed"></span>
-                          
-                        
-                        <b>cobaltt7</b>: That&#39;s a separate feature only implemented under --unstable. This feature should be implemented...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/psf/black/pull/5592#discussion_r4433814524" title="11-01 00:21">
-                        
-                            <span class="octicon eye" title="reviewed"></span>
-                          
-                        
-                        <b>cobaltt7</b>: This should use delimiters to determine if it can be split - #4881 added...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/psf/black/pull/5592#discussion_r4433834263" title="11-01 00:27">
-                        
-                            <span class="octicon eye" title="reviewed"></span>
-                          
-                        
-                        <b>cobaltt7</b>: Only the PR number should be mentioned. Also, if possible try to shorten it slightly, avoiding...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/psf/black/pull/5592#discussion_r4433834602" title="11-01 00:27">
-                        
-                            <span class="octicon eye" title="reviewed"></span>
-                          
-                        
-                        <b>cobaltt7</b>: Why was this actually added? It&#39;s not mentioned in the referenced issue or any of your tests,...</a></p>
-                      
-                    </li>
-                  </ul>
-              </li>
-          <li class="">
-
-              <p><a href="https://github.com/psf/black/pull/5335"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Fix long keyword argument values exceeding line length</b> #5335</a>
-              [dajinzhu]
-
-              
-              </p><p>Summary
-Fix formatting of long keyword argument values so the value can be parenthesized and split when the complete...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/psf/black/pull/5335#discussion_r4433838174" title="11-01 00:28">
-                        
-                            <span class="octicon eye" title="reviewed"></span>
-                          
-                        
-                        <b>cobaltt7</b>: Why not use is_line_short_enough?</a></p>
-                      
-                    </li>
-                  </ul>
-              </li>
-          <li class="">
-
-              <p><a href="https://github.com/psf/black/pull/5616"><span class="octicons" title="newly merged; merged pull request"><span class="octicon dash"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>Drop 3.10 &amp; update dependencies</b> #5616</a>
-              [cobaltt7]
-
-              
-              </p><p>Description
-
-Drop 3.10 runtime support - note I documented this as being removed in 26.11, make sure to change that...</p></li>
-          <li class="">
-
-              <p><a href="https://github.com/psf/black/pull/5643"><span class="octicons" title="newly created; newly merged; merged pull request"><span class="octicon star"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>Fix crashes on a `# fmt: off` region that ends at a closing bracket</b> #5643</a>
-              [LuisFigueroaG]
-
-              
-              </p><p>Description
-This fixes two crashes with a # fmt: off region that ends at the closing bracket.
-# fmt: off without #...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/psf/black/pull/5643#discussion_r4429104935" title="10-30 22:43">
-                        
-                            <span class="octicon eye" title="reviewed"></span>
-                          
-                        
-                        <b>cobaltt7</b>: These two examples are AST-equivalent, with the only different being inside the prefix for the...</a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/psf/black/pull/5643#discussion_r4433436529" title="10-31 21:55">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>LuisFigueroaG</b>: You&#39;re right, they go through the same path. I removed the second one in 1dee402. The...</a></p>
-                      
-                    </li>
-                  </ul>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/psf/black/pull/5643#issuecomment-6535117395" title="10-30 22:47">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>cobaltt7</b>: Code like this that was already formatted by Black will change, but only with an unclosed # fmt:...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/psf/black/pull/5643#issuecomment-6535171307" title="10-30 22:51">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>cobaltt7</b>: x = [
-    # fmt: off
-    1
-]
-
-Note that this crashes with a # fmt: on as well, if it&#39;s after the...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/psf/black/pull/5643#discussion_r4429191917" title="10-30 23:00">
-                        
-                            <span class="octicon eye" title="reviewed"></span>
-                          
-                        
-                        <b>cobaltt7</b>: This check is becoming rather unwieldly and confusing, could it be simplified?</a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/psf/black/pull/5643#discussion_r4433436608" title="10-31 21:55">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>LuisFigueroaG</b>: Simplified in ee8c7a1: the check is now a _needs_newline_after() helper with early returns, and...</a></p>
-                      
-                    </li>
-                  </ul>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/psf/black/pull/5643#issuecomment-6535370878" title="10-30 23:05">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>cobaltt7</b>: I like the compromise for the first issue to implicitly end the # fmt: off block at a bracket....</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/psf/black/pull/5643#issuecomment-6549645317" title="10-31 21:55">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>LuisFigueroaG</b>: Thanks for the review! Pushed:
-
-
-Preview: ending the region at the closing bracket is now the...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/psf/black/pull/5643#discussion_r4433854752" title="11-01 00:32">
-                        
-                            <span class="octicon eye" title="reviewed"></span>
-                          
-                        
-                        <b>cobaltt7</b>: Why isn&#39;t this a normal case test? You can omit the # output section if you want to assert idempotency</a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/psf/black/pull/5643#discussion_r4434271487" title="11-01 03:34">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>LuisFigueroaG</b>: Because assert_format() in tests/util.py also formats every case in the other style...</a></p>
-                      
-                    </li>
-                  </ul>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/psf/black/pull/5643#discussion_r4433890302" title="11-01 00:46">
-                        
-                            <span class="octicon eye" title="reviewed"></span>
-                          
-                        
-                        <b>cobaltt7</b>: The reason this is in preview is to correctly indent # fmt: off comments inside certain blocks...</a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/psf/black/pull/5643#discussion_r4434271533" title="11-01 03:34">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>LuisFigueroaG</b>: Rewrote it in efb58be so it&#39;s about the indentation, with the crash mentioned briefly. And...</a></p>
-                      
-                    </li>
-                  </ul>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/psf/black/pull/5643#discussion_r4433896980" title="11-01 00:48">
-                        
-                            <span class="octicon eye" title="reviewed"></span>
-                          
-                        
-                        <b>cobaltt7</b>: Could you add some line breaks in here just to make it easier to skim quickly?</a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/psf/black/pull/5643#discussion_r4434271599" title="11-01 03:34">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>LuisFigueroaG</b>: Split it up in 1018c79, with the places where an unclosed # fmt: off ends as a list.</a></p>
-                      
-                    </li>
-                  </ul>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/psf/black/pull/5643#discussion_r4433898595" title="11-01 00:48">
-                        
-                            <span class="octicon eye" title="reviewed"></span>
-                          
-                        
-                        <b>cobaltt7</b>: Similar changes could be made here like what I suggested for the changelog</a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/psf/black/pull/5643#discussion_r4434271667" title="11-01 03:34">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>LuisFigueroaG</b>: Done in efb58be, it now matches the changelog entry.</a></p>
-                      
-                    </li>
-                  </ul>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/psf/black/pull/5643#issuecomment-6553054652" title="11-01 03:49">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>cobaltt7</b>: Thanks!</a></p>
-                      
-                    </li>
-                  </ul>
-              </li>
-          <li class="">
-
-              <p><a href="https://github.com/psf/black/pull/5645"><span class="octicons" title="newly created; newly merged; merged pull request"><span class="octicon star"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>Fix blackd client encoding for custom Content-Type charsets</b> #5645</a>
-              [student-shivamm]
-
-              
-              </p><p>Description
-BlackDClient always encodes requests as UTF-8, even when a custom Content-Type declares another charset....</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/psf/black/pull/5645#pullrequestreview-5725707957" title="11-01 00:45">
-                        
-                            <span class="octicon eye" title="reviewed"></span>
-                          
-                        
-                        <b>agammann</b>: In src/blackd/client.py:75, the payload charset lookup is case-sensitive while HTTP header names...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/psf/black/pull/5645#issuecomment-6552905695" title="11-01 03:33">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>student-shivamm</b>: Thanks for the reproduction. I reproduced eight failing subtests with lowercase/mixed-case...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/psf/black/pull/5645#issuecomment-6553083196" title="11-01 03:52">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>cobaltt7</b>: Thanks!</a></p>
-                      
-                    </li>
-                  </ul>
-              </li>
-          <li class="closed">
-
-              <p><a href="https://github.com/psf/black/issues/1553"><span class="octicons" title="newly closed; closed issue"><span class="octicon dash"></span><span class="octicon check"></span><span class="octicon closed issue"></span></span><b>Misleading formatting of long parenthesized yields of tuples</b> #1553</a>
-              [JelleZijlstra]
-
-              <span class="label" style="--label-r:0;--label-g:82;--label-b:204;--label-h:215;--label-s:100;--label-l:40;">T: style</span>
-                <span class="label" style="--label-r:70;--label-g:207;--label-b:84;--label-h:126;--label-s:58;--label-l:54;">S: accepted</span>
-                
-              </p><p>When code of the form (yield a, b) is split into multiple lines, Black puts the yield a and b each  on its own line....</p></li>
-          <li class="">
-
-              <p><a href="https://github.com/psf/black/pull/5646"><span class="octicons" title="newly created; newly merged; merged pull request"><span class="octicon star"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>Remove redundant parentheses around yields of tuples</b> #5646</a>
-              [LiShuochen]
-
-              
-              </p><p>Description
-Fixes #1553.
-With --preview, parenthesize_tuple_in_yield (#5170) gives a yielded tuple its own...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/psf/black/pull/5646#issuecomment-6560993742" title="11-01 16:56">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>cobaltt7</b>: Thanks!</a></p>
-                      
-                    </li>
-                  </ul>
-              </li>
-          <li class="">
-
-              <p><a href="https://github.com/psf/black/pull/5493"><span class="octicons" title="newly merged; merged pull request"><span class="octicon dash"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>Preserve blank lines after imports with --line-ranges</b> #5493</a>
-              [msuozzo]
-
-              
-              </p><p>When formatting with --line-ranges, EmptyLineTracker._maybe_empty_lines
-treated unselected non-import lines after a...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/psf/black/pull/5493#issuecomment-6551993083" title="11-01 01:52">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>cobaltt7</b>: I tested manually and I think this does make sense. Please resolve the test failures and I can...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/psf/black/pull/5493#issuecomment-6561107048" title="11-01 17:05">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>cobaltt7</b>: Thanks!</a></p>
-                      
-                    </li>
-                  </ul>
-              </li>
-          <li class="">
-
-              <p><a href="https://github.com/psf/black/pull/5647"><span class="octicons" title="newly created; newly merged; merged pull request"><span class="octicon star"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>Fix `# fmt: skip` on the last line of a multi-line conditional expression in brackets</b> #5647</a>
-              [b84330808]
-
-              
-              </p><p>Description
-When a conditional expression inside brackets spans several lines and # fmt: skip is on its last line,...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/psf/black/pull/5647#discussion_r4436517475" title="11-01 16:54">
-                        
-                            <span class="octicon eye" title="reviewed"></span>
-                          
-                        
-                        <b>cobaltt7</b>: Suggested change
-      
-    
-    
-      
-          
-            
-                    # A `# fmt:...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/psf/black/pull/5647#issuecomment-6561160862" title="11-01 17:10">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>cobaltt7</b>: Thanks!</a></p>
-                      
-                    </li>
-                  </ul>
-              </li>
+Fixes #3926.
+Closes #5404.
+Fix long quoted return annotations that stop splitting when a function has...</p></li>
           <li class="open">
 
-              <p><a href="https://github.com/psf/black/issues/5546"><span class="octicons" title="issue"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>Project-relative cache-dir allows unrestricted pickle.load of attacker-controlled data</b> #5546</a>
-              [aaka3h]
+              <p><a href="https://github.com/psf/black/issues/5663"><span class="octicons" title="newly created; issue"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>Reject non-positive --line-length values instead of silently accepting them</b> #5663</a>
+              [Aathi-27]
 
               
-              </p><p>Summary
-Black resolves a relative cache-dir from [tool.black] inside the project checkout and then calls...</p><ul class="comments">
+              </p><p>Black accepts --line-length 0 or --line-length -1 without an error. A negative line-length in pyproject.toml is...</p></li>
+          <li class="open">
+
+              <p><a href="https://github.com/psf/black/issues/2405"><span class="octicons" title="issue"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>Simple CLI &#34;client&#34; For blackd</b> #2405</a>
+              [the-wondersmith]
+
+              <span class="label" style="--label-r:162;--label-g:238;--label-b:239;--label-h:180;--label-s:70;--label-l:78;">T: enhancement</span>
+                <span class="label" style="--label-r:171;--label-g:87;--label-b:9;--label-h:28;--label-s:90;--label-l:35;">C: performance</span>
+                <span class="label" style="--label-r:70;--label-g:207;--label-b:84;--label-h:126;--label-s:58;--label-l:54;">S: accepted</span>
+                
+              </p><p>According to the black docs there&#39;s no &#34;official&#34; client for formatting files with blackd. I&#39;ve been having trouble...</p><ul class="comments">
                   <li>
-                      <p><a href="https://github.com/psf/black/issues/5546#issuecomment-6561998630" title="11-01 18:21">
+                      <p><a href="https://github.com/psf/black/issues/2405#issuecomment-6658654103" title="11-05 13:01">
                         
                           <span class="octicon comment" title="comment"></span>
                         
-                        <b>rinopatrick</b>: I&#39;d like to work on this.</a></p>
+                        <b>IslamElsayed</b>: @ichard26 in January 2023 you said you&#39;d accept a simple Python blackd-client, with some...</a></p>
                       
                     </li>
                   </ul>
               </li>
           <li class="">
 
-              <p><a href="https://github.com/psf/black/pull/5510"><span class="octicons" title="merged pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon merged pull"></span></span><b>Action: validate required-version better</b> #5510</a>
-              [JelleZijlstra]
+              <p><a href="https://github.com/psf/black/pull/5660"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Keep commented expressions together when the comment trails the expression (preview)</b> #5660</a>
+              [DresdenGman]
 
               
-              </p><p>Co-authored-by: Jitesh Gulati jiteshgulati805@gmail.com</p><ul class="comments">
+              </p><p>Closes #638.
+The preview feature keep_commented_expressions_together (#5455) keeps a commented expression together...</p><ul class="comments">
                   <li>
-                      <p><a href="https://github.com/psf/black/pull/5510#pullrequestreview-5730477756" title="11-01 22:01">
-                        <span class="octicon checkcircle" title="reviewed, approved"></span>
+                      <p><a href="https://github.com/psf/black/pull/5660#pullrequestreview-5787321330" title="11-05 15:21">
+                        
+                            <span class="octicon eye" title="reviewed"></span>
                           
                         
-                        <b>josemariapinareyes129-code</b></a></p>
+                        <b>cobaltt7</b></a></p>
+                      
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/psf/black/pull/5660#discussion_r4482287014" title="11-05 15:21">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>cobaltt7</b>: This comment is very long and wordy. The code should be largely self-explanatory. If...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/psf/black/pull/5660#discussion_r4482318184" title="11-05 15:21">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>cobaltt7</b>: Please avoid referencing a specific preview feature since they can&#39;t be triggered individually...</a></p>
+                      
+                    </li>
+                  </ul>
                       
                     </li>
                   </ul>
               </li>
           <li class="">
 
-              <p><a href="https://github.com/psf/black/pull/5649"><span class="octicons" title="newly created; newly merged; merged pull request"><span class="octicon star"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>Keep the blank line after a nested import that is followed by a comment</b> #5649</a>
-              [nk-batman21]
+              <p><a href="https://github.com/psf/black/pull/5661"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Wrap long assigned lambdas in preview style</b> #5661</a>
+              [harshitdeora]
+
+              
+              </p><p>Fixes #5656 in preview style. Closes #809
+The Pyomo example leaves a 111-character assignment head because Black...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/psf/black/pull/5661#discussion_r4470722776" title="11-04 17:09">
+                        
+                            <span class="octicon eye" title="reviewed"></span>
+                          
+                        
+                        <b>cobaltt7</b>: What if the lambdef line is still over the line length (ie, the arguments are too long)? Could...</a></p>
+                      
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/psf/black/pull/5661#discussion_r4476493368" title="11-05 04:07">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>harshitdeora</b>: Added a case with parameters that still exceed the line length in 6baa47a. It checks the...</a></p>
+                      
+                    </li>
+                  </ul>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/psf/black/pull/5661#issuecomment-6640717281" title="11-04 19:59">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>cobaltt7</b>: Looking at shades:
+The previous formatting should be retained here: 
+Generally we avoid...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/psf/black/pull/5661#pullrequestreview-5787434517" title="11-05 15:31">
+                        
+                            <span class="octicon eye" title="reviewed"></span>
+                          
+                        
+                        <b>cobaltt7</b></a></p>
+                      
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/psf/black/pull/5661#discussion_r4482375575" title="11-05 15:31">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>cobaltt7</b>: Doesn&#39;t _is_assigned_lambda_call() check _is_parenthesized_atom()? Isn&#39;t it also implied by...</a></p>
+                      
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/psf/black/pull/5661#discussion_r4482577015" title="11-05 15:42">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>harshitdeora</b>: Pushed d70e6d5. The lambda helper already validates the assignment wrapper, so the split check...</a></p>
+                      
+                    </li>
+                  </ul>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/psf/black/pull/5661#discussion_r4482402392" title="11-05 15:31">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>cobaltt7</b>: What non-lambda shape is this checking? A short comment explaining that could be nice</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/psf/black/pull/5661#discussion_r4482438809" title="11-05 15:31">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>cobaltt7</b>: Is it possible to split the parameters if nothing else works, or would that be a visual downgrade?</a></p>
+                      
+                    </li>
+                  </ul>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="">
+
+              <p><a href="https://github.com/psf/black/pull/5662"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Fix crash on a commented parenthesized assignment target</b> #5662</a>
+              [faresrafat3]
 
               
               </p><p>Description
-Since #5493, a comment right after an import inside a function, class, try or if block no longer gets a...</p><ul class="comments">
+Black crashes with INTERNAL ERROR: produced different code on the second pass of the formatter on an...</p><ul class="comments">
                   <li>
-                      <p><a href="https://github.com/psf/black/pull/5649#issuecomment-6566922917" title="11-02 01:30">
+                      <p><a href="https://github.com/psf/black/pull/5662#discussion_r4482497346" title="11-05 15:36">
                         
-                          <span class="octicon comment" title="comment"></span>
+                            <span class="octicon eye" title="reviewed"></span>
+                          
                         
-                        <b>cobaltt7</b>: Thanks for the catch!</a></p>
+                        <b>cobaltt7</b>: #5606 isn&#39;t released, so please update that line instead</a></p>
                       
                     </li>
                   </ul>
               </li>
           <li class="">
 
-              <p><a href="https://github.com/psf/black/pull/5648"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Restrict unpickling of cache and grammar files</b> #5648</a>
-              [rinopatrick]
+              <p><a href="https://github.com/psf/black/pull/5664"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Reject non-positive --line-length values</b> #5664</a>
+              [Aathi-27]
 
               
-              </p><p>Closes #5546.
-A project-relative cache-dir lets a repo author drop crafted pickle files (format cache or grammar...</p><ul class="comments">
+              </p><p>Fixes #5663.
+Black currently accepts zero and negative line lengths from the command line and pyproject.toml without...</p><ul class="comments">
                   <li>
-                      <p><a href="https://github.com/psf/black/pull/5648#issuecomment-6566959662" title="11-02 01:33">
+                      <p><a href="https://github.com/psf/black/pull/5664#discussion_r4483004071" title="11-05 16:22">
                         
-                          <span class="octicon comment" title="comment"></span>
+                            <span class="octicon eye" title="reviewed"></span>
+                          
                         
-                        <b>cobaltt7</b>: Please resolve the test failures</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/psf/black/pull/5648#issuecomment-6567118211" title="11-02 01:46">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>rinopatrick</b>: Thanks — fixed the formatting (ran black itself over the new files) plus the isort ordering. CI...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/psf/black/pull/5648#issuecomment-6567212653" title="11-02 01:54">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>JelleZijlstra</b>: I&#39;m not convinced this is a good idea; the attack it guards against is rather remote, this may...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/psf/black/pull/5648#issuecomment-6567624224" title="11-02 02:29">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>rinopatrick</b>: Thanks for the careful look — fair concerns, some data:
-Remoteness. The reporter confirmed the...</a></p>
+                        <b>JelleZijlstra</b>: this is a bad test, it will break if Click just changes its wording. I&#39;d just drop this whole...</a></p>
                       
                     </li>
                   </ul>
               </li>
+          <li class="">
+
+              <p><a href="https://github.com/psf/black/pull/5537"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Walk gitignored directories when negation patterns exist</b> #5537</a>
+              [Kayvan-Zahiri]
+
+              
+              </p><p>Summary
+
+Fix #3694: with .gitignore patterns like * / !*/ / !*.py, git formats nested *.py files but Black skipped...</p></li>
+          <li class="open">
+
+              <p><a href="https://github.com/psf/black/issues/5656"><span class="octicons" title="issue"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>Odd behavior from `black` when handling long `lambda` functions</b> #5656</a>
+              [mrmundt]
+
+              <span class="label" style="--label-r:215;--label-g:58;--label-b:74;--label-h:353;--label-s:66;--label-l:53;">T: bug</span>
+                <span class="label" style="--label-r:191;--label-g:212;--label-b:242;--label-h:215;--label-s:66;--label-l:84;">F: linetoolong</span>
+                
+              </p><p>Describe the bug
+We were doing some work on one of our interfaces on Pyomo, and we noticed a very long line in one...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/psf/black/issues/5656#issuecomment-6671133077" title="11-05 22:25">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>shashb27</b>: Verified with ruff 0.17.4 on the same repro — every line fits, the signature line is 79...</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="">
+
+              <p><a href="https://github.com/psf/black/pull/5665"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Fix `# fmt: skip` combined with `# fmt: off` / `# yapf: disable` in the same comment</b> #5665</a>
+              [fizzbeom]
+
+              
+              </p><p>Description
+A comment that contains both an fmt: off directive and # fmt: skip, such as
+# yapf: disable  # fmt: skip...</p></li>
+          <li class="">
+
+              <p><a href="https://github.com/psf/black/pull/5576"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Fix BlackDClient default URL to match blackd&#39;s default port</b> #5576</a>
+              [ump45nose]
+
+              <span class="label" style="--label-r:249;--label-g:208;--label-b:196;--label-h:13;--label-s:81;--label-l:87;">S: blocked</span>
+                
+              </p><p>Description
+blackd&#39;s --bind-port option defaults to 45484 (src/blackd/__init__.py:80), but BlackDClient.__init__...</p></li>
           <li class="">
 
               <p><a href="https://github.com/psf/black/pull/5517"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>feat(preview): split binary operations before operator</b> #5517</a>
@@ -867,86 +502,57 @@ Closes #4455.
 For a binary operation with two operands, Black currently drops the optional parentheses...</p></li>
           <li class="">
 
-              <p><a href="https://github.com/psf/black/pull/5651"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Fix crash on `# fmt: off` before the trailing comma in brackets</b> #5651</a>
-              [LuisFigueroaG]
+              <p><a href="https://github.com/psf/black/pull/5592"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Parenthesize unsplittable keyword argument values (preview)</b> #5592</a>
+              [ShahabAhmed01]
 
               
-              </p><p>Description
-A # fmt: off between the last item in brackets and its trailing comma crashes Black:
-x = [
-    a,
-    b
-...</p><ul class="comments">
+              </p><p>Update 2026-11-06 (run ossrun-20261106T103520-b3e2f76a)
+Rebuilt on the current main tip b4f1fcae and squashed to a...</p><ul class="comments">
                   <li>
-                      <p><a href="https://github.com/psf/black/pull/5651#pullrequestreview-5735626409" title="11-02 11:08">
+                      <p><a href="https://github.com/psf/black/pull/5592#issuecomment-6683974435" title="11-06 11:40">
                         
-                            <span class="octicon eye" title="reviewed"></span>
-                          
+                          <span class="octicon comment" title="comment"></span>
                         
-                        <b>chiragjangiir</b>: Code Review: Fix crash on # fmt: off before trailing comma in brackets (#5651)
-1. Summary &amp;...</a></p>
+                        <b>ShahabAhmed01</b>: All nine inline comments are addressed on the new single commit (rebased onto current main...</a></p>
                       
                     </li>
                   </ul>
               </li>
           <li class="">
 
-              <p><a href="https://github.com/psf/black/pull/5650"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Fix line numbers in parse errors and --line-ranges when the file starts with blank lines</b> #5650</a>
-              [simpleqt]
+              <p><a href="https://github.com/psf/black/pull/5667"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Fix blackd startup on Windows with more than 61 logical CPUs</b> #5667</a>
+              [Jinyong-Li]
 
               
               </p><p>Description
-_format_str_once() parsed normalized_contents.lstrip() instead of the source as-is. Stripping the...</p><ul class="comments">
+On Windows with 64 logical CPUs, blackd fails during app initialization with ValueError: max_workers...</p></li>
+          <li class="">
+
+              <p><a href="https://github.com/psf/black/pull/5666"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Keep parens around comparison operands with string trailers</b> #5666</a>
+              [mmporong]
+
+              
+              </p><p>Description
+Fixes #3409.
+With the unstable string_processing feature, this input:
+class X:
+    def f(self):
+       ...</p></li>
+          <li class="">
+
+              <p><a href="https://github.com/psf/black/pull/5668"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>docs: fix typos</b> #5668</a>
+              [crispyaus]
+
+              <span class="label" style="--label-r:0;--label-g:0;--label-b:0;--label-h:0;--label-s:0;--label-l:0;">ci: skip news</span>
+                
+              </p><p>Description
+fixes a few typos in the docs. spelling only, no code or behavior changes. not user-facing, so no...</p><ul class="comments">
                   <li>
-                      <p><a href="https://github.com/psf/black/pull/5650#discussion_r4438211886" title="11-02 01:31">
-                        
-                            <span class="octicon eye" title="reviewed"></span>
+                      <p><a href="https://github.com/psf/black/pull/5668#pullrequestreview-5813028382" title="11-07 14:57">
+                        <span class="octicon checkcircle" title="reviewed, approved"></span>
                           
                         
-                        <b>cobaltt7</b>: Suggested change
-      
-    
-    
-      
-          
-            
-                # Parse the...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/psf/black/pull/5650#discussion_r4438216172" title="11-02 01:32">
-                        
-                            <span class="octicon eye" title="reviewed"></span>
-                          
-                        
-                        <b>cobaltt7</b>: These shouldn&#39;t be removed, although that&#39;s probably a different issue</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/psf/black/pull/5650#issuecomment-6566950893" title="11-02 01:32">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>cobaltt7</b>: Please don&#39;t reformat the entire changelog</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/psf/black/pull/5650#issuecomment-6571139007" title="11-02 07:00">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>simpleqt</b>: Both inline comments handled in 124ab5d.
-src/black/__init__.py:1480 - deleted, exactly the five...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/psf/black/pull/5650#pullrequestreview-5735628877" title="11-02 11:08">
-                        
-                            <span class="octicon eye" title="reviewed"></span>
-                          
-                        
-                        <b>chiragjangiir</b>: Code Review: Fix line numbers in parse errors and --line-ranges on Windows CRLF (#5650)
-1....</a></p>
+                        <b>JelleZijlstra</b></a></p>
                       
                     </li>
                   </ul>
@@ -957,7 +563,7 @@ src/black/__init__.py:1480 - deleted, exactly the five...</a></p>
   </ul>
 
 <p class="footer">
-  created at 2026-11-02 13:57 by
+  created at 2026-11-07 15:21 by
   <a href="https://pypi.org/project/dinghy/1.4.1">
     dinghy
     <span class="dinghy_version">1.4.1</span></a>.
