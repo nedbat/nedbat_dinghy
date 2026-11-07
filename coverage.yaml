@@ -10,7 +10,7 @@ digests:
     since: 1 day
     title: One day
     items: &coverage-items
-      - url: https://github.com/coveragepy/coveragepy
+  - search: repo:coveragepy/coveragepy state:open
         title: Coverage.py
 
   - digest: 3day-coverage.html
