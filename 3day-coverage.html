@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Three days
    — 
-  Activity since 2026-11-08</title>
+  Activity since 2026-11-09</title>
   <link rel="icon" href="https://raw.githubusercontent.com/primer/octicons/main/icons/comment-discussion-24.svg" type="image/svg+xml">
   <style>
   body {
@@ -208,45 +208,18 @@
 
 <h1>Three days
    — 
-  Activity since 2026-11-08</h1>
+  Activity since 2026-11-09</h1>
 
 
 
 <ul class="repos">
   <li>
-      <p><span class="reponame" id="coveragepy"><a href="https://github.com/search?q=repo%3Acoveragepy%2Fcoveragepy+state%3Aopen+updated%3A%3E2026-11-08T11%3A42%3A09&amp;type=issues">Coverage.py</a></span>
+      <p><span class="reponame" id="coveragepy"><a href="https://github.com/search?q=repo%3Acoveragepy%2Fcoveragepy+state%3Aopen+updated%3A%3E2026-11-09T12%3A14%3A15&amp;type=issues">Coverage.py</a></span>
       search items
       
       </p>
       
         <ul class="entries">
-          <li class="">
-
-              <p><a href="https://github.com/coveragepy/coveragepy/pull/2352"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>fix: don&#39;t share a tracer between threads after a nested Coverage stops</b> #2352</a>
-              [Vaibhavtripathi7]
-
-              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
-              </p><p>Collector.resume() calls start() on every tracer from the current thread, and start() always installed the tracer on...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2352#pullrequestreview-5818665939" title="11-08 16:31">
-                        
-                            <span class="octicon eye" title="reviewed"></span>
-                          
-                        
-                        <b>agammann</b>: Could the regression test also let the worker execute a traced line while the outer collector is...</a></p>
-                      
-                    </li>
-                  </ul>
-              </li>
-          <li class="open">
-
-              <p><a href="https://github.com/coveragepy/coveragepy/issues/2370"><span class="octicons" title="newly created; issue"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>Notebook kernel coverage lost under pytest + nbval + pytest-cov (combine prints &#34;Skipping duplicate data&#34;). Since 7.13.1</b> #2370</a>
-              [briochh]
-
-              <span class="label" style="--label-r:255;--label-g:119;--label-b:136;--label-h:352;--label-s:100;--label-l:73;">bug</span>
-                &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
-              </p><p>Describe the bug
-When the notebook starts a child Python process that measures nothing (e.g....</p></li>
           <li class="open">
 
               <p><a href="https://github.com/coveragepy/coveragepy/issues/2372"><span class="octicons" title="newly created; issue"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>HTML report shows stale contexts after an incremental re-run</b> #2372</a>
@@ -306,14 +279,6 @@ The file&#39;s contexts are now read once in report_one_file, and each function 
               &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
               </p><p>Describe the bug
 When the C tracer starts recording a new file, it calls Collector.lock_data and...</p></li>
-          <li class="open">
-
-              <p><a href="https://github.com/coveragepy/coveragepy/issues/2384"><span class="octicons" title="newly created; issue"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>Lines recorded by other threads during a flush are lost</b> #2384</a>
-              [KRRT7]
-
-              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
-              </p><p>Describe the bug
-Collector.flush_data copies each file&#39;s live line (or arc) set, writes the copies to the data file,...</p></li>
           <li class="">
 
               <p><a href="https://github.com/coveragepy/coveragepy/pull/2379"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Prevent spurious SysMonitor arcs after exceptions</b> #2379</a>
@@ -455,13 +420,31 @@ Since 160ad3b (7.13.1) a parallel data file&#39;s name carries a hash, and combi
 
               &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
               </p><p>A config file saved as &#34;UTF-8 with BOM&#34; (Notepad&#39;s default on older Windows, and an option in VS Code and other...</p></li>
+          <li class="open">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/issues/2384"><span class="octicons" title="newly created; issue"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>Lines recorded by other threads during a flush are lost</b> #2384</a>
+              [KRRT7]
+
+              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
+              </p><p>Describe the bug
+Collector.flush_data copies each file&#39;s live line (or arc) set, writes the copies to the data file,...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/issues/2384#issuecomment-6818257016" title="11-12 08:07">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>shashb27</b>: I reproduced this with your script on macOS arm64: 3.11 loses 100-400 body lines per run with...</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
           </ul>
       
     </li>
   </ul>
 
 <p class="footer">
-  created at 2026-11-11 11:42 by
+  created at 2026-11-12 12:14 by
   <a href="https://pypi.org/project/dinghy/1.4.1">
     dinghy
     <span class="dinghy_version">1.4.1</span></a>.

@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>One week
    — 
-  Activity since 2026-11-04</title>
+  Activity since 2026-11-05</title>
   <link rel="icon" href="https://raw.githubusercontent.com/primer/octicons/main/icons/comment-discussion-24.svg" type="image/svg+xml">
   <style>
   body {
@@ -208,43 +208,18 @@
 
 <h1>One week
    — 
-  Activity since 2026-11-04</h1>
+  Activity since 2026-11-05</h1>
 
 
 
 <ul class="repos">
   <li>
-      <p><span class="reponame" id="coveragepy"><a href="https://github.com/search?q=repo%3Acoveragepy%2Fcoveragepy+state%3Aopen+updated%3A%3E2026-11-04T11%3A42%3A09&amp;type=issues">Coverage.py</a></span>
+      <p><span class="reponame" id="coveragepy"><a href="https://github.com/search?q=repo%3Acoveragepy%2Fcoveragepy+state%3Aopen+updated%3A%3E2026-11-05T12%3A14%3A15&amp;type=issues">Coverage.py</a></span>
       search items
       
       </p>
       
         <ul class="entries">
-          <li class="open">
-
-              <p><a href="https://github.com/coveragepy/coveragepy/issues/2358"><span class="octicons" title="issue"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>Combining unexecuted default-tracer files with plugin measurements raises a tracer conflict</b> #2358</a>
-              [harshitdeora]
-
-              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
-              </p><p>Following up on the distributed-coverage failure in pytest-cov #642: an unexecuted source file recorded without a...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/coveragepy/coveragepy/issues/2358#issuecomment-6639455421" title="11-04 19:03">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>ericdelorefice</b>: Thanks for cutting this down to the CoverageData API, it made it quick to check. I see the same...</a></p>
-                      
-                    </li>
-                  </ul>
-              </li>
-          <li class="open">
-
-              <p><a href="https://github.com/coveragepy/coveragepy/issues/2362"><span class="octicons" title="newly created; issue"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>patch = subprocess: SIGINT-killed child exits 1 instead of -2 on Python 3.13 (regression in 7.17.1)</b> #2362</a>
-              [boldaxolotl]
-
-              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
-              </p><p>Describe the bug
-With [run] patch = subprocess, a Python child process that is interrupted by SIGINT exits with...</p></li>
           <li class="">
 
               <p><a href="https://github.com/coveragepy/coveragepy/pull/2363"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>docs: document [report] partial_branches_always</b> #2363</a>
@@ -252,22 +227,6 @@ With [run] patch = subprocess, a Python child process that is interrupted by SIG
 
               &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
               </p><p>[report] partial_branches_always is read in coverage/config.py, used by no_branch_lines() in coverage/python.py, and...</p></li>
-          <li class="open">
-
-              <p><a href="https://github.com/coveragepy/coveragepy/issues/2364"><span class="octicons" title="newly created; issue"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>combine() crashes with DataError (SQLITE_CANTOPEN) when a parallel data file vanishes mid-combine (regression in 7.17.1)</b> #2364</a>
-              [vEpiphyte]
-
-              <span class="label" style="--label-r:255;--label-g:119;--label-b:136;--label-h:352;--label-s:100;--label-l:73;">bug</span>
-                &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
-              </p><p>Describe the bug
-Since 7.17.1, combine_parallel_data() (and so Coverage.combine() / coverage combine) crashes with...</p></li>
-          <li class="">
-
-              <p><a href="https://github.com/coveragepy/coveragepy/pull/2365"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>fix: continue combining when a parallel data file disappears</b> #2365</a>
-              [Jinyong-Li]
-
-              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
-              </p><p>A worker can rename its parallel data file after coverage combine has discovered it. If the old path is gone when...</p></li>
           <li class="">
 
               <p><a href="https://github.com/coveragepy/coveragepy/pull/2367"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>fix: reject wildcard result paths in [paths] configuration</b> #2367</a>
@@ -277,48 +236,6 @@ Since 7.17.1, combine_parallel_data() (and so Coverage.combine() / coverage comb
               </p><p>Fixes #1531.
 Problem
 A [paths] entry whose result (second and later) column is fine, but whose first column contains...</p></li>
-          <li class="">
-
-              <p><a href="https://github.com/coveragepy/coveragepy/pull/2368"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>fix: issues #2364-2362 - parallel data combine crash and SIGINT exit code handling</b> #2368</a>
-              [Sahas2711]
-
-              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
-              </p><p>Summary
-This PR fixes two regressions in coverage.py 7.17.x: a parallel data combine crash when files vanish...</p></li>
-          <li class="">
-
-              <p><a href="https://github.com/coveragepy/coveragepy/pull/2366"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>fix: report a vanishing parallel data file instead of crashing combine</b> #2366</a>
-              [cdytotoro-ctrl]
-
-              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
-              </p><p>Fixes #2364.
-Since 7.17.1, combine_parallel_data() aborts with an uncaught DataError when a parallel data file...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2366#issuecomment-6707768752" title="11-07 13:49">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>ericdelorefice</b>: Thanks for tracing this to update() running outside the try in the combine loop. There&#39;s one...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2366#issuecomment-6708408194" title="11-07 14:46">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>nedbat</b>: @ericdelorefice Thanks for the other reproducer. But on 7.17.0, your code errors with...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2366#issuecomment-6708573788" title="11-07 14:58">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>ericdelorefice</b>: No, the late rename isn&#39;t a regression. Thanks for running it on 7.17.0. I didn&#39;t check older...</a></p>
-                      
-                    </li>
-                  </ul>
-              </li>
           <li class="">
 
               <p><a href="https://github.com/coveragepy/coveragepy/pull/2352"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>fix: don&#39;t share a tracer between threads after a nested Coverage stops</b> #2352</a>
@@ -405,14 +322,6 @@ The file&#39;s contexts are now read once in report_one_file, and each function 
               &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
               </p><p>Describe the bug
 When the C tracer starts recording a new file, it calls Collector.lock_data and...</p></li>
-          <li class="open">
-
-              <p><a href="https://github.com/coveragepy/coveragepy/issues/2384"><span class="octicons" title="newly created; issue"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>Lines recorded by other threads during a flush are lost</b> #2384</a>
-              [KRRT7]
-
-              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
-              </p><p>Describe the bug
-Collector.flush_data copies each file&#39;s live line (or arc) set, writes the copies to the data file,...</p></li>
           <li class="">
 
               <p><a href="https://github.com/coveragepy/coveragepy/pull/2379"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Prevent spurious SysMonitor arcs after exceptions</b> #2379</a>
@@ -554,13 +463,31 @@ Since 160ad3b (7.13.1) a parallel data file&#39;s name carries a hash, and combi
 
               &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
               </p><p>A config file saved as &#34;UTF-8 with BOM&#34; (Notepad&#39;s default on older Windows, and an option in VS Code and other...</p></li>
+          <li class="open">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/issues/2384"><span class="octicons" title="newly created; issue"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>Lines recorded by other threads during a flush are lost</b> #2384</a>
+              [KRRT7]
+
+              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
+              </p><p>Describe the bug
+Collector.flush_data copies each file&#39;s live line (or arc) set, writes the copies to the data file,...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/issues/2384#issuecomment-6818257016" title="11-12 08:07">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>shashb27</b>: I reproduced this with your script on macOS arm64: 3.11 loses 100-400 body lines per run with...</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
           </ul>
       
     </li>
   </ul>
 
 <p class="footer">
-  created at 2026-11-11 11:42 by
+  created at 2026-11-12 12:14 by
   <a href="https://pypi.org/project/dinghy/1.4.1">
     dinghy
     <span class="dinghy_version">1.4.1</span></a>.
