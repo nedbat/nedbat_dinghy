@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Three days
    — 
-  Activity since 2026-11-09</title>
+  Activity since 2026-11-10</title>
   <link rel="icon" href="https://raw.githubusercontent.com/primer/octicons/main/icons/comment-discussion-24.svg" type="image/svg+xml">
   <style>
   body {
@@ -208,106 +208,21 @@
 
 <h1>Three days
    — 
-  Activity since 2026-11-09</h1>
+  Activity since 2026-11-10</h1>
 
 
 
 <ul class="repos">
   <li>
-      <p><span class="reponame" id="coveragepy"><a href="https://github.com/search?q=repo%3Acoveragepy%2Fcoveragepy+state%3Aopen+updated%3A%3E2026-11-09T12%3A14%3A15&amp;type=issues">Coverage.py</a></span>
+      <p><span class="reponame" id="coveragepy"><a href="https://github.com/search?q=repo%3Acoveragepy%2Fcoveragepy+state%3Aopen+updated%3A%3E2026-11-10T11%3A54%3A00&amp;type=issues">Coverage.py</a></span>
       search items
       
       </p>
       
         <ul class="entries">
-          <li class="open">
-
-              <p><a href="https://github.com/coveragepy/coveragepy/issues/2372"><span class="octicons" title="newly created; issue"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>HTML report shows stale contexts after an incremental re-run</b> #2372</a>
-              [patrick-immometrica]
-
-              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
-              </p><p>With show_contexts = true, re-running coverage html into an existing htmlcov directory reuses a file&#39;s page when its...</p></li>
-          <li class="open">
-
-              <p><a href="https://github.com/coveragepy/coveragepy/issues/2374"><span class="octicons" title="newly created; issue"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>json: show_contexts gives every function and class the whole file&#39;s contexts</b> #2374</a>
-              [patrick-immometrica]
-
-              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
-              </p><p>coverage json --show-contexts adds a contexts dict to every entry under functions and classes, but each of those...</p></li>
           <li class="">
 
-              <p><a href="https://github.com/coveragepy/coveragepy/pull/2373"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>fix: html report needs to notice when only contexts change</b> #2373</a>
-              [patrick-immometrica]
-
-              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
-              </p><p>Closes #2372.
-When show_contexts is on, the per-file hash used for incremental HTML now includes the file&#39;s...</p></li>
-          <li class="">
-
-              <p><a href="https://github.com/coveragepy/coveragepy/pull/2375"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>fix: json region contexts only include the region&#39;s lines</b> #2375</a>
-              [patrick-immometrica]
-
-              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
-              </p><p>Closes #2374.
-The file&#39;s contexts are now read once in report_one_file, and each function or class entry gets only...</p></li>
-          <li class="">
-
-              <p><a href="https://github.com/coveragepy/coveragepy/pull/2376"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>perf: hash arc data in one call when saving</b> #2376</a>
-              [patrick-immometrica]
-
-              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
-              </p><p>add_arcs updates the data file hash with the arc set, and Hasher.update walks it one tuple and one int at a time....</p></li>
-          <li class="">
-
-              <p><a href="https://github.com/coveragepy/coveragepy/pull/2377"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>perf: keep the data file open for all reports, not just html</b> #2377</a>
-              [patrick-immometrica]
-
-              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
-              </p><p>#2242 did this for the HTML report. The other reports still open a fresh SQLite connection for each lines(), arcs()...</p></li>
-          <li class="">
-
-              <p><a href="https://github.com/coveragepy/coveragepy/pull/2382"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>fix: snapshot file_tracers before iterating it in flush_data</b> #2382</a>
-              [KRRT7]
-
-              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
-              </p><p>Collector.flush_data iterates self.file_tracers directly, while tracers in other threads can add to it (the C tracer...</p></li>
-          <li class="open">
-
-              <p><a href="https://github.com/coveragepy/coveragepy/issues/2383"><span class="octicons" title="newly created; issue"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>A KeyboardInterrupt while the C tracer holds data_lock leaves it locked, and save() hangs</b> #2383</a>
-              [KRRT7]
-
-              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
-              </p><p>Describe the bug
-When the C tracer starts recording a new file, it calls Collector.lock_data and...</p></li>
-          <li class="">
-
-              <p><a href="https://github.com/coveragepy/coveragepy/pull/2379"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Prevent spurious SysMonitor arcs after exceptions</b> #2379</a>
-              [homm]
-
-              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
-              </p><p>Problem
-SysMonitor remembers the last line seen for each code object so it can record sequential arcs. A normal...</p></li>
-          <li class="">
-
-              <p><a href="https://github.com/coveragepy/coveragepy/pull/2378"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>perf: only lock the C tracer&#39;s data to add a new file</b> #2378</a>
-              [KRRT7]
-
-              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
-              </p><p>CTracer_handle_call called the Python lock_data and unlock_data methods on every call into a measured file, only to...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2378#issuecomment-6766941461" title="11-10 12:10">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>nedbat</b>: Thanks, this seems like a good improvement.
-I think the tests are becoming too white-box,...</a></p>
-                      
-                    </li>
-                  </ul>
-              </li>
-          <li class="">
-
-              <p><a href="https://github.com/coveragepy/coveragepy/pull/2381"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Make multiprocessing coverage deduplication tests deterministic</b> #2381</a>
+              <p><a href="https://github.com/coveragepy/coveragepy/pull/2381"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Make multiprocessing coverage deduplication tests deterministic</b> #2381</a>
               [homm]
 
               <span class="label" style="--label-r:187;--label-g:170;--label-b:255;--label-h:252;--label-s:99;--label-l:83;">question</span>
@@ -325,7 +240,7 @@ I think the tests are becoming too white-box,...</a></p>
               </li>
           <li class="open">
 
-              <p><a href="https://github.com/coveragepy/coveragepy/issues/2385"><span class="octicons" title="newly created; issue"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>An error in the C tracer&#39;s call handling records arcs into the previous frame&#39;s file</b> #2385</a>
+              <p><a href="https://github.com/coveragepy/coveragepy/issues/2385"><span class="octicons" title="issue"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>An error in the C tracer&#39;s call handling records arcs into the previous frame&#39;s file</b> #2385</a>
               [KRRT7]
 
               &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
@@ -351,7 +266,7 @@ CTracer_handle_call pushes a data stack slot early, then fills it in. Every erro
 CTracer_handle_call pushes a data stack slot and then fills it in. If anything failed after the push...</p></li>
           <li class="">
 
-              <p><a href="https://github.com/coveragepy/coveragepy/pull/2380"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Speed up HTML and XML report generation</b> #2380</a>
+              <p><a href="https://github.com/coveragepy/coveragepy/pull/2380"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Speed up HTML and XML report generation</b> #2380</a>
               [homm]
 
               &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
@@ -405,24 +320,9 @@ New HTML
               &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
               </p><p>Closes #1691.
 The Missing column joins missing lines into one range as long as no executed statement sits between...</p></li>
-          <li class="">
-
-              <p><a href="https://github.com/coveragepy/coveragepy/pull/2387"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>fix: hash the data in a parallel data file, not only the data we added</b> #2387</a>
-              [mppyxx]
-
-              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
-              </p><p>Fixes #2370.
-Since 160ad3b (7.13.1) a parallel data file&#39;s name carries a hash, and combine skips files whose hash...</p></li>
-          <li class="">
-
-              <p><a href="https://github.com/coveragepy/coveragepy/pull/2388"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>fix: read config files that start with a UTF-8 byte order mark</b> #2388</a>
-              [SwastikTripathi]
-
-              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
-              </p><p>A config file saved as &#34;UTF-8 with BOM&#34; (Notepad&#39;s default on older Windows, and an option in VS Code and other...</p></li>
           <li class="open">
 
-              <p><a href="https://github.com/coveragepy/coveragepy/issues/2384"><span class="octicons" title="newly created; issue"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>Lines recorded by other threads during a flush are lost</b> #2384</a>
+              <p><a href="https://github.com/coveragepy/coveragepy/issues/2384"><span class="octicons" title="issue"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>Lines recorded by other threads during a flush are lost</b> #2384</a>
               [KRRT7]
 
               &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
@@ -438,13 +338,80 @@ Collector.flush_data copies each file&#39;s live line (or arc) set, writes the c
                     </li>
                   </ul>
               </li>
+          <li class="">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/pull/2387"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>fix: hash the data in a parallel data file, not only the data we added</b> #2387</a>
+              [mppyxx]
+
+              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
+              </p><p>Fixes #2370.
+Since 160ad3b (7.13.1) a parallel data file&#39;s name carries a hash, and combine skips files whose hash...</p></li>
+          <li class="">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/pull/2243"><span class="octicons" title="draft pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon draft pull"></span></span><b>perf: reuse parser results and reduce memory during reporting</b> #2243</a>
+              [KRRT7]
+
+              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
+              </p><p>Summary
+Reuse parser results during reporting, and stop the HTML and LCOV reports from holding large per-file data...</p></li>
+          <li class="">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/pull/2378"><span class="octicons" title="draft pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon draft pull"></span></span><b>perf: only lock the C tracer&#39;s data to add a new file</b> #2378</a>
+              [KRRT7]
+
+              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
+              </p><p>CTracer_handle_call called the Python lock_data and unlock_data methods on every call into a measured file, only to...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2378#issuecomment-6766941461" title="11-10 12:10">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>nedbat</b>: Thanks, this seems like a good improvement.
+I think the tests are becoming too white-box,...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2378#issuecomment-6845656528" title="11-13 06:11">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>KRRT7</b>: I suspect it&#39;s a product of the way I&#39;m finding the optimizations: I change the hot path, then...</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/pull/2391"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>fix: follow greenlet switches so lines aren&#39;t recorded in the wrong file</b> #2391</a>
+              [KRRT7]
+
+              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
+              </p><p>With greenlet-based concurrency, switching into a greenlet resumes its frame without a call event....</p></li>
+          <li class="open">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/issues/2303"><span class="octicons" title="issue"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>sysmon + branch: statement after an `async for` whose iterator raises is reported as executed</b> #2303</a>
+              [SimplicityGuy]
+
+              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
+              </p><p>Describe the bug
+With the sysmon core and branch measurement, take an async for loop that ends because the async...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/issues/2303#issuecomment-6847536549" title="11-13 08:04">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>KRRT7</b>: The extra branch comes from CPython. INSTRUMENTED_END_ASYNC_FOR in Python/bytecodes.c emits...</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
           </ul>
       
     </li>
   </ul>
 
 <p class="footer">
-  created at 2026-11-12 12:14 by
+  created at 2026-11-13 11:54 by
   <a href="https://pypi.org/project/dinghy/1.4.1">
     dinghy
     <span class="dinghy_version">1.4.1</span></a>.

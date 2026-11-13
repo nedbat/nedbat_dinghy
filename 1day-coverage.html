@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>One day
    — 
-  Activity since 2026-11-11</title>
+  Activity since 2026-11-12</title>
   <link rel="icon" href="https://raw.githubusercontent.com/primer/octicons/main/icons/comment-discussion-24.svg" type="image/svg+xml">
   <style>
   body {
@@ -208,32 +208,72 @@
 
 <h1>One day
    — 
-  Activity since 2026-11-11</h1>
+  Activity since 2026-11-12</h1>
 
 
 
 <ul class="repos">
   <li>
-      <p><span class="reponame" id="coveragepy"><a href="https://github.com/search?q=repo%3Acoveragepy%2Fcoveragepy+state%3Aopen+updated%3A%3E2026-11-11T12%3A14%3A15&amp;type=issues">Coverage.py</a></span>
+      <p><span class="reponame" id="coveragepy"><a href="https://github.com/search?q=repo%3Acoveragepy%2Fcoveragepy+state%3Aopen+updated%3A%3E2026-11-12T11%3A54%3A00&amp;type=issues">Coverage.py</a></span>
       search items
       
       </p>
       
         <ul class="entries">
-          <li class="open">
+          <li class="">
 
-              <p><a href="https://github.com/coveragepy/coveragepy/issues/2384"><span class="octicons" title="issue"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>Lines recorded by other threads during a flush are lost</b> #2384</a>
+              <p><a href="https://github.com/coveragepy/coveragepy/pull/2387"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>fix: hash the data in a parallel data file, not only the data we added</b> #2387</a>
+              [mppyxx]
+
+              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
+              </p><p>Fixes #2370.
+Since 160ad3b (7.13.1) a parallel data file&#39;s name carries a hash, and combine skips files whose hash...</p></li>
+          <li class="">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/pull/2243"><span class="octicons" title="draft pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon draft pull"></span></span><b>perf: reuse parser results and reduce memory during reporting</b> #2243</a>
               [KRRT7]
 
               &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
-              </p><p>Describe the bug
-Collector.flush_data copies each file&#39;s live line (or arc) set, writes the copies to the data file,...</p><ul class="comments">
+              </p><p>Summary
+Reuse parser results during reporting, and stop the HTML and LCOV reports from holding large per-file data...</p></li>
+          <li class="">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/pull/2378"><span class="octicons" title="draft pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon draft pull"></span></span><b>perf: only lock the C tracer&#39;s data to add a new file</b> #2378</a>
+              [KRRT7]
+
+              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
+              </p><p>CTracer_handle_call called the Python lock_data and unlock_data methods on every call into a measured file, only to...</p><ul class="comments">
                   <li>
-                      <p><a href="https://github.com/coveragepy/coveragepy/issues/2384#issuecomment-6818257016" title="11-12 08:07">
+                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2378#issuecomment-6845656528" title="11-13 06:11">
                         
                           <span class="octicon comment" title="comment"></span>
                         
-                        <b>shashb27</b>: I reproduced this with your script on macOS arm64: 3.11 loses 100-400 body lines per run with...</a></p>
+                        <b>KRRT7</b>: I suspect it&#39;s a product of the way I&#39;m finding the optimizations: I change the hot path, then...</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/pull/2391"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>fix: follow greenlet switches so lines aren&#39;t recorded in the wrong file</b> #2391</a>
+              [KRRT7]
+
+              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
+              </p><p>With greenlet-based concurrency, switching into a greenlet resumes its frame without a call event....</p></li>
+          <li class="open">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/issues/2303"><span class="octicons" title="issue"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>sysmon + branch: statement after an `async for` whose iterator raises is reported as executed</b> #2303</a>
+              [SimplicityGuy]
+
+              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
+              </p><p>Describe the bug
+With the sysmon core and branch measurement, take an async for loop that ends because the async...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/issues/2303#issuecomment-6847536549" title="11-13 08:04">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>KRRT7</b>: The extra branch comes from CPython. INSTRUMENTED_END_ASYNC_FOR in Python/bytecodes.c emits...</a></p>
                       
                     </li>
                   </ul>
@@ -244,7 +284,7 @@ Collector.flush_data copies each file&#39;s live line (or arc) set, writes the c
   </ul>
 
 <p class="footer">
-  created at 2026-11-12 12:14 by
+  created at 2026-11-13 11:54 by
   <a href="https://pypi.org/project/dinghy/1.4.1">
     dinghy
     <span class="dinghy_version">1.4.1</span></a>.
