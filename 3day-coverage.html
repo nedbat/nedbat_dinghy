@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Three days
    — 
-  Activity since 2026-11-10</title>
+  Activity since 2026-11-11</title>
   <link rel="icon" href="https://raw.githubusercontent.com/primer/octicons/main/icons/comment-discussion-24.svg" type="image/svg+xml">
   <style>
   body {
@@ -208,118 +208,18 @@
 
 <h1>Three days
    — 
-  Activity since 2026-11-10</h1>
+  Activity since 2026-11-11</h1>
 
 
 
 <ul class="repos">
   <li>
-      <p><span class="reponame" id="coveragepy"><a href="https://github.com/search?q=repo%3Acoveragepy%2Fcoveragepy+state%3Aopen+updated%3A%3E2026-11-10T11%3A54%3A00&amp;type=issues">Coverage.py</a></span>
+      <p><span class="reponame" id="coveragepy"><a href="https://github.com/search?q=repo%3Acoveragepy%2Fcoveragepy+state%3Aopen+updated%3A%3E2026-11-11T11%3A14%3A08&amp;type=issues">Coverage.py</a></span>
       search items
       
       </p>
       
         <ul class="entries">
-          <li class="">
-
-              <p><a href="https://github.com/coveragepy/coveragepy/pull/2381"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Make multiprocessing coverage deduplication tests deterministic</b> #2381</a>
-              [homm]
-
-              <span class="label" style="--label-r:187;--label-g:170;--label-b:255;--label-h:252;--label-s:99;--label-l:83;">question</span>
-                &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
-              </p><p>The simple and append multiprocessing tests expect all three workers to record identical coverage. If the pool...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2381#issuecomment-6768726554" title="11-10 13:34">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>nedbat</b>: Does this solve the same problem as #2361?</a></p>
-                      
-                    </li>
-                  </ul>
-              </li>
-          <li class="open">
-
-              <p><a href="https://github.com/coveragepy/coveragepy/issues/2385"><span class="octicons" title="issue"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>An error in the C tracer&#39;s call handling records arcs into the previous frame&#39;s file</b> #2385</a>
-              [KRRT7]
-
-              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
-              </p><p>Describe the bug
-CTracer_handle_call pushes a data stack slot early, then fills it in. Every error exit after the...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/coveragepy/coveragepy/issues/2385#issuecomment-6769154369" title="11-10 13:54">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>namanraii</b>: Hi — I&#39;d like to work on this. I reproduced it on current main (7d382b3) with Python 3.11.17...</a></p>
-                      
-                    </li>
-                  </ul>
-              </li>
-          <li class="">
-
-              <p><a href="https://github.com/coveragepy/coveragepy/pull/2386"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>fix: a failed call in the C tracer records nothing #2385</b> #2386</a>
-              [namanraii]
-
-              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
-              </p><p>Fixes #2385.
-CTracer_handle_call pushes a data stack slot and then fills it in. If anything failed after the push...</p></li>
-          <li class="">
-
-              <p><a href="https://github.com/coveragepy/coveragepy/pull/2380"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Speed up HTML and XML report generation</b> #2380</a>
-              [homm]
-
-              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
-              </p><p>Report benchmarks
-
-
-
-Environment
-Branch coverage report
-Base
-Optimized
-Speedup
-
-
-
-
-local macOS, CLI
-New HTML
-2.518...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2380#issuecomment-6767468355" title="11-10 12:35">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>nedbat</b>: This is a big PR, it is difficult to review. I also suspect it overlaps with other PRs in...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2380#issuecomment-6771701891" title="11-10 15:38">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>homm</b>: Is it ok if I leave all small optimizations as individual commits in this PR and make another PR...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2380#issuecomment-6778068375" title="11-10 20:10">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>nedbat</b>: We can try that smaller breakdown, but it would be really helpful to me if you would check for...</a></p>
-                      
-                    </li>
-                  </ul>
-              </li>
-          <li class="">
-
-              <p><a href="https://github.com/coveragepy/coveragepy/pull/2331"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>fix: excluded lines end a range of missing lines</b> #2331</a>
-              [Mohanad49]
-
-              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
-              </p><p>Closes #1691.
-The Missing column joins missing lines into one range as long as no executed statement sits between...</p></li>
           <li class="open">
 
               <p><a href="https://github.com/coveragepy/coveragepy/issues/2384"><span class="octicons" title="issue"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>Lines recorded by other threads during a flush are lost</b> #2384</a>
@@ -340,14 +240,6 @@ Collector.flush_data copies each file&#39;s live line (or arc) set, writes the c
               </li>
           <li class="">
 
-              <p><a href="https://github.com/coveragepy/coveragepy/pull/2387"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>fix: hash the data in a parallel data file, not only the data we added</b> #2387</a>
-              [mppyxx]
-
-              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
-              </p><p>Fixes #2370.
-Since 160ad3b (7.13.1) a parallel data file&#39;s name carries a hash, and combine skips files whose hash...</p></li>
-          <li class="">
-
               <p><a href="https://github.com/coveragepy/coveragepy/pull/2243"><span class="octicons" title="draft pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon draft pull"></span></span><b>perf: reuse parser results and reduce memory during reporting</b> #2243</a>
               [KRRT7]
 
@@ -361,15 +253,6 @@ Reuse parser results during reporting, and stop the HTML and LCOV reports from h
 
               &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
               </p><p>CTracer_handle_call called the Python lock_data and unlock_data methods on every call into a measured file, only to...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2378#issuecomment-6766941461" title="11-10 12:10">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>nedbat</b>: Thanks, this seems like a good improvement.
-I think the tests are becoming too white-box,...</a></p>
-                      
-                    </li>
                   <li>
                       <p><a href="https://github.com/coveragepy/coveragepy/pull/2378#issuecomment-6845656528" title="11-13 06:11">
                         
@@ -405,13 +288,158 @@ With the sysmon core and branch measurement, take an async for loop that ends be
                     </li>
                   </ul>
               </li>
+          <li class="open">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/issues/2370"><span class="octicons" title="issue"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>Notebook kernel coverage lost under pytest + nbval + pytest-cov (combine prints &#34;Skipping duplicate data&#34;). Since 7.13.1</b> #2370</a>
+              [briochh]
+
+              <span class="label" style="--label-r:255;--label-g:119;--label-b:136;--label-h:352;--label-s:100;--label-l:73;">bug</span>
+                &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
+              </p><p>Describe the bug
+When the notebook starts a child Python process that measures nothing (e.g....</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/issues/2370#issuecomment-6852190039" title="11-13 11:58">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>nedbat</b>: Thanks for this report, but it would be much easier for me if you could provide direct steps to...</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="open">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/issues/2394"><span class="octicons" title="newly created; issue"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>`lcov` considers Coverage&#39;s function data inconsistent with its line data</b> #2394</a>
+              [jakelishman]
+
+              <span class="label" style="--label-r:255;--label-g:119;--label-b:136;--label-h:352;--label-s:100;--label-l:73;">bug</span>
+                &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
+              </p><p>Describe the bug
+Calling lcov --add-tracefile on a file generated by coverage lcov for executing a Python file with...</p></li>
+          <li class="">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/pull/2393"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Fix json: filter contexts by region statements when show_contexts is enabled (fixes #2374)</b> #2393</a>
+              [imsurya26]
+
+              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
+              </p><p>Summary
+Fixes #2374
+When --show-contexts (json:show_contexts = True) is enabled, make_region_data in...</p></li>
+          <li class="">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/pull/2395"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>fix: lcov `FN` data only counts body lines</b> #2395</a>
+              [jakelishman]
+
+              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
+              </p><p>If we include the function signature/start lines in the FN data of an lcov file, lcov 2.4+ will complain about...</p></li>
+          <li class="">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/pull/2387"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>fix: hash the data in a parallel data file, not only the data we added</b> #2387</a>
+              [mppyxx]
+
+              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
+              </p><p>Fixes #2370.
+Since 160ad3b (7.13.1) a parallel data file&#39;s name carries a hash, and combine skips files whose hash...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2387#issuecomment-6852990879" title="11-13 12:32">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>nedbat</b>: Could you provide clear instructions to reproduce the problem? Files to create, packages to...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2387#issuecomment-6859828844" title="11-13 17:13">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>mppyxx</b>: Sure. This script builds everything from an empty directory, then runs the same pytest command...</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="open">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/issues/2383"><span class="octicons" title="issue"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>A KeyboardInterrupt while the C tracer holds data_lock leaves it locked, and save() hangs</b> #2383</a>
+              [KRRT7]
+
+              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
+              </p><p>Describe the bug
+When the C tracer starts recording a new file, it calls Collector.lock_data and...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/issues/2383#issuecomment-6862114204" title="11-13 18:55">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>tanveer-arch</b>: Hi  I reproduced this on current main. A KeyboardInterrupt while the C tracer is in lock_data...</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/pull/2396"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Fix data_lock left locked by KeyboardInterrupt, hanging save()</b> #2396</a>
+              [tanveer-arch]
+
+              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
+              </p><p>Fixes #2383
+When the C tracer starts recording a new file, it calls Collector.lock_data and Collector.unlock_data,...</p></li>
+          <li class="">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/pull/2379"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Prevent spurious SysMonitor arcs after exceptions</b> #2379</a>
+              [homm]
+
+              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
+              </p><p>Problem
+SysMonitor remembers the last line seen for each code object so it can record sequential arcs. A normal...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2379#issuecomment-6875595055" title="11-14 10:01">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>homm</b>: I&#39;ve fixed CI coverage issues for this code.</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/pull/2380"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Speed up HTML and XML report generation</b> #2380</a>
+              [homm]
+
+              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
+              </p><p>Report benchmarks
+
+
+
+Environment
+Branch coverage report
+Base
+Optimized
+Speedup
+
+
+
+
+local macOS, CLI
+New HTML
+2.518...</p></li>
+          <li class="">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/pull/2397"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>fix: preserve data recorded by other threads during flush_data</b> #2397</a>
+              [ychampion]
+
+              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
+              </p><p>Fixes #2384
+Problem
+Collector.flush_data previously copied each file&#39;s live line or arc set, wrote those copies to...</p></li>
           </ul>
       
     </li>
   </ul>
 
 <p class="footer">
-  created at 2026-11-13 11:54 by
+  created at 2026-11-14 11:14 by
   <a href="https://pypi.org/project/dinghy/1.4.1">
     dinghy
     <span class="dinghy_version">1.4.1</span></a>.
