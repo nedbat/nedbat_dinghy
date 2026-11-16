@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>One day
    — 
-  Activity since 2026-11-14</title>
+  Activity since 2026-11-15</title>
   <link rel="icon" href="https://raw.githubusercontent.com/primer/octicons/main/icons/comment-discussion-24.svg" type="image/svg+xml">
   <style>
   body {
@@ -208,56 +208,18 @@
 
 <h1>One day
    — 
-  Activity since 2026-11-14</h1>
+  Activity since 2026-11-15</h1>
 
 
 
 <ul class="repos">
   <li>
-      <p><span class="reponame" id="coveragepy"><a href="https://github.com/search?q=repo%3Acoveragepy%2Fcoveragepy+state%3Aopen+updated%3A%3E2026-11-14T11%3A46%3A26&amp;type=issues">Coverage.py</a></span>
+      <p><span class="reponame" id="coveragepy"><a href="https://github.com/search?q=repo%3Acoveragepy%2Fcoveragepy+state%3Aopen+updated%3A%3E2026-11-15T12%3A28%3A00&amp;type=issues">Coverage.py</a></span>
       search items
       
       </p>
       
         <ul class="entries">
-          <li class="">
-
-              <p><a href="https://github.com/coveragepy/coveragepy/pull/2377"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>perf: keep the data file open for all reports, not just html</b> #2377</a>
-              [patrick-immometrica]
-
-              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
-              </p><p>#2242 did this for the HTML report. The other reports still open a fresh SQLite connection for each lines(), arcs()...</p></li>
-          <li class="">
-
-              <p><a href="https://github.com/coveragepy/coveragepy/pull/2373"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>fix: html report needs to notice when only contexts change</b> #2373</a>
-              [patrick-immometrica]
-
-              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
-              </p><p>Closes #2372.
-When show_contexts is on, the per-file hash used for incremental HTML now includes the file&#39;s...</p></li>
-          <li class="">
-
-              <p><a href="https://github.com/coveragepy/coveragepy/pull/2397"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>fix: preserve data recorded by other threads during flush_data</b> #2397</a>
-              [ychampion]
-
-              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
-              </p><p>Fixes #2384
-Problem
-Collector.flush_data previously copied each file&#39;s live line or arc set, wrote those copies to...</p></li>
-          <li class="">
-
-              <p><a href="https://github.com/coveragepy/coveragepy/pull/2391"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>fix: follow greenlet switches so lines aren&#39;t recorded in the wrong file</b> #2391</a>
-              [KRRT7]
-
-              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
-              </p><p>With greenlet-based concurrency, switching into a greenlet resumes its frame without a call event....</p></li>
-          <li class="">
-
-              <p><a href="https://github.com/coveragepy/coveragepy/pull/2382"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>fix: snapshot file_tracers before iterating it in flush_data</b> #2382</a>
-              [KRRT7]
-
-              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
-              </p><p>Collector.flush_data iterates self.file_tracers directly, while tracers in other threads can add to it (the C tracer...</p></li>
           <li class="">
 
               <p><a href="https://github.com/coveragepy/coveragepy/pull/2379"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Prevent spurious SysMonitor arcs after exceptions</b> #2379</a>
@@ -274,143 +236,33 @@ SysMonitor remembers the last line seen for each code object so it can record se
                         
                         <b>nedbat</b>: Why do we need to patch SysMonitor? Isn&#39;t there an observable external problem that this PR fixes?</a></p>
                       
-                    </li>
-                  </ul>
-              </li>
-          <li class="open">
-
-              <p><a href="https://github.com/coveragepy/coveragepy/issues/2385"><span class="octicons" title="issue"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>An error in the C tracer&#39;s call handling records arcs into the previous frame&#39;s file</b> #2385</a>
-              [KRRT7]
-
-              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
-              </p><p>Describe the bug
-CTracer_handle_call pushes a data stack slot early, then fills it in. Every error exit after the...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/coveragepy/coveragepy/issues/2385#issuecomment-6888336849" title="11-15 03:06">
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2379#discussion_r4578713121" title="11-15 14:05">
                         
                           <span class="octicon comment" title="comment"></span>
                         
-                        <b>nedbat</b>: @KRRT7 Why open an issue with a patch as a &#34;sketch&#34;? A full PR would be more helpful.
-@namanraii...</a></p>
+                        <b>homm</b>: CI requires both 100% coverage of test files and 100% coverage of changed lines. The original...</a></p>
                       
                     </li>
-                  <li>
-                      <p><a href="https://github.com/coveragepy/coveragepy/issues/2385#issuecomment-6888363043" title="11-15 03:08">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>namanraii</b>: Thanks! I&#39;ve already opened #2386 for this, with the fix in tracer.c and a regression test in...</a></p>
+                  </ul>
                       
                     </li>
                   </ul>
               </li>
           <li class="">
 
-              <p><a href="https://github.com/coveragepy/coveragepy/pull/2386"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>fix: a failed call in the C tracer records nothing #2385</b> #2386</a>
-              [namanraii]
-
-              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
-              </p><p>Fixes #2385.
-CTracer_handle_call pushes a data stack slot and then fills it in. If anything failed after the push...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2386#issuecomment-6888471786" title="11-15 03:19">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>nedbat</b>: @KRRT7 @namanraii Is there a real-world scenario that could cause this failure? Ideally we&#39;d be...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2386#issuecomment-6888926507" title="11-15 04:04">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>namanraii</b>: I looked for a realistic trigger that doesn&#39;t monkeypatch the tracer.
-The failure has to come...</a></p>
-                      
-                    </li>
-                  </ul>
-              </li>
-          <li class="">
-
-              <p><a href="https://github.com/coveragepy/coveragepy/pull/2399"><span class="octicons" title="newly created; draft pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon draft pull"></span></span><b>perf: reuse the parser&#39;s AST to find code regions</b> #2399</a>
-              [KRRT7]
-
-              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
-              </p><p>Depends on #2398, and includes its commit. Only the last commit is new here.
-The HTML, JSON and LCOV reports found...</p></li>
-          <li class="">
-
-              <p><a href="https://github.com/coveragepy/coveragepy/pull/2398"><span class="octicons" title="newly created; draft pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon draft pull"></span></span><b>perf: write lcov records as files are analyzed, instead of holding them</b> #2398</a>
-              [KRRT7]
-
-              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
-              </p><p>The LCOV report built a list of every file&#39;s FileReporter and Analysis, sorted it by relative file name, and only...</p></li>
-          <li class="open">
-
-              <p><a href="https://github.com/coveragepy/coveragepy/issues/2400"><span class="octicons" title="newly created; issue"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>Allow glob in `source`</b> #2400</a>
-              [ferdinandrau]
-
-              <span class="label" style="--label-r:162;--label-g:238;--label-b:239;--label-h:180;--label-s:70;--label-l:78;">enhancement</span>
-                &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
-              </p><p>Is your feature request related to a problem? Please describe.
-Hi, I would really like to be able to give all my...</p></li>
-          <li class="">
-
-              <p><a href="https://github.com/coveragepy/coveragepy/pull/2319"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>sysmon: don&#39;t record branch arcs to lines that never execute</b> #2319</a>
-              [shashb27]
-
-              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
-              </p><p>Fixes #2303.
-The problem
-With the sysmon core and branch measurement on Python 3.14, an async for loop that ends...</p></li>
-          <li class="">
-
-              <p><a href="https://github.com/coveragepy/coveragepy/pull/2380"><span class="octicons" title="draft pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon draft pull"></span></span><b>Speed up HTML and XML report generation</b> #2380</a>
+              <p><a href="https://github.com/coveragepy/coveragepy/pull/2402"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Speed up incremental HTML reports by caching analysis summaries</b> #2402</a>
               [homm]
 
               &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
-              </p><p>Report benchmarks
-
-
-
-Environment
-Branch coverage report
-Base
-Optimized
-Speedup
-
-
-
-
-local macOS, CLI
-New HTML
-2.518...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2380#issuecomment-6887921719" title="11-15 02:26">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>nedbat</b>: So that I can understand what&#39;s happening: why did you close this PR?</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2380#issuecomment-6891926736" title="11-15 08:50">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>homm</b>: I found that some of the changes to the HTML reports were unnecessary. I&#39;m looking into this now...</a></p>
-                      
-                    </li>
-                  </ul>
-              </li>
+              </p><p>HTML reports currently analyze every file and rebuild its function and class summaries even when the source and...</p></li>
           </ul>
       
     </li>
   </ul>
 
 <p class="footer">
-  created at 2026-11-15 11:46 by
+  created at 2026-11-16 12:28 by
   <a href="https://pypi.org/project/dinghy/1.4.1">
     dinghy
     <span class="dinghy_version">1.4.1</span></a>.
