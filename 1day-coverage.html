@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>One day
    — 
-  Activity since 2026-11-15</title>
+  Activity since 2026-11-16</title>
   <link rel="icon" href="https://raw.githubusercontent.com/primer/octicons/main/icons/comment-discussion-24.svg" type="image/svg+xml">
   <style>
   body {
@@ -208,13 +208,13 @@
 
 <h1>One day
    — 
-  Activity since 2026-11-15</h1>
+  Activity since 2026-11-16</h1>
 
 
 
 <ul class="repos">
   <li>
-      <p><span class="reponame" id="coveragepy"><a href="https://github.com/search?q=repo%3Acoveragepy%2Fcoveragepy+state%3Aopen+updated%3A%3E2026-11-15T12%3A28%3A00&amp;type=issues">Coverage.py</a></span>
+      <p><span class="reponame" id="coveragepy"><a href="https://github.com/search?q=repo%3Acoveragepy%2Fcoveragepy+state%3Aopen+updated%3A%3E2026-11-16T12%3A48%3A17&amp;type=issues">Coverage.py</a></span>
       search items
       
       </p>
@@ -222,47 +222,91 @@
         <ul class="entries">
           <li class="">
 
-              <p><a href="https://github.com/coveragepy/coveragepy/pull/2379"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Prevent spurious SysMonitor arcs after exceptions</b> #2379</a>
-              [homm]
+              <p><a href="https://github.com/coveragepy/coveragepy/pull/2404"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>lcov: start function records at the first body line</b> #2404</a>
+              [tony1233200]
 
               &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
-              </p><p>Problem
-SysMonitor remembers the last line seen for each code object so it can record sequential arcs. A normal...</p><ul class="comments">
+              </p><p>Fixes #2394.
+Problem. For a file with a function that is never called, coverage lcov...</p></li>
+          <li class="">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/pull/2405"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Include contexts in the HTML incremental hash</b> #2405</a>
+              [tony1233200]
+
+              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
+              </p><p>Fixes #2372: with show_contexts = true, re-running coverage html into an existing directory reused a file&#39;s page...</p></li>
+          <li class="">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/pull/2406"><span class="octicons" title="newly created; draft pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon draft pull"></span></span><b>perf: reuse the parser&#39;s soft keyword lines for HTML highlighting</b> #2406</a>
+              [KRRT7]
+
+              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
+              </p><p>To highlight soft keywords like match, case, type and lazy, the HTML report parsed each file&#39;s source again. It...</p></li>
+          <li class="">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/pull/2398"><span class="octicons" title="draft pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon draft pull"></span></span><b>perf: write lcov records as files are analyzed, instead of holding them</b> #2398</a>
+              [KRRT7]
+
+              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
+              </p><p>The LCOV report built a list of every file&#39;s FileReporter and Analysis, sorted it by relative file name, and only...</p></li>
+          <li class="">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/pull/2399"><span class="octicons" title="draft pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon draft pull"></span></span><b>perf: reuse the parser&#39;s AST to find code regions</b> #2399</a>
+              [KRRT7]
+
+              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
+              </p><p>Depends on #2398, and includes its commit. Only the last commit is new here.
+The HTML, JSON and LCOV reports found...</p></li>
+          <li class="">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/pull/2331"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>fix: excluded lines end a range of missing lines</b> #2331</a>
+              [Mohanad49]
+
+              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
+              </p><p>Closes #1691.
+The Missing column joins missing lines into one range as long as no executed statement sits between...</p></li>
+          <li class="open">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/issues/2394"><span class="octicons" title="issue"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>`lcov` considers Coverage&#39;s function data inconsistent with its line data</b> #2394</a>
+              [jakelishman]
+
+              <span class="label" style="--label-r:255;--label-g:119;--label-b:136;--label-h:352;--label-s:100;--label-l:73;">bug</span>
+                &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
+              </p><p>Describe the bug
+Calling lcov --add-tracefile on a file generated by coverage lcov for executing a Python file with...</p><ul class="comments">
                   <li>
-                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2379#discussion_r4576801693" title="11-15 03:01">
-                        
-                            <span class="octicon eye" title="reviewed"></span>
-                          
-                        
-                        <b>nedbat</b>: Why do we need to patch SysMonitor? Isn&#39;t there an observable external problem that this PR fixes?</a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2379#discussion_r4578713121" title="11-15 14:05">
+                      <p><a href="https://github.com/coveragepy/coveragepy/issues/2394#issuecomment-6929868699" title="11-16 21:26">
                         
                           <span class="octicon comment" title="comment"></span>
                         
-                        <b>homm</b>: CI requires both 100% coverage of test files and 100% coverage of changed lines. The original...</a></p>
+                        <b>shashb27</b>: I can reproduce this on current main (7.17.4a0) — an uncalled def f(): gives FN:1,2,f with...</a></p>
                       
                     </li>
-                  </ul>
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/issues/2394#issuecomment-6932994209" title="11-16 23:51">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>jakelishman</b>: I opened PR #2395 shortly after opening the issue - you can see it in the timeline above this.</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/issues/2394#issuecomment-6933203948" title="11-17 00:01">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>shashb27</b>: My bad. Missed it.</a></p>
                       
                     </li>
                   </ul>
               </li>
-          <li class="">
-
-              <p><a href="https://github.com/coveragepy/coveragepy/pull/2402"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Speed up incremental HTML reports by caching analysis summaries</b> #2402</a>
-              [homm]
-
-              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
-              </p><p>HTML reports currently analyze every file and rebuild its function and class summaries even when the source and...</p></li>
           </ul>
       
     </li>
   </ul>
 
 <p class="footer">
-  created at 2026-11-16 12:28 by
+  created at 2026-11-17 12:48 by
   <a href="https://pypi.org/project/dinghy/1.4.1">
     dinghy
     <span class="dinghy_version">1.4.1</span></a>.
