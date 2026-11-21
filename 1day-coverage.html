@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>One day
    — 
-  Activity since 2026-11-19</title>
+  Activity since 2026-11-20</title>
   <link rel="icon" href="https://raw.githubusercontent.com/primer/octicons/main/icons/comment-discussion-24.svg" type="image/svg+xml">
   <style>
   body {
@@ -208,13 +208,13 @@
 
 <h1>One day
    — 
-  Activity since 2026-11-19</h1>
+  Activity since 2026-11-20</h1>
 
 
 
 <ul class="repos">
   <li>
-      <p><span class="reponame" id="coveragepy"><a href="https://github.com/search?q=repo%3Acoveragepy%2Fcoveragepy+state%3Aopen+updated%3A%3E2026-11-19T12%3A32%3A47&amp;type=issues">Coverage.py</a></span>
+      <p><span class="reponame" id="coveragepy"><a href="https://github.com/search?q=repo%3Acoveragepy%2Fcoveragepy+state%3Aopen+updated%3A%3E2026-11-20T12%3A10%3A46&amp;type=issues">Coverage.py</a></span>
       search items
       
       </p>
@@ -222,38 +222,32 @@
         <ul class="entries">
           <li class="">
 
-              <p><a href="https://github.com/coveragepy/coveragepy/pull/2397"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>fix: preserve data recorded by other threads during flush_data</b> #2397</a>
-              [ychampion]
+              <p><a href="https://github.com/coveragepy/coveragepy/pull/2395"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>fix: lcov `FN` data only counts body lines</b> #2395</a>
+              [jakelishman]
 
               &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
-              </p><p>Fixes #2384
-Problem
-Collector.flush_data previously copied each file&#39;s live line or arc set, wrote those copies to...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2397#issuecomment-7009273953" title="11-19 12:35">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>ychampion</b>: I reran this on 0a866a6 against base 475ffad on Linux with CPython 3.12 and 3.14. One worker...</a></p>
-                      
-                    </li>
-                  </ul>
-              </li>
+              </p><p>If we include the function signature/start lines in the FN data of an lcov file, lcov 2.4+ will complain about...</p></li>
           <li class="">
 
-              <p><a href="https://github.com/coveragepy/coveragepy/pull/2410"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>fix: keep measuring seen code after a nested sysmon Coverage stops #2302</b> #2410</a>
-              [glaziermag]
+              <p><a href="https://github.com/coveragepy/coveragepy/pull/2411"><span class="octicons" title="newly created; draft pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon draft pull"></span></span><b>Populate Cobertura XML methods with function coverage</b> #2411</a>
+              [tony1233200]
 
               &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
-              </p><p>Fixes #2302.
-When a second Coverage starts, the outer SysMonitor is stopped and frees its tool id. Since Python...</p></li>
+              </p><p>Closes #2056. The Cobertura XML report now populates the &lt;methods&gt; element of each class with the functions in the...</p></li>
+          <li class="">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/pull/2412"><span class="octicons" title="newly created; draft pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon draft pull"></span></span><b>Expand glob patterns in [run] source</b> #2412</a>
+              [tony1233200]
+
+              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
+              </p><p>Closes #2400. A [run] source entry may now be a glob pattern, for example source = [&#34;packages/*/src&#34;]: it is...</p></li>
           </ul>
       
     </li>
   </ul>
 
 <p class="footer">
-  created at 2026-11-20 12:32 by
+  created at 2026-11-21 12:10 by
   <a href="https://pypi.org/project/dinghy/1.4.1">
     dinghy
     <span class="dinghy_version">1.4.1</span></a>.
