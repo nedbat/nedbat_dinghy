@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>One week
    — 
-  Activity since 2026-11-17</title>
+  Activity since 2026-11-18</title>
   <link rel="icon" href="https://raw.githubusercontent.com/primer/octicons/main/icons/comment-discussion-24.svg" type="image/svg+xml">
   <style>
   body {
@@ -208,13 +208,13 @@
 
 <h1>One week
    — 
-  Activity since 2026-11-17</h1>
+  Activity since 2026-11-18</h1>
 
 
 
 <ul class="repos">
   <li>
-      <p><span class="reponame" id="coveragepy"><a href="https://github.com/search?q=repo%3Acoveragepy%2Fcoveragepy+state%3Aopen+updated%3A%3E2026-11-17T14%3A35%3A53&amp;type=issues">Coverage.py</a></span>
+      <p><span class="reponame" id="coveragepy"><a href="https://github.com/search?q=repo%3Acoveragepy%2Fcoveragepy+state%3Aopen+updated%3A%3E2026-11-18T13%3A55%3A23&amp;type=issues">Coverage.py</a></span>
       search items
       
       </p>
@@ -265,12 +265,104 @@ Hi, I would really like to be able to give all my...</p><ul class="comments">
 With [html] show_contexts = true, an existing HTML page could be reused after contexts changed, leaving...</p></li>
           <li class="">
 
+              <p><a href="https://github.com/coveragepy/coveragepy/pull/2386"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>fix: a failed call in the C tracer records nothing #2385</b> #2386</a>
+              [namanraii]
+
+              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
+              </p><p>Fixes #2385.
+CTracer_handle_call pushes a data stack slot and then fills it in. If anything failed after the push...</p></li>
+          <li class="">
+
               <p><a href="https://github.com/coveragepy/coveragepy/pull/2409"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>fix: an empty data file makes an empty lcov file</b> #2409</a>
               [SnakeO]
 
               &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
               </p><p>fixes #2054.
 when nothing gets measured (rules_python with a --source that has no Python files in it), the data file...</p></li>
+          <li class="">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/pull/2415"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Fix LCOV checksums for Python strings containing Unicode line separators</b> #2415</a>
+              [pcbeingused333]
+
+              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
+              </p><p>A literal U+2028 inside a Python string counts as a line break for
+str.splitlines(). LCOV uses the resulting list...</p></li>
+          <li class="">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/pull/2416"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Report a report file that can&#39;t be written instead of raising a traceback</b> #2416</a>
+              [qianeric-backup]
+
+              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
+              </p><p>Writing a one-file report to a path that can&#39;t be created escapes as a raw OSError
+from render_report:
+$ coverage...</p></li>
+          <li class="">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/pull/2417"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Report a report directory that can&#39;t be created instead of raising a traceback</b> #2417</a>
+              [qianeric-backup]
+
+              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
+              </p><p>HtmlReporter.make_directory() calls ensure_dir(), which is a bare
+os.makedirs(directory, exist_ok=True), so an...</p></li>
+          <li class="">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/pull/2412"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Expand glob patterns in [run] source</b> #2412</a>
+              [tony1233200]
+
+              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
+              </p><p>Closes #2400. A [run] source entry may now be a glob pattern, for example source = [&#34;packages/*/src&#34;]: it is...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2412#issuecomment-7085122446" title="11-22 20:17">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>nedbat</b>: This pull request is a draft. Let me know when you are ready for it to be considered.</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2412#issuecomment-7085433557" title="11-22 20:38">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>tony1233200</b>: Ready for review. Rebased onto the latest main, CI is green (tests, types, pylint, docs and...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2412#issuecomment-7086043591" title="11-22 21:25">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>tony1233200</b>: Same situation as #2411: the &#34;Ready for review&#34; button is present but disabled for me — the page...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2412#issuecomment-7086536333" title="11-22 22:04">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>nedbat</b>: @tony1233200 You&#39;re opening a dozen pull requests a day across many repos. Slow down....</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2412#discussion_r4688639537" title="11-25 00:47">
+                        <span class="octicon filediff" title="reviewed, changes requested"></span>
+                          
+                        
+                        <b>nedbat</b>: Wouldn&#39;t it be better to refactor this so that lines 231/233 didn&#39;t repeat 235/237?</a></p>
+                      
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2412#discussion_r4689004922" title="11-25 01:35">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>tony1233200</b>: Done — refactored so glob matches and literal entries are classified in a single loop (commit...</a></p>
+                      
+                    </li>
+                  </ul>
+                      
+                    </li>
+                  </ul>
+              </li>
           <li class="">
 
               <p><a href="https://github.com/coveragepy/coveragepy/pull/2411"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Populate Cobertura XML methods with function coverage</b> #2411</a>
@@ -314,68 +406,19 @@ when nothing gets measured (rules_python with a --source that has no Python file
               </li>
           <li class="">
 
-              <p><a href="https://github.com/coveragepy/coveragepy/pull/2412"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Expand glob patterns in [run] source</b> #2412</a>
-              [tony1233200]
-
-              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
-              </p><p>Closes #2400. A [run] source entry may now be a glob pattern, for example source = [&#34;packages/*/src&#34;]: it is...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2412#issuecomment-7085122446" title="11-22 20:17">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>nedbat</b>: This pull request is a draft. Let me know when you are ready for it to be considered.</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2412#issuecomment-7085433557" title="11-22 20:38">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>tony1233200</b>: Ready for review. Rebased onto the latest main, CI is green (tests, types, pylint, docs and...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2412#issuecomment-7086043591" title="11-22 21:25">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>tony1233200</b>: Same situation as #2411: the &#34;Ready for review&#34; button is present but disabled for me — the page...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2412#issuecomment-7086536333" title="11-22 22:04">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>nedbat</b>: @tony1233200 You&#39;re opening a dozen pull requests a day across many repos. Slow down....</a></p>
-                      
-                    </li>
-                  </ul>
-              </li>
-          <li class="">
-
               <p><a href="https://github.com/coveragepy/coveragepy/pull/2413"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>fix: avoid misleading reasons for finally exit branches</b> #2413</a>
               [wozhenbang2004]
 
               &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
               </p><p>Fixes #867.
 An exception or return pending through a finally clause can prevent the normal onward jump even when the...</p></li>
-          <li class="">
-
-              <p><a href="https://github.com/coveragepy/coveragepy/pull/2414"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>feat: expose registered plugins and their enabled state</b> #2414</a>
-              [wozhenbang2004]
-
-              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
-              </p><p>Fixes #920.
-Plugin tests currently have to inspect Coverage._plugins and _coverage_enabled to check registration and...</p></li>
           </ul>
       
     </li>
   </ul>
 
 <p class="footer">
-  created at 2026-11-24 14:35 by
+  created at 2026-11-25 13:55 by
   <a href="https://pypi.org/project/dinghy/1.4.1">
     dinghy
     <span class="dinghy_version">1.4.1</span></a>.
