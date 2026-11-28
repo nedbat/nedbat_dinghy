@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Three days
    — 
-  Activity since 2026-11-24</title>
+  Activity since 2026-11-25</title>
   <link rel="icon" href="https://raw.githubusercontent.com/primer/octicons/main/icons/comment-discussion-24.svg" type="image/svg+xml">
   <style>
   body {
@@ -208,66 +208,18 @@
 
 <h1>Three days
    — 
-  Activity since 2026-11-24</h1>
+  Activity since 2026-11-25</h1>
 
 
 
 <ul class="repos">
   <li>
-      <p><span class="reponame" id="coveragepy"><a href="https://github.com/search?q=repo%3Acoveragepy%2Fcoveragepy+state%3Aopen+updated%3A%3E2026-11-24T13%3A31%3A33&amp;type=issues">Coverage.py</a></span>
+      <p><span class="reponame" id="coveragepy"><a href="https://github.com/search?q=repo%3Acoveragepy%2Fcoveragepy+state%3Aopen+updated%3A%3E2026-11-25T12%3A43%3A50&amp;type=issues">Coverage.py</a></span>
       search items
       
       </p>
       
         <ul class="entries">
-          <li class="">
-
-              <p><a href="https://github.com/coveragepy/coveragepy/pull/2386"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>fix: a failed call in the C tracer records nothing #2385</b> #2386</a>
-              [namanraii]
-
-              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
-              </p><p>Fixes #2385.
-CTracer_handle_call pushes a data stack slot and then fills it in. If anything failed after the push...</p></li>
-          <li class="">
-
-              <p><a href="https://github.com/coveragepy/coveragepy/pull/2409"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>fix: an empty data file makes an empty lcov file</b> #2409</a>
-              [SnakeO]
-
-              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
-              </p><p>fixes #2054.
-when nothing gets measured (rules_python with a --source that has no Python files in it), the data file...</p></li>
-          <li class="">
-
-              <p><a href="https://github.com/coveragepy/coveragepy/pull/2415"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Fix LCOV checksums for Python strings containing Unicode line separators</b> #2415</a>
-              [pcbeingused333]
-
-              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
-              </p><p>A literal U+2028 inside a Python string counts as a line break for
-str.splitlines(). LCOV uses the resulting list...</p></li>
-          <li class="">
-
-              <p><a href="https://github.com/coveragepy/coveragepy/pull/2416"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Report a report file that can&#39;t be written instead of raising a traceback</b> #2416</a>
-              [qianeric-backup]
-
-              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
-              </p><p>Writing a one-file report to a path that can&#39;t be created escapes as a raw OSError
-from render_report:
-$ coverage...</p></li>
-          <li class="">
-
-              <p><a href="https://github.com/coveragepy/coveragepy/pull/2417"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Report a report directory that can&#39;t be created instead of raising a traceback</b> #2417</a>
-              [qianeric-backup]
-
-              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
-              </p><p>HtmlReporter.make_directory() calls ensure_dir(), which is a bare
-os.makedirs(directory, exist_ok=True), so an...</p></li>
-          <li class="">
-
-              <p><a href="https://github.com/coveragepy/coveragepy/pull/2411"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Populate Cobertura XML methods with function coverage</b> #2411</a>
-              [tony1233200]
-
-              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
-              </p><p>Closes #2056. The Cobertura XML report now populates the &lt;methods&gt; element of each class with the functions in the...</p></li>
           <li class="">
 
               <p><a href="https://github.com/coveragepy/coveragepy/pull/2309"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>guard against empty co_code in ctracer RESUME paths</b> #2309</a>
@@ -292,18 +244,45 @@ os.makedirs(directory, exist_ok=True), so an...</p></li>
 Adds Coverage.clear_data(). It discards collected data but keeps the setup from the first start()....</p></li>
           <li class="">
 
-              <p><a href="https://github.com/coveragepy/coveragepy/pull/2420"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>perf: union per-context bitmaps before decoding line numbers</b> #2420</a>
-              [lei9444]
+              <p><a href="https://github.com/coveragepy/coveragepy/pull/2415"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Fix LCOV checksums for Python strings containing Unicode line separators</b> #2415</a>
+              [pcbeingused333]
 
               &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
-              </p><p>CoverageData.lines() needs the union of the lines executed in the selected contexts. Previously, it decoded each...</p></li>
+              </p><p>A literal U+2028 inside a Python string counts as a line break for
+str.splitlines(). LCOV uses the resulting list...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2415#issuecomment-7232393157" title="11-28 02:29">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>nedbat</b>: How did you find this problem?</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="open">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/issues/2421"><span class="octicons" title="newly created; issue"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>sysmon core keeps every started code object alive, including untraced ones</b> #2421</a>
+              [adam-zovos]
+
+              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
+              </p><p>Describe the bug
+With the sysmon core, SysMonitor.code_objects keeps every code object that starts, including ones...</p></li>
+          <li class="">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/pull/2422"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Avoid retaining untraced code objects in sysmon</b> #2422</a>
+              [itisrmk]
+
+              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
+              </p><p>Fixes #2421.
+The sysmon core keeps strong references to code objects to preserve their identities. Untraced code...</p></li>
           </ul>
       
     </li>
   </ul>
 
 <p class="footer">
-  created at 2026-11-27 13:31 by
+  created at 2026-11-28 12:43 by
   <a href="https://pypi.org/project/dinghy/1.4.1">
     dinghy
     <span class="dinghy_version">1.4.1</span></a>.

@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>One day
    — 
-  Activity since 2026-11-26</title>
+  Activity since 2026-11-27</title>
   <link rel="icon" href="https://raw.githubusercontent.com/primer/octicons/main/icons/comment-discussion-24.svg" type="image/svg+xml">
   <style>
   body {
@@ -208,13 +208,13 @@
 
 <h1>One day
    — 
-  Activity since 2026-11-26</h1>
+  Activity since 2026-11-27</h1>
 
 
 
 <ul class="repos">
   <li>
-      <p><span class="reponame" id="coveragepy"><a href="https://github.com/search?q=repo%3Acoveragepy%2Fcoveragepy+state%3Aopen+updated%3A%3E2026-11-26T13%3A31%3A33&amp;type=issues">Coverage.py</a></span>
+      <p><span class="reponame" id="coveragepy"><a href="https://github.com/search?q=repo%3Acoveragepy%2Fcoveragepy+state%3Aopen+updated%3A%3E2026-11-27T12%3A43%3A50&amp;type=issues">Coverage.py</a></span>
       search items
       
       </p>
@@ -222,26 +222,45 @@
         <ul class="entries">
           <li class="">
 
-              <p><a href="https://github.com/coveragepy/coveragepy/pull/2235"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Add Coverage.clear_data() for lightweight data reset</b> #2235</a>
-              [pctablet505]
+              <p><a href="https://github.com/coveragepy/coveragepy/pull/2415"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Fix LCOV checksums for Python strings containing Unicode line separators</b> #2415</a>
+              [pcbeingused333]
 
               &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
-              </p><p>Closes #2139
-Adds Coverage.clear_data(). It discards collected data but keeps the setup from the first start()....</p></li>
+              </p><p>A literal U+2028 inside a Python string counts as a line break for
+str.splitlines(). LCOV uses the resulting list...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/coveragepy/coveragepy/pull/2415#issuecomment-7232393157" title="11-28 02:29">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>nedbat</b>: How did you find this problem?</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="open">
+
+              <p><a href="https://github.com/coveragepy/coveragepy/issues/2421"><span class="octicons" title="newly created; issue"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon issue"></span></span><b>sysmon core keeps every started code object alive, including untraced ones</b> #2421</a>
+              [adam-zovos]
+
+              &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
+              </p><p>Describe the bug
+With the sysmon core, SysMonitor.code_objects keeps every code object that starts, including ones...</p></li>
           <li class="">
 
-              <p><a href="https://github.com/coveragepy/coveragepy/pull/2420"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>perf: union per-context bitmaps before decoding line numbers</b> #2420</a>
-              [lei9444]
+              <p><a href="https://github.com/coveragepy/coveragepy/pull/2422"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Avoid retaining untraced code objects in sysmon</b> #2422</a>
+              [itisrmk]
 
               &nbsp;&nbsp; <span class="homerepo">coveragepy/coveragepy</span>
-              </p><p>CoverageData.lines() needs the union of the lines executed in the selected contexts. Previously, it decoded each...</p></li>
+              </p><p>Fixes #2421.
+The sysmon core keeps strong references to code objects to preserve their identities. Untraced code...</p></li>
           </ul>
       
     </li>
   </ul>
 
 <p class="footer">
-  created at 2026-11-27 13:31 by
+  created at 2026-11-28 12:43 by
   <a href="https://pypi.org/project/dinghy/1.4.1">
     dinghy
     <span class="dinghy_version">1.4.1</span></a>.
